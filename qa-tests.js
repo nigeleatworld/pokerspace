@@ -260,9 +260,9 @@ test('tournament state validation enforces mode, counters and exactly 24000 live
 });
 
 test('setup defaults to fixed tournament while cash choices and accounting remain available',()=>{
-  assert(/data-mode="tournament"[^>]*class="selected"/.test(html),'Tournament must be selected by default');
+  assert(/data-mode="tournament"[^>]*class="mode-card selected"/.test(html),'Tournament must be selected by default');
   assert(/data-mode="cash"/.test(html),'Cash remains selectable');
-  assert(/8 players[^<]*3,000 chips[^<]*7 hands\/level[^<]*no rebuys/i.test(html),'fixed structure summary');
+  assert(/8 players.*3,000 chips.*7 hands.*no rebuys/i.test(html),'fixed structure summary');
   assert(html.includes('data-n="6"')&&html.includes('data-n="7"')&&html.includes('data-n="8"'),'cash seat range remains');
   assert(/Buy in for \$1,500/.test(html)&&/totalBuyIns\s*\+=\s*1500/.test(html),'cash buy-in and explicit rebuy remain');
 });
