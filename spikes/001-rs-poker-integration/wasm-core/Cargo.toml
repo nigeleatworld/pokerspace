@@ -1,0 +1,19 @@
+[package]
+name = "rs-poker-wasm-core-probe"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+rs_poker = { git = "https://github.com/elliottneilclark/rs-poker", rev = "c9fff5de185ece2c148e6bd84c552b3ac93ec060", default-features = false }
+wasm-bindgen = "0.2.126"
+getrandom = { version = "0.4", features = ["wasm_js"] }
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort"
+opt-level = "z"
+strip = true

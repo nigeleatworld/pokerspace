@@ -1,0 +1,619 @@
+=== tournament tests ===
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded clap_lex v1.1.0
+  Downloaded scopeguard v1.2.0
+  Downloaded anstyle v1.0.14
+  Downloaded utf8parse v0.2.2
+  Downloaded is_terminal_polyfill v1.70.2
+  Downloaded approx v0.5.1
+  Downloaded cast v0.3.0
+  Downloaded cfg-if v1.0.4
+  Downloaded tikv-jemallocator v0.6.1
+  Downloaded colorchoice v1.0.5
+  Downloaded errno v0.3.14
+  Downloaded page_size v0.6.0
+  Downloaded alloca v0.4.0
+  Downloaded plotters-svg v0.3.7
+  Downloaded futures-core v0.3.32
+  Downloaded anstyle-query v1.1.5
+  Downloaded zmij v1.0.21
+  Downloaded walkdir v2.5.0
+  Downloaded same-file v1.0.6
+  Downloaded ciborium-io v0.2.2
+  Downloaded plotters-backend v0.3.7
+  Downloaded ciborium-ll v0.2.2
+  Downloaded futures-sink v0.3.32
+  Downloaded tokio-macros v2.5.0
+  Downloaded env_filter v1.0.1
+  Downloaded tokio-test v0.4.5
+  Downloaded unicode-ident v1.0.24
+  Downloaded tracing-core v0.1.36
+  Downloaded zerocopy-derive v0.8.50
+  Downloaded linked-hash-map v0.5.6
+  Downloaded lazy_static v1.5.0
+  Downloaded anstyle-parse v1.0.0
+  Downloaded oorandom v11.1.5
+  Downloaded find-msvc-tools v0.1.9
+  Downloaded itoa v1.0.18
+  Downloaded lock_api v0.4.14
+  Downloaded autocfg v1.5.1
+  Downloaded either v1.16.0
+  Downloaded anstream v1.0.0
+  Downloaded criterion-plot v0.8.2
+  Downloaded fastrand v2.4.1
+  Downloaded env_logger v0.11.10
+  Downloaded rand_core v0.10.1
+  Downloaded zerocopy v0.8.50
+  Downloaded crossbeam-deque v0.8.6
+  Downloaded pin-project-lite v0.2.17
+  Downloaded thiserror v2.0.18
+  Downloaded anes v0.1.6
+  Downloaded async-trait v0.1.89
+  Downloaded once_cell v1.21.4
+  Downloaded thiserror-impl v2.0.18
+  Downloaded parking_lot v0.12.5
+  Downloaded parking_lot_core v0.9.12
+  Downloaded tokio-stream v0.1.18
+  Downloaded ciborium v0.2.2
+  Downloaded shlex v2.0.1
+  Downloaded iana-time-zone v0.1.65
+  Downloaded tempfile v3.27.0
+  Downloaded thread_local v1.1.9
+  Downloaded tinytemplate v1.2.1
+  Downloaded crossbeam-epoch v0.9.18
+  Downloaded console v0.15.11
+  Downloaded smallvec v1.15.1
+  Downloaded tracing-attributes v0.1.31
+  Downloaded num-traits v0.2.19
+  Downloaded sharded-slab v0.1.7
+  Downloaded chacha20 v0.10.0
+  Downloaded clap v4.6.1
+  Downloaded little-sorry v3.0.0
+  Downloaded serde_derive v1.0.228
+  Downloaded getrandom v0.4.2
+  Downloaded half v2.7.1
+  Downloaded log v0.4.32
+  Downloaded bitflags v2.13.0
+  Downloaded quote v1.0.45
+  Downloaded serde_core v1.0.228
+  Downloaded crossbeam-utils v0.8.21
+  Downloaded similar v2.7.0
+  Downloaded bytes v1.11.1
+  Downloaded core-foundation-sys v0.8.7
+  Downloaded proc-macro2 v1.0.106
+  Downloaded rayon-core v1.13.0
+  Downloaded serde v1.0.228
+  Downloaded cc v1.2.63
+  Downloaded insta v1.41.1
+  Downloaded memchr v2.8.1
+  Downloaded rand v0.10.1
+  Downloaded criterion v0.8.2
+  Downloaded tokio-util v0.7.17
+  Downloaded itertools v0.13.0
+  Downloaded plotters v0.3.7
+  Downloaded regex v1.12.4
+  Downloaded itertools v0.14.0
+  Downloaded serde_json v1.0.150
+  Downloaded aho-corasick v1.1.4
+  Downloaded clap_builder v4.6.0
+  Downloaded rayon v1.12.0
+  Downloaded chrono v0.4.45
+  Downloaded tracing-subscriber v0.3.23
+  Downloaded syn v2.0.117
+  Downloaded regex-syntax v0.8.11
+  Downloaded rustix v1.1.4
+  Downloaded tracing v0.1.44
+  Downloaded regex-automata v0.4.14
+  Downloaded libc v0.2.186
+  Downloaded jiff v0.2.28
+  Downloaded tokio v1.43.4
+  Downloaded tikv-jemalloc-sys v0.6.1+5.3.0-1-ge13ca993e8ccb9ba9847cc330696e02839f328f7
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.45
+   Compiling unicode-ident v1.0.24
+   Compiling libc v0.2.186
+   Compiling cfg-if v1.0.4
+   Compiling shlex v2.0.1
+   Compiling find-msvc-tools v0.1.9
+   Compiling memchr v2.8.1
+   Compiling serde_core v1.0.228
+   Compiling parking_lot_core v0.9.12
+   Compiling crossbeam-utils v0.8.21
+   Compiling autocfg v1.5.1
+   Compiling cc v1.2.63
+   Compiling smallvec v1.15.1
+   Compiling once_cell v1.21.4
+   Compiling num-traits v0.2.19
+   Compiling serde v1.0.228
+   Compiling scopeguard v1.2.0
+   Compiling zerocopy v0.8.50
+   Compiling lock_api v0.4.14
+   Compiling aho-corasick v1.1.4
+   Compiling rand_core v0.10.1
+   Compiling regex-syntax v0.8.11
+   Compiling getrandom v0.4.2
+   Compiling pin-project-lite v0.2.17
+   Compiling zmij v1.0.21
+   Compiling either v1.16.0
+   Compiling anstyle v1.0.14
+   Compiling regex-automata v0.4.14
+   Compiling rayon-core v1.13.0
+   Compiling bytes v1.11.1
+   Compiling serde_json v1.0.150
+   Compiling regex v1.12.4
+   Compiling alloca v0.4.0
+   Compiling tikv-jemalloc-sys v0.6.1+5.3.0-1-ge13ca993e8ccb9ba9847cc330696e02839f328f7
+   Compiling plotters-backend v0.3.7
+   Compiling itoa v1.0.18
+   Compiling clap_lex v1.1.0
+   Compiling ciborium-io v0.2.2
+   Compiling lazy_static v1.5.0
+   Compiling parking_lot v0.12.5
+   Compiling futures-core v0.3.32
+   Compiling utf8parse v0.2.2
+   Compiling rustix v1.1.4
+   Compiling anstyle-parse v1.0.0
+   Compiling clap_builder v4.6.0
+   Compiling errno v0.3.14
+   Compiling plotters-svg v0.3.7
+   Compiling syn v2.0.117
+   Compiling crossbeam-epoch v0.9.18
+   Compiling crossbeam-deque v0.8.6
+   Compiling itertools v0.13.0
+   Compiling chacha20 v0.10.0
+   Compiling tracing-core v0.1.36
+   Compiling colorchoice v1.0.5
+   Compiling cast v0.3.0
+   Compiling same-file v1.0.6
+   Compiling thiserror v2.0.18
+   Compiling bitflags v2.13.0
+   Compiling core-foundation-sys v0.8.7
+   Compiling log v0.4.32
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling anstyle-query v1.1.5
+   Compiling env_filter v1.0.1
+   Compiling iana-time-zone v0.1.65
+   Compiling anstream v1.0.0
+   Compiling rand v0.10.1
+   Compiling walkdir v2.5.0
+   Compiling criterion-plot v0.8.2
+   Compiling clap v4.6.1
+   Compiling plotters v0.3.7
+   Compiling sharded-slab v0.1.7
+   Compiling console v0.15.11
+   Compiling serde_derive v1.0.228
+   Compiling zerocopy-derive v0.8.50
+   Compiling tokio-macros v2.5.0
+   Compiling rayon v1.12.0
+   Compiling tracing-attributes v0.1.31
+   Compiling thiserror-impl v2.0.18
+   Compiling tokio v1.43.4
+   Compiling page_size v0.6.0
+   Compiling thread_local v1.1.9
+   Compiling linked-hash-map v0.5.6
+   Compiling futures-sink v0.3.32
+   Compiling oorandom v11.1.5
+   Compiling similar v2.7.0
+   Compiling jiff v0.2.28
+   Compiling anes v0.1.6
+   Compiling fastrand v2.4.1
+   Compiling rs_poker v5.0.0 (/private/tmp/rs-poker-river-room-spike)
+   Compiling tempfile v3.27.0
+   Compiling insta v1.41.1
+   Compiling tracing-subscriber v0.3.23
+   Compiling tracing v0.1.44
+   Compiling env_logger v0.11.10
+   Compiling async-trait v0.1.89
+   Compiling little-sorry v3.0.0
+   Compiling tokio-stream v0.1.18
+   Compiling tokio-test v0.4.5
+   Compiling tinytemplate v1.2.1
+   Compiling chrono v0.4.45
+   Compiling tokio-util v0.7.17
+   Compiling approx v0.5.1
+   Compiling itertools v0.14.0
+   Compiling half v2.7.1
+   Compiling ciborium-ll v0.2.2
+   Compiling ciborium v0.2.2
+   Compiling criterion v0.8.2
+   Compiling tikv-jemallocator v0.6.1
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 35.22s
+     Running unittests src/lib.rs (target/debug/build/rs_poker/7ac8b064e844e85d/out/rs_poker-7ac8b064e844e85d)
+
+running 2 tests
+test arena::competition::tournament::tests::test_all_in ... ok
+test arena::competition::tournament::tests::test_headsup_tournament_folding_never_wins ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 1017 filtered out; finished in 0.00s
+
+=== estimator tests ===
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.12s
+     Running unittests src/lib.rs (target/debug/build/rs_poker/7ac8b064e844e85d/out/rs_poker-7ac8b064e844e85d)
+
+running 12 tests
+test arena::hand_estimator::distribution::tests::canonicalizes_regardless_of_order ... ok
+test arena::hand_estimator::distribution::tests::point_mass_returns_none_when_dead ... ok
+test arena::hand_estimator::distribution::tests::point_mass_returns_its_combo_when_alive ... ok
+test arena::hand_estimator::tests::estimator_is_object_safe ... ok
+test arena::hand_estimator::tests::opponent_ranges_get_is_bounds_safe ... ok
+test arena::hand_estimator::estimators::tests::returns_point_mass_for_opponent_only ... ok
+test arena::hand_estimator::world::tests::known_hands_round_trips_every_hand ... ok
+test arena::hand_estimator::distribution::tests::weighted_never_returns_a_dead_card ... ok
+test arena::hand_estimator::distribution::tests::weighted_returns_none_when_all_dead ... ok
+test arena::hand_estimator::estimators::tests::uniform_returns_weighted_for_opponent_only ... ok
+test arena::hand_estimator::world::tests::sampled_world_has_no_duplicate_cards ... ok
+test arena::hand_estimator::distribution::tests::enumerates_exactly_1326_unique_combos ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 1007 filtered out; finished in 0.00s
+
+=== CFR tests ===
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running unittests src/lib.rs (target/debug/build/rs_poker/7ac8b064e844e85d/out/rs_poker-7ac8b064e844e85d)
+
+running 231 tests
+test arena::cfr::action_bit_set::tests::test_all_indices ... ok
+test arena::cfr::action_bit_set::tests::test_count ... ok
+test arena::cfr::action_bit_set::tests::test_clone_copy ... ok
+test arena::cfr::action_bit_set::tests::test_insert_and_contains ... ok
+test arena::cfr::action_bit_set::tests::test_new_is_empty ... ok
+test arena::cfr::action_generator::configurable::tests::test_configurable_no_fold_when_checking ... ok
+test arena::cfr::action_generator::configurable::tests::test_configurable_all_actions_valid_facing_bet ... ok
+test arena::cfr::action_generator::basic::tests::test_should_gen_2_actions ... ok
+test arena::cfr::action_generator::configurable::tests::test_validate_nested_round_override ... ok
+test arena::cfr::action_generator::configurable::tests::test_validate_pot_mult_negative ... ok
+test arena::cfr::action_generator::configurable::tests::test_validate_raise_mult_below_one ... ok
+test arena::cfr::action_generator::preflop_chart::tests::test_bet_or_all_in ... ok
+test arena::cfr::action_generator::preflop_chart::tests::test_charts_for_position_fallback ... ok
+test arena::cfr::action_generator::preflop_chart::tests::test_position_calculation ... ok
+test arena::cfr::action_generator::configurable::tests::test_configurable_all_actions_valid_preflop ... ok
+test arena::cfr::action_generator::basic::tests::test_should_gen_3_actions ... ok
+test arena::cfr::action_generator::configurable::tests::test_configurable_per_round_config ... ok
+test arena::cfr::action_generator::configurable::tests::test_configurable_gen_actions_basic ... ok
+test arena::cfr::action_generator::preflop_chart::tests::test_serde_minimal_config ... ok
+test arena::cfr::action_generator::preflop_chart::tests::test_serde_roundtrip ... ok
+test arena::cfr::action_generator::preflop_chart::tests::test_serde_strategy_minimal_in_chart ... ok
+test arena::cfr::action_generator::preflop_chart::tests::test_validate_no_positions ... ok
+test arena::cfr::action_generator::preflop_chart::tests::test_validate_non_positive_four_bet_plus_multiplier ... ok
+test arena::cfr::action_generator::preflop_chart::tests::test_validate_non_positive_raise_size ... ok
+test arena::cfr::action_generator::preflop_chart::tests::test_validate_non_positive_three_bet_multiplier ... ok
+test arena::cfr::action_generator::preflop_chart::tests::test_validate_rfi_rejects_call ... ok
+test arena::cfr::action_generator::preflop_chart::tests::test_validate_vs4bet_rejects_raise ... ok
+test arena::cfr::action_generator::configurable::tests::test_configurable_call_disabled ... ok
+test arena::cfr::action_generator::configurable::tests::test_configurable_all_actions_valid_flop ... ok
+test arena::cfr::action_generator::preflop_chart::tests::test_preflop_actions_for_chart_hand ... ok
+test arena::cfr::action_generator::preflop_chart::tests::test_preflop_chart_action_gen_in_simulation ... ok
+test arena::cfr::action_generator::simple::tests::test_simple_all_actions_valid_after_multiple_raises ... ok
+test arena::cfr::action_generator::configurable::tests::test_configurable_with_setup_shove ... ok
+test arena::cfr::action_generator::simple::tests::test_simple_all_actions_valid_facing_raise ... ok
+test arena::cfr::action_generator::preflop_chart::tests::test_mixed_strategy_generates_multiple_actions ... ok
+test arena::cfr::action_generator::preflop_chart::tests::test_chart_raise_when_raise_capped_falls_back_to_call ... ok
+test arena::cfr::action_generator::preflop_chart::tests::test_postflop_delegates_to_configurable ... ok
+test arena::cfr::action_generator::simple::tests::test_simple_all_actions_valid_facing_bet ... ok
+test arena::cfr::action_generator::simple::tests::test_simple_all_actions_valid_preflop_bb ... ok
+test arena::cfr::action_generator::simple::tests::test_simple_all_actions_valid_large_pot ... ok
+test arena::cfr::action_index_mapper::tests::test_all_in_always_maps_to_all_in_idx ... ok
+test arena::cfr::action_index_mapper::tests::test_all_in_close_to_min_raise ... ok
+test arena::cfr::action_index_mapper::tests::test_bet_above_max_maps_to_raise_max ... ok
+test arena::cfr::action_index_mapper::tests::test_bet_at_max_maps_to_raise_max ... ok
+test arena::cfr::action_index_mapper::tests::test_bet_below_min_maps_to_raise_min ... ok
+test arena::cfr::action_index_mapper::tests::test_bet_matching_all_in_maps_to_all_in_idx ... ok
+test arena::cfr::action_index_mapper::tests::test_bet_matching_current_bet_maps_to_call ... ok
+test arena::cfr::action_index_mapper::tests::test_call_always_maps_to_one ... ok
+test arena::cfr::action_index_mapper::tests::test_compute_effective_range ... ok
+test arena::cfr::action_index_mapper::tests::test_compute_effective_range_two_players ... ok
+test arena::cfr::action_index_mapper::tests::test_config_from_game_state ... ok
+test arena::cfr::action_index_mapper::tests::test_fold_always_maps_to_zero ... ok
+test arena::cfr::action_index_mapper::tests::test_index_to_bet_returns_none_for_out_of_range ... ok
+test arena::cfr::action_index_mapper::tests::test_index_to_bet_returns_none_for_special_indices ... ok
+test arena::cfr::action_index_mapper::tests::test_index_to_bet_roundtrip ... ok
+test arena::cfr::action_generator::simple::tests::test_simple_all_actions_valid_river ... ok
+test arena::cfr::action_index_mapper::tests::test_log_distribution_midpoint ... ok
+test arena::cfr::action_index_mapper::tests::test_mapper_from_game_state ... ok
+test arena::cfr::action_index_mapper::tests::test_min_bet_maps_to_raise_min ... ok
+test arena::cfr::action_index_mapper::tests::test_num_action_indices_constant ... ok
+test arena::cfr::action_index_mapper::tests::test_raises_spread_across_indices ... ok
+test arena::cfr::action_index_mapper::tests::test_small_pot_edge_case ... ok
+current_round_bet = 900
+Bet(900.0) maps to index 1
+Player 1 all-in amount = 900
+Bet(1000.0) maps to index 13
+test arena::cfr::action_picker::tests::test_all_in_scenario_action_mapping ... ok
+bet_idx for Bet(10.0) = 2
+Iteration 1: fold=0.0325, call=0.9675, invalid_sum=0.0000, allin=0.0000
+Iteration 2: fold=0.0065, call=0.9935, invalid_sum=0.0000, allin=0.0000
+Iteration 3: fold=0.0023, call=0.9977, invalid_sum=0.0000, allin=0.0000
+Iteration 4: fold=0.0011, call=0.9989, invalid_sum=0.0000, allin=0.0000
+Iteration 5: fold=0.0006, call=0.9994, invalid_sum=0.0000, allin=0.0000
+Iteration 6: fold=0.0004, call=0.9996, invalid_sum=0.0000, allin=0.0000
+Iteration 7: fold=0.0002, call=0.9998, invalid_sum=0.0000, allin=0.0000
+Iteration 8: fold=0.0002, call=0.9998, invalid_sum=0.0000, allin=0.0000
+Iteration 9: fold=0.0001, call=0.9999, invalid_sum=0.0000, allin=0.0000
+Iteration 10: fold=0.0001, call=0.9999, invalid_sum=0.0000, allin=0.0000
+test arena::cfr::action_picker::tests::test_debug_weights_after_iterations ... ok
+test arena::cfr::action_picker::tests::test_different_bet_amounts_map_correctly ... ok
+test arena::cfr::action_picker::tests::test_filters_to_valid_actions_only ... ok
+test arena::cfr::action_generator::simple::tests::test_simple_all_actions_valid_flop_first_to_act ... ok
+test arena::cfr::action_picker::tests::test_fold_and_allin_always_same_index ... ok
+test arena::cfr::action_picker::tests::test_handles_zero_weights ... ok
+test arena::cfr::action_picker::tests::test_pick_action_uniform_no_regret_matcher ... ok
+test arena::cfr::action_picker::tests::test_pick_action_with_only_two_valid_actions ... ok
+test arena::cfr::action_picker::tests::test_pick_action_with_regret_matcher ... ok
+test arena::cfr::action_picker::tests::test_pick_best_action_deterministic ... ok
+test arena::cfr::action_generator::simple::tests::test_simple_all_actions_valid_preflop_sb ... ok
+test arena::cfr::action_picker::tests::test_pick_best_action_no_regret_matcher ... ok
+test arena::cfr::action_picker::tests::test_pick_best_action_with_regret_matcher ... ok
+test arena::cfr::action_picker::tests::test_pick_best_handles_ties ... ok
+test arena::cfr::action_generator::simple::tests::test_simple_all_actions_valid_three_players ... ok
+test arena::cfr::action_validator::tests::test_all_in_equals_sizing ... ok
+test arena::cfr::action_picker::tests::test_single_action_always_picked ... ok
+test arena::cfr::action_validator::tests::test_all_in_kept_when_capped ... ok
+test arena::cfr::action_validator::tests::test_bet_equal_to_all_in_removed_when_all_in_exists ... ok
+test arena::cfr::action_validator::tests::test_bet_equal_to_call_kept_when_no_call ... ok
+test arena::cfr::action_validator::tests::test_bet_equal_to_call_removed_when_call_exists ... ok
+test arena::cfr::action_picker::tests::test_convergence_equal_rewards ... ok
+test arena::cfr::action_validator::tests::test_bet_less_than_all_in_kept ... ok
+test arena::cfr::action_validator::tests::test_different_bet_amounts_kept ... ok
+test arena::cfr::action_validator::tests::test_duplicate_bet_amounts_removed ... ok
+test arena::cfr::action_validator::tests::test_empty_actions_after_filtering ... ok
+test arena::cfr::action_validator::tests::test_fold_kept_when_facing_bet ... ok
+test arena::cfr::action_validator::tests::test_fold_removed_when_nothing_to_call ... ok
+test arena::cfr::action_validator::tests::test_full_validation_pipeline ... ok
+test arena::cfr::action_validator::tests::test_player_already_all_in ... ok
+test arena::cfr::action_validator::tests::test_raises_kept_when_no_limit ... ok
+test arena::cfr::action_validator::tests::test_raises_kept_when_not_capped ... ok
+test arena::cfr::action_validator::tests::test_raises_removed_when_capped ... ok
+test arena::cfr::agent::engine::wave_tests::wave_mean_averages_only_sampled_slots ... ok
+test arena::cfr::agent::engine::wave_tests::wave_mean_single_sample_equals_sample ... ok
+test arena::cfr::agent::hand_log::tests::new_is_empty ... ok
+test arena::cfr::agent::hand_log::tests::freeze_collapses_into_prefix_and_empties_tail ... ok
+test arena::cfr::agent::hand_log::tests::full_path_through_freeze_then_two_descents ... ok
+test arena::cfr::agent::hand_log::tests::record_appends_in_order ... ok
+test arena::cfr::agent::hand_log::tests::historian_records_into_shared_log ... ok
+test arena::cfr::agent::hand_log::tests::spawn_child_copies_tail_and_is_independent ... ok
+test arena::cfr::action_picker::tests::test_convergence_with_clear_winner ... ok
+test arena::cfr::agent::tests::concurrent_children_have_independent_tails ... ok
+test arena::cfr::action_picker::tests::test_pick_action_dedupes_index_collisions ... ok
+test arena::cfr::action_generator::simple::tests::test_simple_all_actions_valid_small_stack ... ok
+test arena::cfr::action_generator::simple::tests::test_simple_no_fold_when_checking ... ok
+test arena::cfr::action_generator::simple::tests::test_simple_gen_actions_with_bet_facing ... ok
+test arena::cfr::action_generator::simple::tests::test_simple_all_actions_valid_tiny_pot ... ok
+test arena::cfr::agent::tests::act_respects_iteration_budget ... ok
+test arena::cfr::agent::tests::default_estimator_has_no_hand_log_and_no_historian ... ok
+test arena::cfr::agent::tests::fast_forward_from_flop_deals_turn_and_river ... ok
+test arena::cfr::agent::tests::fast_forward_river_call_loses_with_worse_hand ... ok
+test arena::cfr::agent::tests::fast_forward_split_pot_on_tie ... ok
+test arena::cfr::agent::tests::estimate_receives_current_hand_log ... ok
+test arena::cfr::agent::tests::enumeration_path_is_value_stable_without_seed ... ok
+test arena::cfr::agent::tests::historian_present_only_when_estimator_needs_history ... ok
+test arena::cfr::agent::tests::explore_runs_with_uniform_estimator ... ok
+test arena::cfr::agent::tests::no_act_deadline_completes_budgeted_waves ... ok
+test arena::cfr::agent::tests::test_act_returns_only_validated_actions_when_cap_reached ... ok
+test arena::cfr::agent::tests::test_cfr_vs_non_cfr_agent ... ok
+test arena::cfr::agent::tests::test_create_agent ... ok
+
+k              mean        std      var_red    time_us
+--------------------------------------------------------
+1-samp        40.00     498.40     baseline       2190
+test arena::cfr::agent::tests::historian_populates_log_in_real_cfr_sim ... ok
+test arena::cfr::agent::tests::diag_event_records_iteration_bound_stop ... ok
+AKs vs 72o avg reward for AKs: 160.93
+test arena::cfr::agent::tests::test_flop_sample_dominated_hand ... ok
+k=1          127.50     261.71         1.9x      14102
+test arena::cfr::agent::tests::diag_event_records_deadline_stop ... ok
+PCFR+ after 24 iterations: fold=1.000000, call=0.000000
+test arena::cfr::agent::tests::test_pcfr_fold_vs_call_with_penalty_equal_to_call ... ok
+Multi-sample flop (k=3): mean=117.56, std=129.66
+Single-sample runout:     mean=80.00, std=493.56
+Variance reduction: 3.8x
+test arena::cfr::agent::tests::test_flop_sample_variance_vs_single_sample ... ok
+test arena::cfr::agent::tests::test_rbp_preserves_fold_decision ... ok
+test arena::cfr::agent::tests::test_parallel_builds_cfr_tree ... ok
+After exploration: 1 active actions, 6 updates
+test arena::cfr::agent::tests::test_rbp_reduces_active_actions ... ok
+test arena::cfr::agent::tests::test_river_fold_via_fast_forward_at_depth_zero ... ok
+Possible actions: [Fold, Bet(500.0)]
+  Fold -> index 0
+  Bet(500.0) -> index 1
+Chosen action: Fold
+Weights after exploration: fold=1.000000, call=0.000000
+test arena::cfr::agent::tests::test_river_should_fold_king_high_vs_pair ... ok
+k=2          125.33     163.63         3.0x      23706
+test arena::cfr::agent::tests::test_shared_cfr_states_between_agents ... ok
+test arena::cfr::agent::tests::test_sub_simulation_traversal_isolation ... ok
+test arena::cfr::agent::tests::test_run_heads_up ... ok
+test arena::cfr::agent::tests::test_run_heads_up_parallel ... ok
+test arena::cfr::budget::tests::deadline_emits_start_timer_once_at_root ... ok
+test arena::cfr::budget::tests::iteration_count_stops_at_limit ... ok
+test arena::cfr::budget::tests::max_width_returns_wave_in_range_else_fast_forward ... ok
+test arena::cfr::budget::tests::most_restrictive_all_pass_returns_pass ... ok
+test arena::cfr::budget::tests::most_restrictive_empty_returns_pass ... ok
+test arena::cfr::budget::tests::most_restrictive_fast_forward_wins_over_wave ... ok
+test arena::cfr::budget::tests::most_restrictive_picks_min_start_timer_duration ... ok
+test arena::cfr::budget::tests::most_restrictive_picks_min_wave_width ... ok
+test arena::cfr::budget::tests::most_restrictive_start_timer_wins ... ok
+test arena::cfr::budget::tests::most_restrictive_stop_wins_over_action ... ok
+test arena::cfr::budget::tests::node_count_stops_at_limit ... ok
+test arena::cfr::budget::tests::per_depth_dispatches_by_depth ... ok
+test arena::cfr::budget::tests::per_depth_does_not_fall_through_when_child_returns_pass ... ok
+test arena::cfr::budget::tests::regret_below_needs_both_floor_and_threshold ... ok
+test arena::cfr::budget_config::tests::build_produces_most_restrictive_over_items ... ok
+test arena::cfr::budget_config::tests::default_is_small_safe_exploration ... ok
+test arena::cfr::budget_config::tests::json_round_trips_flat_array ... ok
+test arena::cfr::budget_config::tests::per_depth_dispatches_by_depth ... ok
+test arena::cfr::budget_config::tests::per_depth_iterations_expands_to_per_depth_of_iteration_count ... ok
+test arena::cfr::exploration::tests::build_default_limiter_has_positive_permits ... ok
+test arena::cfr::exploration::tests::default_limiter_permits_is_at_least_eight ... ok
+test arena::cfr::exploration::tests::try_acquire_falls_back_when_exhausted ... ok
+test arena::cfr::export::tests::test_different_node_types_displayed_correctly ... ok
+test arena::cfr::export::tests::test_dot_generation_matches_file_output ... ok
+Skipping test_export_creates_different_formats - Graphviz not installed
+test arena::cfr::export::tests::test_export_creates_different_formats ... ok
+test arena::cfr::export::tests::test_export_to_dot_creates_file ... ok
+Generated DOT content:
+digraph CFRTree {
+  // Graph styling
+  graph [rankdir=TB, splines=polyline, nodesep=1.0, ranksep=1.2, concentrate=true, compound=true];
+  node [shape=box, style="rounded,filled", fontname="Arial", margin=0.2];
+  edge [fontname="Arial", penwidth=1.0, labelangle=25, labeldistance=1.8, labelfloat=true];
+  // Add legend
+  subgraph cluster_legend {
+    graph [rank=sink];
+    label="Legend";
+    style=rounded;
+    color=gray;
+    margin=16;
+    node [shape=plaintext, style=""];
+    legend [label=<
+      <table border="0" cellborder="0" cellspacing="2">
+        <tr><td align="left"><b>Node Types:</b></td></tr>
+        <tr><td align="left">• Root (⬢): Light Blue - Starting state</td></tr>
+        <tr><td align="left">• Player (□): Coral - Decision points</td></tr>
+        <tr><td align="left">• Chance (○): Light Green - Card deals</td></tr>
+        <tr><td align="left">• Terminal (⬡): Light Grey - Final states</td></tr>
+        <tr><td><br/></td></tr>
+        <tr><td align="left"><b>Edge Properties:</b></td></tr>
+        <tr><td align="left">• Labels: Action/Card</td></tr>
+      </table>
+    >];
+  }
+
+  // Node grouping
+  {rank=source; node_0;}
+  node_0 [label="Root Node\nIndex: 0", shape=doubleoctagon, style="filled", fillcolor="lightblue", tooltip="Index: 0"];
+  node_0 -> node_1 [label="0", weight=1]
+  node_1 [label="Player 0 Node\nIndex: 1", shape=box, style="rounded,filled", fillcolor="coral", tooltip="Index: 1"];
+  {rank=same; node_1;}  // Group player nodes
+  node_1 -> node_2 [label="Fold", weight=1]
+  node_1 -> node_3 [label="Check/Call", weight=1]
+  node_1 -> node_4 [label="Bet/Raise 1", weight=1]
+  node_2 [label="Terminal Node\nIndex: 2\nUtility: -10.00", shape=hexagon, style="filled", fillcolor="lightgrey", tooltip="Utility: -10.00"];
+  node_3 [label="Chance Node\nIndex: 3", shape=ellipse, style="filled", fillcolor="lightgreen", tooltip="Index: 3"];
+  node_3 -> node_5 [label="2s", weight=1]
+  node_3 -> node_8 [label="3s", weight=1]
+  node_3 -> node_11 [label="4s", weight=1]
+  node_4 [label="Chance Node\nIndex: 4", shape=ellipse, style="filled", fillcolor="lightgreen", tooltip="Index: 4"];
+  node_4 -> node_14 [label="2s", weight=1]
+  node_5 [label="Player 1 Node\nIndex: 5", shape=box, style="rounded,filled", fillcolor="coral", tooltip="Index: 5"];
+  {rank=same; node_5;}  // Group player nodes
+  node_5 -> node_6 [label="Fold", weight=1]
+  node_5 -> node_7 [label="Check/Call", weight=1]
+  node_6 [label="Terminal Node\nIndex: 6\nUtility: 15.00", shape=hexagon, style="filled", fillcolor="lightgrey", tooltip="Utility: 15.00"];
+  node_7 [label="Terminal Node\nIndex: 7\nUtility: 5.00", shape=hexagon, style="filled", fillcolor="lightgrey", tooltip="Utility: 5.00"];
+  node_8 [label="Player 1 Node\nIndex: 8", shape=box, style="rounded,filled", fillcolor="coral", tooltip="Index: 8"];
+  {rank=same; node_8;}  // Group player nodes
+  node_8 -> node_9 [label="Fold", weight=1]
+  node_8 -> node_10 [label="Check/Call", weight=1]
+  node_9 [label="Terminal Node\nIndex: 9\nUtility: 15.00", shape=hexagon, style="filled", fillcolor="lightgrey", tooltip="Utility: 15.00"];
+  node_10 [label="Terminal Node\nIndex: 10\nUtility: 5.00", shape=hexagon, style="filled", fillcolor="lightgrey", tooltip="Utility: 5.00"];
+  node_11 [label="Player 1 Node\nIndex: 11", shape=box, style="rounded,filled", fillcolor="coral", tooltip="Index: 11"];
+  {rank=same; node_11;}  // Group player nodes
+  node_11 -> node_12 [label="Fold", weight=1]
+  node_11 -> node_13 [label="Check/Call", weight=1]
+  node_12 [label="Terminal Node\nIndex: 12\nUtility: 15.00", shape=hexagon, style="filled", fillcolor="lightgrey", tooltip="Utility: 15.00"];
+  node_13 [label="Terminal Node\nIndex: 13\nUtility: 5.00", shape=hexagon, style="filled", fillcolor="lightgrey", tooltip="Utility: 5.00"];
+  node_14 [label="Player 1 Node\nIndex: 14", shape=box, style="rounded,filled", fillcolor="coral", tooltip="Index: 14"];
+  {rank=same; node_14;}  // Group player nodes
+  node_14 -> node_15 [label="Fold", weight=1]
+  node_14 -> node_16 [label="Check/Call", weight=1]
+  node_15 [label="Terminal Node\nIndex: 15\nUtility: 20.00", shape=hexagon, style="filled", fillcolor="lightgrey", tooltip="Utility: 20.00"];
+  node_16 [label="Chance Node\nIndex: 16", shape=ellipse, style="filled", fillcolor="lightgreen", tooltip="Index: 16"];
+  node_16 -> node_17 [label="2s", weight=1]
+  node_17 [label="Terminal Node\nIndex: 17\nUtility: 30.00", shape=hexagon, style="filled", fillcolor="lightgrey", tooltip="Utility: 30.00"];
+}
+
+test arena::cfr::export::tests::test_generate_dot_output ... ok
+test arena::cfr::export::tests::test_invalid_format_returns_error ... ok
+test arena::cfr::agent::tests::act_returns_within_act_deadline ... ok
+test arena::cfr::agent::tests::wave_loop_completes_with_size_one_limiter ... ok
+test arena::cfr::node::tests::test_node_clone ... ok
+test arena::cfr::node::tests::test_node_data_is_chance ... ok
+test arena::cfr::node::tests::test_node_data_is_player ... ok
+test arena::cfr::node::tests::test_node_data_is_root ... ok
+test arena::cfr::node::tests::test_node_data_is_terminal ... ok
+test arena::cfr::node::tests::test_node_get_parent_and_child_idx ... ok
+test arena::cfr::node::tests::test_node_iter_children ... ok
+test arena::cfr::node::tests::test_node_new ... ok
+test arena::cfr::node::tests::test_node_new_root ... ok
+test arena::cfr::node::tests::test_node_set_get_child ... ok
+test arena::cfr::node::tests::test_node_size_optimization ... ok
+test arena::cfr::node::tests::test_node_try_set_child_already_set ... ok
+test arena::cfr::node::tests::test_node_try_set_child_success ... ok
+test arena::cfr::node::tests::test_node_write_data ... ok
+
+thread 'arena::cfr::node::tests::test_set_child_panics_on_double_set' (21896930) panicked at src/arena/cfr/node.rs:191:9:
+assertion `left == right` failed: Child already set at index 0
+  left: 2
+ right: 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test arena::cfr::node::tests::test_terminal_data_new ... ok
+test arena::cfr::node::tests::test_set_child_panics_on_double_set - should panic ... ok
+test arena::cfr::export::tests::test_player_seat_labeling ... ok
+test arena::cfr::agent::tests::wave_loop_runs_exactly_budget_waves_at_m_one ... ok
+test arena::cfr::node_arena::tests::test_concurrent_push_and_read ... ok
+test arena::cfr::node_arena::tests::test_concurrent_pushes ... ok
+test arena::cfr::node_arena::tests::test_concurrent_reads ... ok
+test arena::cfr::agent::tests::sub_sim_continues_prefix_without_relogging_setup ... ok
+test arena::cfr::node_arena::tests::test_cross_chunk_boundary ... ok
+test arena::cfr::node_arena::tests::test_node_arena_is_send_and_sync ... ok
+
+thread 'arena::cfr::node_arena::tests::test_get_out_of_bounds' (21896937) panicked at src/arena/cfr/node_arena.rs:136:9:
+NodeArena::get(0) out of bounds (len=0)
+test arena::cfr::node_arena::tests::test_get_out_of_bounds - should panic ... ok
+test arena::cfr::node_arena::tests::test_iter ... ok
+test arena::cfr::node_arena::tests::test_iter_snapshot_ignores_concurrent_pushes ... ok
+test arena::cfr::node_arena::tests::test_multiple_pushes ... ok
+test arena::cfr::node_arena::tests::test_push_and_get ... ok
+test arena::cfr::agent::tests::diag_event_emitted_at_every_depth ... ok
+test arena::cfr::state::tests::test_add_get_node ... ok
+test arena::cfr::state::tests::test_ensure_child_concurrent_race ... ok
+test arena::cfr::state::tests::test_ensure_child_type_mismatch_with_mutation ... ok
+test arena::cfr::state::tests::test_ensure_child_creates_new ... ok
+k=3          133.27     131.91         3.8x      60335
+
+thread 'arena::cfr::state::tests::test_ensure_child_type_mismatch_without_mutation_panics' (21896955) panicked at src/arena/cfr/state.rs:324:13:
+Node type mismatch at parent_idx=0, child_idx=0: expected Player(PlayerData { regret_matcher: None, player_idx: 0 }), found Chance. This can occur when different bet amounts map to the same index. Set allow_node_mutation=true to handle this case.
+test arena::cfr::state::tests::test_ensure_child_type_mismatch_without_mutation_panics - should panic ... ok
+test arena::cfr::state::tests::test_update_node ... ok
+test arena::cfr::state::tests::test_node_get_not_exist ... ok
+test arena::cfr::state::tests::test_update_node_not_found ... ok
+current_round_bet = 900
+Player 1 current_round_player_bet = 0
+Player 1 stack = 900
+Player 1 all-in amount = 900
+test arena::cfr::state::tests::test_with_node_data_reads_correctly ... ok
+
+thread 'arena::cfr::state::tests::test_with_node_data_panics_out_of_bounds' (21896967) panicked at src/arena/cfr/node_arena.rs:136:9:
+NodeArena::get(100) out of bounds (len=1)
+test arena::cfr::state::tests::test_with_node_data_panics_out_of_bounds - should panic ... ok
+test arena::cfr::tests::test_cfr_vs_calling_from_starting_round ... ok
+Valid actions: [Fold, Bet(900.0)]
+Action Fold maps to index 0
+Action Bet(900.0) maps to index 1
+test arena::cfr::tests::test_debug_all_in_convergence ... ok
+test arena::cfr::tests::test_should_fold_after_preflop ... ok
+test arena::cfr::tests::test_cfr_agent_from_starting_round ... ok
+test arena::cfr::tests::test_should_fold_all_in ... ok
+test arena::cfr::traversal_state::tests::test_clone_shares_state ... ok
+test arena::cfr::traversal_state::tests::test_cloned_traversal_share_loc ... ok
+test arena::cfr::traversal_state::tests::test_fork_is_independent ... ok
+test arena::cfr::traversal_state::tests::test_get_all_after_move ... ok
+test arena::cfr::traversal_state::tests::test_move_to ... ok
+test arena::cfr::traversal_state::tests::test_new_and_getters ... ok
+test arena::cfr::traversal_state::tests::test_new_root ... ok
+test arena::cfr::traversal_state::tests::test_traversal_set_new ... ok
+test arena::cfr::tests::test_should_fold_with_one_round_to_go ... ok
+test arena::cfr::tests::test_should_fold_with_two_rounds_to_go ... ok
+test arena::cfr::tests::test_should_go_all_in ... ok
+test arena::cfr::tests::test_multiple_games_same_cfr_agent ... ok
+test arena::cfr::tests::test_cfr_with_configurable_action_generator ... ok
+k=5          137.71     109.70         4.5x      87084
+test arena::cfr::agent::tests::diag_event_records_stable_strategy_stop ... ok
+k=8          130.04      89.41         5.6x     116691
+k=13         130.39      69.68         7.2x     178762
+test arena::cfr::agent::tests::multi_thread_exploration_is_sound ... ok
+test arena::cfr::agent::tests::test_flop_sample_count_comparison ... ok
+test arena::cfr::agent::tests::engine_populates_avg_regret_after_updates ... ok
+
+test result: ok. 231 passed; 0 failed; 0 ignored; 0 measured; 788 filtered out; finished in 59.58s
+

@@ -1,0 +1,6 @@
+{
+  "hands": 15000,
+  "decisions": 130394,
+  "handsPerTable": 5000,
+  "sourceSha256": "656266e40cd8de1533d821d6913f90acb7085eaca392880c6b9a7d471ee9586d"
+}

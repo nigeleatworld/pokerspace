@@ -1,0 +1,24 @@
+evaluator seven-card category=StraightFlush
+eight-player one-hand actions=11 wall_ms=1392.900
+decision_ms mean=126.615 p50=101.389 p95=334.839 max=334.839
+final_stacks=[100.0, 99.0, 98.0, 98.0, 0.0, 305.0, 0.0, 100.0]
+cfr_nodes=429235
+eight-player tournament places=[4, 1, 5, 8, 2, 7, 6, 3] rounds=27 wall_ms=0.124
+        1.84 real        12.33 user         0.11 sys
+           150224896  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                9635  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+               17168  involuntary context switches
+         95453178234  instructions retired
+         40835205333  cycles elapsed
+           148767200  peak memory footprint

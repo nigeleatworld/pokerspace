@@ -1,0 +1,5893 @@
+{
+  "runAt": "2026-08-02T06:23:38.202Z",
+  "sourceSha256": "656266e40cd8de1533d821d6913f90acb7085eaca392880c6b9a7d471ee9586d",
+  "seed": 20260802,
+  "start": 0,
+  "selectedTables": [
+    2,
+    6,
+    8
+  ],
+  "handsPerTable": 5000,
+  "totalHands": 15000,
+  "runtimeSeconds": 5900.74,
+  "audit": {
+    "views": 130394,
+    "forbiddenReads": 0,
+    "illegalActions": 0,
+    "stalls": 0,
+    "conservationFailures": 0,
+    "cardFailures": 0
+  },
+  "tables": {
+    "2": {
+      "pressure": {
+        "hands": 2000,
+        "decisions": 4884,
+        "vpip": {
+          "count": 1334,
+          "opportunities": 2000,
+          "ratePct": 66.7,
+          "wilson95Pct": [
+            64.6,
+            68.73
+          ]
+        },
+        "pfr": {
+          "count": 789,
+          "opportunities": 2000,
+          "ratePct": 39.45,
+          "wilson95Pct": [
+            37.33,
+            41.61
+          ]
+        },
+        "threeBet": {
+          "count": 98,
+          "opportunities": 629,
+          "ratePct": 15.58,
+          "wilson95Pct": [
+            12.96,
+            18.62
+          ]
+        },
+        "classes": {
+          "flop": {
+            "pureBluff": {
+              "count": 67,
+              "opportunities": 443,
+              "ratePct": 15.12,
+              "wilson95Pct": [
+                12.09,
+                18.76
+              ]
+            },
+            "semiBluff": {
+              "count": 59,
+              "opportunities": 190,
+              "ratePct": 31.05,
+              "wilson95Pct": [
+                24.9,
+                37.95
+              ]
+            },
+            "thinValue": {
+              "count": 19,
+              "opportunities": 388,
+              "ratePct": 4.9,
+              "wilson95Pct": [
+                3.16,
+                7.52
+              ]
+            },
+            "strongValue": {
+              "count": 54,
+              "opportunities": 69,
+              "ratePct": 78.26,
+              "wilson95Pct": [
+                67.18,
+                86.36
+              ]
+            },
+            "trap": {
+              "count": 15,
+              "opportunities": 69,
+              "ratePct": 21.74,
+              "wilson95Pct": [
+                13.64,
+                32.82
+              ]
+            }
+          },
+          "turn": {
+            "pureBluff": {
+              "count": 24,
+              "opportunities": 209,
+              "ratePct": 11.48,
+              "wilson95Pct": [
+                7.84,
+                16.52
+              ]
+            },
+            "semiBluff": {
+              "count": 74,
+              "opportunities": 312,
+              "ratePct": 23.72,
+              "wilson95Pct": [
+                19.34,
+                28.74
+              ]
+            },
+            "thinValue": {
+              "count": 7,
+              "opportunities": 314,
+              "ratePct": 2.23,
+              "wilson95Pct": [
+                1.08,
+                4.53
+              ]
+            },
+            "strongValue": {
+              "count": 103,
+              "opportunities": 141,
+              "ratePct": 73.05,
+              "wilson95Pct": [
+                65.19,
+                79.69
+              ]
+            },
+            "trap": {
+              "count": 38,
+              "opportunities": 141,
+              "ratePct": 26.95,
+              "wilson95Pct": [
+                20.31,
+                34.81
+              ]
+            }
+          },
+          "river": {
+            "pureBluff": {
+              "count": 11,
+              "opportunities": 96,
+              "ratePct": 11.46,
+              "wilson95Pct": [
+                6.52,
+                19.36
+              ]
+            },
+            "semiBluff": {
+              "count": 30,
+              "opportunities": 272,
+              "ratePct": 11.03,
+              "wilson95Pct": [
+                7.84,
+                15.31
+              ]
+            },
+            "thinValue": {
+              "count": 2,
+              "opportunities": 221,
+              "ratePct": 0.9,
+              "wilson95Pct": [
+                0.25,
+                3.24
+              ]
+            },
+            "strongValue": {
+              "count": 169,
+              "opportunities": 228,
+              "ratePct": 74.12,
+              "wilson95Pct": [
+                68.07,
+                79.37
+              ]
+            },
+            "trap": {
+              "count": 58,
+              "opportunities": 228,
+              "ratePct": 25.44,
+              "wilson95Pct": [
+                20.22,
+                31.47
+              ]
+            }
+          }
+        },
+        "sizing": {
+          "flop": {
+            "totalAggressions": 199,
+            "underbet": {
+              "count": 28,
+              "opportunities": 199,
+              "ratePct": 14.07,
+              "wilson95Pct": [
+                9.92,
+                19.58
+              ]
+            },
+            "standard": {
+              "count": 171,
+              "opportunities": 199,
+              "ratePct": 85.93,
+              "wilson95Pct": [
+                80.42,
+                90.08
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 199,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.89
+              ]
+            },
+            "allIn": {
+              "count": 0,
+              "opportunities": 199,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.89
+              ]
+            }
+          },
+          "turn": {
+            "totalAggressions": 208,
+            "underbet": {
+              "count": 34,
+              "opportunities": 208,
+              "ratePct": 16.35,
+              "wilson95Pct": [
+                11.94,
+                21.97
+              ]
+            },
+            "standard": {
+              "count": 173,
+              "opportunities": 208,
+              "ratePct": 83.17,
+              "wilson95Pct": [
+                77.5,
+                87.65
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 208,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.81
+              ]
+            },
+            "allIn": {
+              "count": 1,
+              "opportunities": 208,
+              "ratePct": 0.48,
+              "wilson95Pct": [
+                0.08,
+                2.67
+              ]
+            }
+          },
+          "river": {
+            "totalAggressions": 212,
+            "underbet": {
+              "count": 0,
+              "opportunities": 212,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.78
+              ]
+            },
+            "standard": {
+              "count": 113,
+              "opportunities": 212,
+              "ratePct": 53.3,
+              "wilson95Pct": [
+                46.59,
+                59.9
+              ]
+            },
+            "overbet": {
+              "count": 97,
+              "opportunities": 212,
+              "ratePct": 45.75,
+              "wilson95Pct": [
+                39.18,
+                52.48
+              ]
+            },
+            "allIn": {
+              "count": 2,
+              "opportunities": 212,
+              "ratePct": 0.94,
+              "wilson95Pct": [
+                0.26,
+                3.37
+              ]
+            }
+          }
+        }
+      },
+      "balanced": {
+        "hands": 2000,
+        "decisions": 5009,
+        "vpip": {
+          "count": 1299,
+          "opportunities": 2000,
+          "ratePct": 64.95,
+          "wilson95Pct": [
+            62.83,
+            67.01
+          ]
+        },
+        "pfr": {
+          "count": 721,
+          "opportunities": 2000,
+          "ratePct": 36.05,
+          "wilson95Pct": [
+            33.97,
+            38.18
+          ]
+        },
+        "threeBet": {
+          "count": 84,
+          "opportunities": 667,
+          "ratePct": 12.59,
+          "wilson95Pct": [
+            10.29,
+            15.33
+          ]
+        },
+        "classes": {
+          "flop": {
+            "pureBluff": {
+              "count": 36,
+              "opportunities": 491,
+              "ratePct": 7.33,
+              "wilson95Pct": [
+                5.34,
+                9.98
+              ]
+            },
+            "semiBluff": {
+              "count": 45,
+              "opportunities": 182,
+              "ratePct": 24.73,
+              "wilson95Pct": [
+                19.02,
+                31.47
+              ]
+            },
+            "thinValue": {
+              "count": 11,
+              "opportunities": 364,
+              "ratePct": 3.02,
+              "wilson95Pct": [
+                1.7,
+                5.33
+              ]
+            },
+            "strongValue": {
+              "count": 64,
+              "opportunities": 89,
+              "ratePct": 71.91,
+              "wilson95Pct": [
+                61.82,
+                80.19
+              ]
+            },
+            "trap": {
+              "count": 25,
+              "opportunities": 89,
+              "ratePct": 28.09,
+              "wilson95Pct": [
+                19.81,
+                38.18
+              ]
+            }
+          },
+          "turn": {
+            "pureBluff": {
+              "count": 13,
+              "opportunities": 228,
+              "ratePct": 5.7,
+              "wilson95Pct": [
+                3.36,
+                9.51
+              ]
+            },
+            "semiBluff": {
+              "count": 62,
+              "opportunities": 301,
+              "ratePct": 20.6,
+              "wilson95Pct": [
+                16.41,
+                25.52
+              ]
+            },
+            "thinValue": {
+              "count": 8,
+              "opportunities": 292,
+              "ratePct": 2.74,
+              "wilson95Pct": [
+                1.39,
+                5.31
+              ]
+            },
+            "strongValue": {
+              "count": 125,
+              "opportunities": 176,
+              "ratePct": 71.02,
+              "wilson95Pct": [
+                63.93,
+                77.22
+              ]
+            },
+            "trap": {
+              "count": 51,
+              "opportunities": 176,
+              "ratePct": 28.98,
+              "wilson95Pct": [
+                22.78,
+                36.07
+              ]
+            }
+          },
+          "river": {
+            "pureBluff": {
+              "count": 6,
+              "opportunities": 98,
+              "ratePct": 6.12,
+              "wilson95Pct": [
+                2.84,
+                12.72
+              ]
+            },
+            "semiBluff": {
+              "count": 33,
+              "opportunities": 299,
+              "ratePct": 11.04,
+              "wilson95Pct": [
+                7.97,
+                15.09
+              ]
+            },
+            "thinValue": {
+              "count": 3,
+              "opportunities": 191,
+              "ratePct": 1.57,
+              "wilson95Pct": [
+                0.54,
+                4.52
+              ]
+            },
+            "strongValue": {
+              "count": 176,
+              "opportunities": 252,
+              "ratePct": 69.84,
+              "wilson95Pct": [
+                63.91,
+                75.18
+              ]
+            },
+            "trap": {
+              "count": 74,
+              "opportunities": 252,
+              "ratePct": 29.37,
+              "wilson95Pct": [
+                24.09,
+                35.26
+              ]
+            }
+          }
+        },
+        "sizing": {
+          "flop": {
+            "totalAggressions": 156,
+            "underbet": {
+              "count": 25,
+              "opportunities": 156,
+              "ratePct": 16.03,
+              "wilson95Pct": [
+                11.1,
+                22.59
+              ]
+            },
+            "standard": {
+              "count": 131,
+              "opportunities": 156,
+              "ratePct": 83.97,
+              "wilson95Pct": [
+                77.41,
+                88.9
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 156,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                2.4
+              ]
+            },
+            "allIn": {
+              "count": 0,
+              "opportunities": 156,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                2.4
+              ]
+            }
+          },
+          "turn": {
+            "totalAggressions": 208,
+            "underbet": {
+              "count": 33,
+              "opportunities": 208,
+              "ratePct": 15.87,
+              "wilson95Pct": [
+                11.53,
+                21.44
+              ]
+            },
+            "standard": {
+              "count": 174,
+              "opportunities": 208,
+              "ratePct": 83.65,
+              "wilson95Pct": [
+                78.03,
+                88.06
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 208,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.81
+              ]
+            },
+            "allIn": {
+              "count": 1,
+              "opportunities": 208,
+              "ratePct": 0.48,
+              "wilson95Pct": [
+                0.08,
+                2.67
+              ]
+            }
+          },
+          "river": {
+            "totalAggressions": 218,
+            "underbet": {
+              "count": 0,
+              "opportunities": 218,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.73
+              ]
+            },
+            "standard": {
+              "count": 125,
+              "opportunities": 218,
+              "ratePct": 57.34,
+              "wilson95Pct": [
+                50.7,
+                63.72
+              ]
+            },
+            "overbet": {
+              "count": 90,
+              "opportunities": 218,
+              "ratePct": 41.28,
+              "wilson95Pct": [
+                34.95,
+                47.92
+              ]
+            },
+            "allIn": {
+              "count": 3,
+              "opportunities": 218,
+              "ratePct": 1.38,
+              "wilson95Pct": [
+                0.47,
+                3.97
+              ]
+            }
+          }
+        }
+      },
+      "value": {
+        "hands": 2000,
+        "decisions": 4996,
+        "vpip": {
+          "count": 1301,
+          "opportunities": 2000,
+          "ratePct": 65.05,
+          "wilson95Pct": [
+            62.93,
+            67.11
+          ]
+        },
+        "pfr": {
+          "count": 739,
+          "opportunities": 2000,
+          "ratePct": 36.95,
+          "wilson95Pct": [
+            34.86,
+            39.09
+          ]
+        },
+        "threeBet": {
+          "count": 93,
+          "opportunities": 650,
+          "ratePct": 14.31,
+          "wilson95Pct": [
+            11.83,
+            17.21
+          ]
+        },
+        "classes": {
+          "flop": {
+            "pureBluff": {
+              "count": 29,
+              "opportunities": 492,
+              "ratePct": 5.89,
+              "wilson95Pct": [
+                4.14,
+                8.34
+              ]
+            },
+            "semiBluff": {
+              "count": 50,
+              "opportunities": 192,
+              "ratePct": 26.04,
+              "wilson95Pct": [
+                20.35,
+                32.68
+              ]
+            },
+            "thinValue": {
+              "count": 14,
+              "opportunities": 351,
+              "ratePct": 3.99,
+              "wilson95Pct": [
+                2.39,
+                6.58
+              ]
+            },
+            "strongValue": {
+              "count": 59,
+              "opportunities": 80,
+              "ratePct": 73.75,
+              "wilson95Pct": [
+                63.18,
+                82.14
+              ]
+            },
+            "trap": {
+              "count": 21,
+              "opportunities": 80,
+              "ratePct": 26.25,
+              "wilson95Pct": [
+                17.86,
+                36.82
+              ]
+            }
+          },
+          "turn": {
+            "pureBluff": {
+              "count": 9,
+              "opportunities": 254,
+              "ratePct": 3.54,
+              "wilson95Pct": [
+                1.88,
+                6.6
+              ]
+            },
+            "semiBluff": {
+              "count": 40,
+              "opportunities": 331,
+              "ratePct": 12.08,
+              "wilson95Pct": [
+                9,
+                16.04
+              ]
+            },
+            "thinValue": {
+              "count": 5,
+              "opportunities": 280,
+              "ratePct": 1.79,
+              "wilson95Pct": [
+                0.77,
+                4.11
+              ]
+            },
+            "strongValue": {
+              "count": 111,
+              "opportunities": 156,
+              "ratePct": 71.15,
+              "wilson95Pct": [
+                63.6,
+                77.69
+              ]
+            },
+            "trap": {
+              "count": 45,
+              "opportunities": 156,
+              "ratePct": 28.85,
+              "wilson95Pct": [
+                22.31,
+                36.4
+              ]
+            }
+          },
+          "river": {
+            "pureBluff": {
+              "count": 6,
+              "opportunities": 116,
+              "ratePct": 5.17,
+              "wilson95Pct": [
+                2.39,
+                10.83
+              ]
+            },
+            "semiBluff": {
+              "count": 34,
+              "opportunities": 319,
+              "ratePct": 10.66,
+              "wilson95Pct": [
+                7.73,
+                14.52
+              ]
+            },
+            "thinValue": {
+              "count": 1,
+              "opportunities": 181,
+              "ratePct": 0.55,
+              "wilson95Pct": [
+                0.1,
+                3.06
+              ]
+            },
+            "strongValue": {
+              "count": 158,
+              "opportunities": 232,
+              "ratePct": 68.1,
+              "wilson95Pct": [
+                61.85,
+                73.76
+              ]
+            },
+            "trap": {
+              "count": 73,
+              "opportunities": 232,
+              "ratePct": 31.47,
+              "wilson95Pct": [
+                25.83,
+                37.7
+              ]
+            }
+          }
+        },
+        "sizing": {
+          "flop": {
+            "totalAggressions": 152,
+            "underbet": {
+              "count": 30,
+              "opportunities": 152,
+              "ratePct": 19.74,
+              "wilson95Pct": [
+                14.19,
+                26.78
+              ]
+            },
+            "standard": {
+              "count": 122,
+              "opportunities": 152,
+              "ratePct": 80.26,
+              "wilson95Pct": [
+                73.22,
+                85.81
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 152,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                2.47
+              ]
+            },
+            "allIn": {
+              "count": 0,
+              "opportunities": 152,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                2.47
+              ]
+            }
+          },
+          "turn": {
+            "totalAggressions": 165,
+            "underbet": {
+              "count": 25,
+              "opportunities": 165,
+              "ratePct": 15.15,
+              "wilson95Pct": [
+                10.48,
+                21.41
+              ]
+            },
+            "standard": {
+              "count": 140,
+              "opportunities": 165,
+              "ratePct": 84.85,
+              "wilson95Pct": [
+                78.59,
+                89.52
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 165,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                2.28
+              ]
+            },
+            "allIn": {
+              "count": 0,
+              "opportunities": 165,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                2.28
+              ]
+            }
+          },
+          "river": {
+            "totalAggressions": 199,
+            "underbet": {
+              "count": 0,
+              "opportunities": 199,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.89
+              ]
+            },
+            "standard": {
+              "count": 118,
+              "opportunities": 199,
+              "ratePct": 59.3,
+              "wilson95Pct": [
+                52.36,
+                65.88
+              ]
+            },
+            "overbet": {
+              "count": 80,
+              "opportunities": 199,
+              "ratePct": 40.2,
+              "wilson95Pct": [
+                33.64,
+                47.14
+              ]
+            },
+            "allIn": {
+              "count": 1,
+              "opportunities": 199,
+              "ratePct": 0.5,
+              "wilson95Pct": [
+                0.09,
+                2.79
+              ]
+            }
+          }
+        }
+      },
+      "trap": {
+        "hands": 2000,
+        "decisions": 5030,
+        "vpip": {
+          "count": 1309,
+          "opportunities": 2000,
+          "ratePct": 65.45,
+          "wilson95Pct": [
+            63.34,
+            67.5
+          ]
+        },
+        "pfr": {
+          "count": 729,
+          "opportunities": 2000,
+          "ratePct": 36.45,
+          "wilson95Pct": [
+            34.37,
+            38.58
+          ]
+        },
+        "threeBet": {
+          "count": 74,
+          "opportunities": 639,
+          "ratePct": 11.58,
+          "wilson95Pct": [
+            9.33,
+            14.29
+          ]
+        },
+        "classes": {
+          "flop": {
+            "pureBluff": {
+              "count": 21,
+              "opportunities": 492,
+              "ratePct": 4.27,
+              "wilson95Pct": [
+                2.81,
+                6.44
+              ]
+            },
+            "semiBluff": {
+              "count": 21,
+              "opportunities": 190,
+              "ratePct": 11.05,
+              "wilson95Pct": [
+                7.34,
+                16.31
+              ]
+            },
+            "thinValue": {
+              "count": 13,
+              "opportunities": 352,
+              "ratePct": 3.69,
+              "wilson95Pct": [
+                2.17,
+                6.22
+              ]
+            },
+            "strongValue": {
+              "count": 74,
+              "opportunities": 92,
+              "ratePct": 80.43,
+              "wilson95Pct": [
+                71.18,
+                87.25
+              ]
+            },
+            "trap": {
+              "count": 18,
+              "opportunities": 92,
+              "ratePct": 19.57,
+              "wilson95Pct": [
+                12.75,
+                28.82
+              ]
+            }
+          },
+          "turn": {
+            "pureBluff": {
+              "count": 14,
+              "opportunities": 224,
+              "ratePct": 6.25,
+              "wilson95Pct": [
+                3.76,
+                10.22
+              ]
+            },
+            "semiBluff": {
+              "count": 45,
+              "opportunities": 329,
+              "ratePct": 13.68,
+              "wilson95Pct": [
+                10.38,
+                17.81
+              ]
+            },
+            "thinValue": {
+              "count": 6,
+              "opportunities": 300,
+              "ratePct": 2,
+              "wilson95Pct": [
+                0.92,
+                4.29
+              ]
+            },
+            "strongValue": {
+              "count": 131,
+              "opportunities": 173,
+              "ratePct": 75.72,
+              "wilson95Pct": [
+                68.82,
+                81.51
+              ]
+            },
+            "trap": {
+              "count": 42,
+              "opportunities": 173,
+              "ratePct": 24.28,
+              "wilson95Pct": [
+                18.49,
+                31.18
+              ]
+            }
+          },
+          "river": {
+            "pureBluff": {
+              "count": 2,
+              "opportunities": 96,
+              "ratePct": 2.08,
+              "wilson95Pct": [
+                0.57,
+                7.28
+              ]
+            },
+            "semiBluff": {
+              "count": 27,
+              "opportunities": 323,
+              "ratePct": 8.36,
+              "wilson95Pct": [
+                5.81,
+                11.89
+              ]
+            },
+            "thinValue": {
+              "count": 3,
+              "opportunities": 196,
+              "ratePct": 1.53,
+              "wilson95Pct": [
+                0.52,
+                4.4
+              ]
+            },
+            "strongValue": {
+              "count": 170,
+              "opportunities": 245,
+              "ratePct": 69.39,
+              "wilson95Pct": [
+                63.35,
+                74.82
+              ]
+            },
+            "trap": {
+              "count": 74,
+              "opportunities": 245,
+              "ratePct": 30.2,
+              "wilson95Pct": [
+                24.8,
+                36.22
+              ]
+            }
+          }
+        },
+        "sizing": {
+          "flop": {
+            "totalAggressions": 129,
+            "underbet": {
+              "count": 23,
+              "opportunities": 129,
+              "ratePct": 17.83,
+              "wilson95Pct": [
+                12.18,
+                25.33
+              ]
+            },
+            "standard": {
+              "count": 106,
+              "opportunities": 129,
+              "ratePct": 82.17,
+              "wilson95Pct": [
+                74.67,
+                87.82
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 129,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                2.89
+              ]
+            },
+            "allIn": {
+              "count": 0,
+              "opportunities": 129,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                2.89
+              ]
+            }
+          },
+          "turn": {
+            "totalAggressions": 196,
+            "underbet": {
+              "count": 33,
+              "opportunities": 196,
+              "ratePct": 16.84,
+              "wilson95Pct": [
+                12.25,
+                22.7
+              ]
+            },
+            "standard": {
+              "count": 163,
+              "opportunities": 196,
+              "ratePct": 83.16,
+              "wilson95Pct": [
+                77.3,
+                87.75
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 196,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.92
+              ]
+            },
+            "allIn": {
+              "count": 0,
+              "opportunities": 196,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.92
+              ]
+            }
+          },
+          "river": {
+            "totalAggressions": 202,
+            "underbet": {
+              "count": 0,
+              "opportunities": 202,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.87
+              ]
+            },
+            "standard": {
+              "count": 109,
+              "opportunities": 202,
+              "ratePct": 53.96,
+              "wilson95Pct": [
+                47.08,
+                60.7
+              ]
+            },
+            "overbet": {
+              "count": 91,
+              "opportunities": 202,
+              "ratePct": 45.05,
+              "wilson95Pct": [
+                38.34,
+                51.94
+              ]
+            },
+            "allIn": {
+              "count": 2,
+              "opportunities": 202,
+              "ratePct": 0.99,
+              "wilson95Pct": [
+                0.27,
+                3.54
+              ]
+            }
+          }
+        }
+      },
+      "nit": {
+        "hands": 2000,
+        "decisions": 4940,
+        "vpip": {
+          "count": 1238,
+          "opportunities": 2000,
+          "ratePct": 61.9,
+          "wilson95Pct": [
+            59.75,
+            64
+          ]
+        },
+        "pfr": {
+          "count": 700,
+          "opportunities": 2000,
+          "ratePct": 35,
+          "wilson95Pct": [
+            32.94,
+            37.12
+          ]
+        },
+        "threeBet": {
+          "count": 74,
+          "opportunities": 670,
+          "ratePct": 11.04,
+          "wilson95Pct": [
+            8.89,
+            13.64
+          ]
+        },
+        "classes": {
+          "flop": {
+            "pureBluff": {
+              "count": 15,
+              "opportunities": 457,
+              "ratePct": 3.28,
+              "wilson95Pct": [
+                2,
+                5.34
+              ]
+            },
+            "semiBluff": {
+              "count": 31,
+              "opportunities": 195,
+              "ratePct": 15.9,
+              "wilson95Pct": [
+                11.43,
+                21.68
+              ]
+            },
+            "thinValue": {
+              "count": 10,
+              "opportunities": 355,
+              "ratePct": 2.82,
+              "wilson95Pct": [
+                1.54,
+                5.11
+              ]
+            },
+            "strongValue": {
+              "count": 58,
+              "opportunities": 77,
+              "ratePct": 75.32,
+              "wilson95Pct": [
+                64.65,
+                83.6
+              ]
+            },
+            "trap": {
+              "count": 19,
+              "opportunities": 77,
+              "ratePct": 24.68,
+              "wilson95Pct": [
+                16.4,
+                35.35
+              ]
+            }
+          },
+          "turn": {
+            "pureBluff": {
+              "count": 4,
+              "opportunities": 226,
+              "ratePct": 1.77,
+              "wilson95Pct": [
+                0.69,
+                4.46
+              ]
+            },
+            "semiBluff": {
+              "count": 37,
+              "opportunities": 326,
+              "ratePct": 11.35,
+              "wilson95Pct": [
+                8.35,
+                15.25
+              ]
+            },
+            "thinValue": {
+              "count": 11,
+              "opportunities": 276,
+              "ratePct": 3.99,
+              "wilson95Pct": [
+                2.24,
+                6.99
+              ]
+            },
+            "strongValue": {
+              "count": 95,
+              "opportunities": 153,
+              "ratePct": 62.09,
+              "wilson95Pct": [
+                54.2,
+                69.39
+              ]
+            },
+            "trap": {
+              "count": 58,
+              "opportunities": 153,
+              "ratePct": 37.91,
+              "wilson95Pct": [
+                30.61,
+                45.8
+              ]
+            }
+          },
+          "river": {
+            "pureBluff": {
+              "count": 0,
+              "opportunities": 87,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                4.23
+              ]
+            },
+            "semiBluff": {
+              "count": 28,
+              "opportunities": 303,
+              "ratePct": 9.24,
+              "wilson95Pct": [
+                6.47,
+                13.03
+              ]
+            },
+            "thinValue": {
+              "count": 4,
+              "opportunities": 222,
+              "ratePct": 1.8,
+              "wilson95Pct": [
+                0.7,
+                4.54
+              ]
+            },
+            "strongValue": {
+              "count": 145,
+              "opportunities": 226,
+              "ratePct": 64.16,
+              "wilson95Pct": [
+                57.72,
+                70.13
+              ]
+            },
+            "trap": {
+              "count": 80,
+              "opportunities": 226,
+              "ratePct": 35.4,
+              "wilson95Pct": [
+                29.46,
+                41.83
+              ]
+            }
+          }
+        },
+        "sizing": {
+          "flop": {
+            "totalAggressions": 114,
+            "underbet": {
+              "count": 20,
+              "opportunities": 114,
+              "ratePct": 17.54,
+              "wilson95Pct": [
+                11.65,
+                25.55
+              ]
+            },
+            "standard": {
+              "count": 94,
+              "opportunities": 114,
+              "ratePct": 82.46,
+              "wilson95Pct": [
+                74.45,
+                88.35
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 114,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                3.26
+              ]
+            },
+            "allIn": {
+              "count": 0,
+              "opportunities": 114,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                3.26
+              ]
+            }
+          },
+          "turn": {
+            "totalAggressions": 147,
+            "underbet": {
+              "count": 18,
+              "opportunities": 147,
+              "ratePct": 12.24,
+              "wilson95Pct": [
+                7.89,
+                18.53
+              ]
+            },
+            "standard": {
+              "count": 129,
+              "opportunities": 147,
+              "ratePct": 87.76,
+              "wilson95Pct": [
+                81.47,
+                92.11
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 147,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                2.55
+              ]
+            },
+            "allIn": {
+              "count": 0,
+              "opportunities": 147,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                2.55
+              ]
+            }
+          },
+          "river": {
+            "totalAggressions": 177,
+            "underbet": {
+              "count": 0,
+              "opportunities": 177,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                2.12
+              ]
+            },
+            "standard": {
+              "count": 109,
+              "opportunities": 177,
+              "ratePct": 61.58,
+              "wilson95Pct": [
+                54.24,
+                68.43
+              ]
+            },
+            "overbet": {
+              "count": 68,
+              "opportunities": 177,
+              "ratePct": 38.42,
+              "wilson95Pct": [
+                31.57,
+                45.76
+              ]
+            },
+            "allIn": {
+              "count": 0,
+              "opportunities": 177,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                2.12
+              ]
+            }
+          }
+        }
+      }
+    },
+    "6": {
+      "pressure": {
+        "hands": 6000,
+        "decisions": 9497,
+        "vpip": {
+          "count": 1736,
+          "opportunities": 6000,
+          "ratePct": 28.93,
+          "wilson95Pct": [
+            27.8,
+            30.09
+          ]
+        },
+        "pfr": {
+          "count": 1220,
+          "opportunities": 6000,
+          "ratePct": 20.33,
+          "wilson95Pct": [
+            19.33,
+            21.37
+          ]
+        },
+        "threeBet": {
+          "count": 278,
+          "opportunities": 2450,
+          "ratePct": 11.35,
+          "wilson95Pct": [
+            10.15,
+            12.66
+          ]
+        },
+        "classes": {
+          "flop": {
+            "pureBluff": {
+              "count": 66,
+              "opportunities": 427,
+              "ratePct": 15.46,
+              "wilson95Pct": [
+                12.34,
+                19.19
+              ]
+            },
+            "semiBluff": {
+              "count": 52,
+              "opportunities": 202,
+              "ratePct": 25.74,
+              "wilson95Pct": [
+                20.21,
+                32.19
+              ]
+            },
+            "thinValue": {
+              "count": 46,
+              "opportunities": 479,
+              "ratePct": 9.6,
+              "wilson95Pct": [
+                7.28,
+                12.57
+              ]
+            },
+            "strongValue": {
+              "count": 86,
+              "opportunities": 99,
+              "ratePct": 86.87,
+              "wilson95Pct": [
+                78.82,
+                92.16
+              ]
+            },
+            "trap": {
+              "count": 12,
+              "opportunities": 99,
+              "ratePct": 12.12,
+              "wilson95Pct": [
+                7.07,
+                20
+              ]
+            }
+          },
+          "turn": {
+            "pureBluff": {
+              "count": 21,
+              "opportunities": 165,
+              "ratePct": 12.73,
+              "wilson95Pct": [
+                8.48,
+                18.67
+              ]
+            },
+            "semiBluff": {
+              "count": 67,
+              "opportunities": 365,
+              "ratePct": 18.36,
+              "wilson95Pct": [
+                14.72,
+                22.65
+              ]
+            },
+            "thinValue": {
+              "count": 22,
+              "opportunities": 415,
+              "ratePct": 5.3,
+              "wilson95Pct": [
+                3.53,
+                7.9
+              ]
+            },
+            "strongValue": {
+              "count": 132,
+              "opportunities": 158,
+              "ratePct": 83.54,
+              "wilson95Pct": [
+                76.98,
+                88.52
+              ]
+            },
+            "trap": {
+              "count": 26,
+              "opportunities": 158,
+              "ratePct": 16.46,
+              "wilson95Pct": [
+                11.48,
+                23.02
+              ]
+            }
+          },
+          "river": {
+            "pureBluff": {
+              "count": 13,
+              "opportunities": 72,
+              "ratePct": 18.06,
+              "wilson95Pct": [
+                10.87,
+                28.48
+              ]
+            },
+            "semiBluff": {
+              "count": 57,
+              "opportunities": 344,
+              "ratePct": 16.57,
+              "wilson95Pct": [
+                13.01,
+                20.86
+              ]
+            },
+            "thinValue": {
+              "count": 10,
+              "opportunities": 235,
+              "ratePct": 4.26,
+              "wilson95Pct": [
+                2.33,
+                7.65
+              ]
+            },
+            "strongValue": {
+              "count": 220,
+              "opportunities": 284,
+              "ratePct": 77.46,
+              "wilson95Pct": [
+                72.26,
+                81.94
+              ]
+            },
+            "trap": {
+              "count": 61,
+              "opportunities": 284,
+              "ratePct": 21.48,
+              "wilson95Pct": [
+                17.1,
+                26.62
+              ]
+            }
+          }
+        },
+        "sizing": {
+          "flop": {
+            "totalAggressions": 250,
+            "underbet": {
+              "count": 58,
+              "opportunities": 250,
+              "ratePct": 23.2,
+              "wilson95Pct": [
+                18.4,
+                28.81
+              ]
+            },
+            "standard": {
+              "count": 189,
+              "opportunities": 250,
+              "ratePct": 75.6,
+              "wilson95Pct": [
+                69.91,
+                80.51
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 250,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.51
+              ]
+            },
+            "allIn": {
+              "count": 3,
+              "opportunities": 250,
+              "ratePct": 1.2,
+              "wilson95Pct": [
+                0.41,
+                3.47
+              ]
+            }
+          },
+          "turn": {
+            "totalAggressions": 242,
+            "underbet": {
+              "count": 58,
+              "opportunities": 242,
+              "ratePct": 23.97,
+              "wilson95Pct": [
+                19.02,
+                29.73
+              ]
+            },
+            "standard": {
+              "count": 183,
+              "opportunities": 242,
+              "ratePct": 75.62,
+              "wilson95Pct": [
+                69.84,
+                80.6
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 242,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.56
+              ]
+            },
+            "allIn": {
+              "count": 1,
+              "opportunities": 242,
+              "ratePct": 0.41,
+              "wilson95Pct": [
+                0.07,
+                2.3
+              ]
+            }
+          },
+          "river": {
+            "totalAggressions": 300,
+            "underbet": {
+              "count": 0,
+              "opportunities": 300,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.26
+              ]
+            },
+            "standard": {
+              "count": 143,
+              "opportunities": 300,
+              "ratePct": 47.67,
+              "wilson95Pct": [
+                42.08,
+                53.31
+              ]
+            },
+            "overbet": {
+              "count": 143,
+              "opportunities": 300,
+              "ratePct": 47.67,
+              "wilson95Pct": [
+                42.08,
+                53.31
+              ]
+            },
+            "allIn": {
+              "count": 14,
+              "opportunities": 300,
+              "ratePct": 4.67,
+              "wilson95Pct": [
+                2.8,
+                7.68
+              ]
+            }
+          }
+        }
+      },
+      "balanced": {
+        "hands": 6000,
+        "decisions": 9273,
+        "vpip": {
+          "count": 1620,
+          "opportunities": 6000,
+          "ratePct": 27,
+          "wilson95Pct": [
+            25.89,
+            28.14
+          ]
+        },
+        "pfr": {
+          "count": 1116,
+          "opportunities": 6000,
+          "ratePct": 18.6,
+          "wilson95Pct": [
+            17.64,
+            19.6
+          ]
+        },
+        "threeBet": {
+          "count": 230,
+          "opportunities": 2501,
+          "ratePct": 9.2,
+          "wilson95Pct": [
+            8.13,
+            10.39
+          ]
+        },
+        "classes": {
+          "flop": {
+            "pureBluff": {
+              "count": 41,
+              "opportunities": 395,
+              "ratePct": 10.38,
+              "wilson95Pct": [
+                7.74,
+                13.78
+              ]
+            },
+            "semiBluff": {
+              "count": 49,
+              "opportunities": 185,
+              "ratePct": 26.49,
+              "wilson95Pct": [
+                20.65,
+                33.28
+              ]
+            },
+            "thinValue": {
+              "count": 35,
+              "opportunities": 423,
+              "ratePct": 8.27,
+              "wilson95Pct": [
+                6.01,
+                11.29
+              ]
+            },
+            "strongValue": {
+              "count": 91,
+              "opportunities": 115,
+              "ratePct": 79.13,
+              "wilson95Pct": [
+                70.82,
+                85.56
+              ]
+            },
+            "trap": {
+              "count": 22,
+              "opportunities": 115,
+              "ratePct": 19.13,
+              "wilson95Pct": [
+                12.99,
+                27.27
+              ]
+            }
+          },
+          "turn": {
+            "pureBluff": {
+              "count": 16,
+              "opportunities": 177,
+              "ratePct": 9.04,
+              "wilson95Pct": [
+                5.64,
+                14.18
+              ]
+            },
+            "semiBluff": {
+              "count": 42,
+              "opportunities": 271,
+              "ratePct": 15.5,
+              "wilson95Pct": [
+                11.67,
+                20.29
+              ]
+            },
+            "thinValue": {
+              "count": 19,
+              "opportunities": 363,
+              "ratePct": 5.23,
+              "wilson95Pct": [
+                3.38,
+                8.03
+              ]
+            },
+            "strongValue": {
+              "count": 154,
+              "opportunities": 215,
+              "ratePct": 71.63,
+              "wilson95Pct": [
+                65.26,
+                77.23
+              ]
+            },
+            "trap": {
+              "count": 60,
+              "opportunities": 215,
+              "ratePct": 27.91,
+              "wilson95Pct": [
+                22.34,
+                34.25
+              ]
+            }
+          },
+          "river": {
+            "pureBluff": {
+              "count": 3,
+              "opportunities": 59,
+              "ratePct": 5.08,
+              "wilson95Pct": [
+                1.74,
+                13.92
+              ]
+            },
+            "semiBluff": {
+              "count": 29,
+              "opportunities": 272,
+              "ratePct": 10.66,
+              "wilson95Pct": [
+                7.53,
+                14.89
+              ]
+            },
+            "thinValue": {
+              "count": 9,
+              "opportunities": 267,
+              "ratePct": 3.37,
+              "wilson95Pct": [
+                1.78,
+                6.28
+              ]
+            },
+            "strongValue": {
+              "count": 190,
+              "opportunities": 294,
+              "ratePct": 64.63,
+              "wilson95Pct": [
+                59,
+                69.87
+              ]
+            },
+            "trap": {
+              "count": 103,
+              "opportunities": 294,
+              "ratePct": 35.03,
+              "wilson95Pct": [
+                29.81,
+                40.65
+              ]
+            }
+          }
+        },
+        "sizing": {
+          "flop": {
+            "totalAggressions": 216,
+            "underbet": {
+              "count": 56,
+              "opportunities": 216,
+              "ratePct": 25.93,
+              "wilson95Pct": [
+                20.54,
+                32.15
+              ]
+            },
+            "standard": {
+              "count": 159,
+              "opportunities": 216,
+              "ratePct": 73.61,
+              "wilson95Pct": [
+                67.36,
+                79.04
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 216,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.75
+              ]
+            },
+            "allIn": {
+              "count": 1,
+              "opportunities": 216,
+              "ratePct": 0.46,
+              "wilson95Pct": [
+                0.08,
+                2.58
+              ]
+            }
+          },
+          "turn": {
+            "totalAggressions": 231,
+            "underbet": {
+              "count": 38,
+              "opportunities": 231,
+              "ratePct": 16.45,
+              "wilson95Pct": [
+                12.23,
+                21.77
+              ]
+            },
+            "standard": {
+              "count": 189,
+              "opportunities": 231,
+              "ratePct": 81.82,
+              "wilson95Pct": [
+                76.34,
+                86.26
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 231,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.64
+              ]
+            },
+            "allIn": {
+              "count": 4,
+              "opportunities": 231,
+              "ratePct": 1.73,
+              "wilson95Pct": [
+                0.68,
+                4.37
+              ]
+            }
+          },
+          "river": {
+            "totalAggressions": 231,
+            "underbet": {
+              "count": 0,
+              "opportunities": 231,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.64
+              ]
+            },
+            "standard": {
+              "count": 85,
+              "opportunities": 231,
+              "ratePct": 36.8,
+              "wilson95Pct": [
+                30.84,
+                43.18
+              ]
+            },
+            "overbet": {
+              "count": 130,
+              "opportunities": 231,
+              "ratePct": 56.28,
+              "wilson95Pct": [
+                49.83,
+                62.52
+              ]
+            },
+            "allIn": {
+              "count": 16,
+              "opportunities": 231,
+              "ratePct": 6.93,
+              "wilson95Pct": [
+                4.31,
+                10.95
+              ]
+            }
+          }
+        }
+      },
+      "value": {
+        "hands": 6000,
+        "decisions": 9089,
+        "vpip": {
+          "count": 1519,
+          "opportunities": 6000,
+          "ratePct": 25.32,
+          "wilson95Pct": [
+            24.23,
+            26.43
+          ]
+        },
+        "pfr": {
+          "count": 1043,
+          "opportunities": 6000,
+          "ratePct": 17.38,
+          "wilson95Pct": [
+            16.45,
+            18.36
+          ]
+        },
+        "threeBet": {
+          "count": 214,
+          "opportunities": 2443,
+          "ratePct": 8.76,
+          "wilson95Pct": [
+            7.7,
+            9.95
+          ]
+        },
+        "classes": {
+          "flop": {
+            "pureBluff": {
+              "count": 22,
+              "opportunities": 371,
+              "ratePct": 5.93,
+              "wilson95Pct": [
+                3.95,
+                8.81
+              ]
+            },
+            "semiBluff": {
+              "count": 37,
+              "opportunities": 210,
+              "ratePct": 17.62,
+              "wilson95Pct": [
+                13.06,
+                23.34
+              ]
+            },
+            "thinValue": {
+              "count": 35,
+              "opportunities": 407,
+              "ratePct": 8.6,
+              "wilson95Pct": [
+                6.25,
+                11.73
+              ]
+            },
+            "strongValue": {
+              "count": 63,
+              "opportunities": 96,
+              "ratePct": 65.63,
+              "wilson95Pct": [
+                55.69,
+                74.36
+              ]
+            },
+            "trap": {
+              "count": 32,
+              "opportunities": 96,
+              "ratePct": 33.33,
+              "wilson95Pct": [
+                24.71,
+                43.24
+              ]
+            }
+          },
+          "turn": {
+            "pureBluff": {
+              "count": 12,
+              "opportunities": 159,
+              "ratePct": 7.55,
+              "wilson95Pct": [
+                4.37,
+                12.73
+              ]
+            },
+            "semiBluff": {
+              "count": 43,
+              "opportunities": 291,
+              "ratePct": 14.78,
+              "wilson95Pct": [
+                11.16,
+                19.31
+              ]
+            },
+            "thinValue": {
+              "count": 16,
+              "opportunities": 338,
+              "ratePct": 4.73,
+              "wilson95Pct": [
+                2.93,
+                7.55
+              ]
+            },
+            "strongValue": {
+              "count": 137,
+              "opportunities": 198,
+              "ratePct": 69.19,
+              "wilson95Pct": [
+                62.45,
+                75.21
+              ]
+            },
+            "trap": {
+              "count": 60,
+              "opportunities": 198,
+              "ratePct": 30.3,
+              "wilson95Pct": [
+                24.33,
+                37.03
+              ]
+            }
+          },
+          "river": {
+            "pureBluff": {
+              "count": 6,
+              "opportunities": 71,
+              "ratePct": 8.45,
+              "wilson95Pct": [
+                3.93,
+                17.24
+              ]
+            },
+            "semiBluff": {
+              "count": 27,
+              "opportunities": 266,
+              "ratePct": 10.15,
+              "wilson95Pct": [
+                7.07,
+                14.37
+              ]
+            },
+            "thinValue": {
+              "count": 7,
+              "opportunities": 234,
+              "ratePct": 2.99,
+              "wilson95Pct": [
+                1.46,
+                6.05
+              ]
+            },
+            "strongValue": {
+              "count": 196,
+              "opportunities": 297,
+              "ratePct": 65.99,
+              "wilson95Pct": [
+                60.43,
+                71.15
+              ]
+            },
+            "trap": {
+              "count": 98,
+              "opportunities": 297,
+              "ratePct": 33,
+              "wilson95Pct": [
+                27.9,
+                38.53
+              ]
+            }
+          }
+        },
+        "sizing": {
+          "flop": {
+            "totalAggressions": 157,
+            "underbet": {
+              "count": 30,
+              "opportunities": 157,
+              "ratePct": 19.11,
+              "wilson95Pct": [
+                13.73,
+                25.97
+              ]
+            },
+            "standard": {
+              "count": 126,
+              "opportunities": 157,
+              "ratePct": 80.25,
+              "wilson95Pct": [
+                73.34,
+                85.73
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 157,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                2.39
+              ]
+            },
+            "allIn": {
+              "count": 1,
+              "opportunities": 157,
+              "ratePct": 0.64,
+              "wilson95Pct": [
+                0.11,
+                3.52
+              ]
+            }
+          },
+          "turn": {
+            "totalAggressions": 208,
+            "underbet": {
+              "count": 39,
+              "opportunities": 208,
+              "ratePct": 18.75,
+              "wilson95Pct": [
+                14.03,
+                24.6
+              ]
+            },
+            "standard": {
+              "count": 166,
+              "opportunities": 208,
+              "ratePct": 79.81,
+              "wilson95Pct": [
+                73.83,
+                84.7
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 208,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.81
+              ]
+            },
+            "allIn": {
+              "count": 3,
+              "opportunities": 208,
+              "ratePct": 1.44,
+              "wilson95Pct": [
+                0.49,
+                4.15
+              ]
+            }
+          },
+          "river": {
+            "totalAggressions": 236,
+            "underbet": {
+              "count": 0,
+              "opportunities": 236,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.6
+              ]
+            },
+            "standard": {
+              "count": 99,
+              "opportunities": 236,
+              "ratePct": 41.95,
+              "wilson95Pct": [
+                35.83,
+                48.32
+              ]
+            },
+            "overbet": {
+              "count": 125,
+              "opportunities": 236,
+              "ratePct": 52.97,
+              "wilson95Pct": [
+                46.6,
+                59.24
+              ]
+            },
+            "allIn": {
+              "count": 12,
+              "opportunities": 236,
+              "ratePct": 5.08,
+              "wilson95Pct": [
+                2.93,
+                8.68
+              ]
+            }
+          }
+        }
+      },
+      "trap": {
+        "hands": 6000,
+        "decisions": 9351,
+        "vpip": {
+          "count": 1617,
+          "opportunities": 6000,
+          "ratePct": 26.95,
+          "wilson95Pct": [
+            25.84,
+            28.09
+          ]
+        },
+        "pfr": {
+          "count": 1114,
+          "opportunities": 6000,
+          "ratePct": 18.57,
+          "wilson95Pct": [
+            17.6,
+            19.57
+          ]
+        },
+        "threeBet": {
+          "count": 218,
+          "opportunities": 2443,
+          "ratePct": 8.92,
+          "wilson95Pct": [
+            7.86,
+            10.12
+          ]
+        },
+        "classes": {
+          "flop": {
+            "pureBluff": {
+              "count": 13,
+              "opportunities": 413,
+              "ratePct": 3.15,
+              "wilson95Pct": [
+                1.85,
+                5.31
+              ]
+            },
+            "semiBluff": {
+              "count": 47,
+              "opportunities": 212,
+              "ratePct": 22.17,
+              "wilson95Pct": [
+                17.1,
+                28.23
+              ]
+            },
+            "thinValue": {
+              "count": 20,
+              "opportunities": 414,
+              "ratePct": 4.83,
+              "wilson95Pct": [
+                3.15,
+                7.34
+              ]
+            },
+            "strongValue": {
+              "count": 78,
+              "opportunities": 110,
+              "ratePct": 70.91,
+              "wilson95Pct": [
+                61.83,
+                78.58
+              ]
+            },
+            "trap": {
+              "count": 32,
+              "opportunities": 110,
+              "ratePct": 29.09,
+              "wilson95Pct": [
+                21.42,
+                38.17
+              ]
+            }
+          },
+          "turn": {
+            "pureBluff": {
+              "count": 9,
+              "opportunities": 188,
+              "ratePct": 4.79,
+              "wilson95Pct": [
+                2.54,
+                8.85
+              ]
+            },
+            "semiBluff": {
+              "count": 51,
+              "opportunities": 324,
+              "ratePct": 15.74,
+              "wilson95Pct": [
+                12.18,
+                20.1
+              ]
+            },
+            "thinValue": {
+              "count": 17,
+              "opportunities": 362,
+              "ratePct": 4.7,
+              "wilson95Pct": [
+                2.95,
+                7.39
+              ]
+            },
+            "strongValue": {
+              "count": 133,
+              "opportunities": 202,
+              "ratePct": 65.84,
+              "wilson95Pct": [
+                59.06,
+                72.03
+              ]
+            },
+            "trap": {
+              "count": 69,
+              "opportunities": 202,
+              "ratePct": 34.16,
+              "wilson95Pct": [
+                27.97,
+                40.94
+              ]
+            }
+          },
+          "river": {
+            "pureBluff": {
+              "count": 2,
+              "opportunities": 82,
+              "ratePct": 2.44,
+              "wilson95Pct": [
+                0.67,
+                8.46
+              ]
+            },
+            "semiBluff": {
+              "count": 37,
+              "opportunities": 290,
+              "ratePct": 12.76,
+              "wilson95Pct": [
+                9.4,
+                17.09
+              ]
+            },
+            "thinValue": {
+              "count": 7,
+              "opportunities": 238,
+              "ratePct": 2.94,
+              "wilson95Pct": [
+                1.43,
+                5.95
+              ]
+            },
+            "strongValue": {
+              "count": 194,
+              "opportunities": 305,
+              "ratePct": 63.61,
+              "wilson95Pct": [
+                58.07,
+                68.81
+              ]
+            },
+            "trap": {
+              "count": 107,
+              "opportunities": 305,
+              "ratePct": 35.08,
+              "wilson95Pct": [
+                29.94,
+                40.59
+              ]
+            }
+          }
+        },
+        "sizing": {
+          "flop": {
+            "totalAggressions": 158,
+            "underbet": {
+              "count": 44,
+              "opportunities": 158,
+              "ratePct": 27.85,
+              "wilson95Pct": [
+                21.45,
+                35.3
+              ]
+            },
+            "standard": {
+              "count": 114,
+              "opportunities": 158,
+              "ratePct": 72.15,
+              "wilson95Pct": [
+                64.7,
+                78.55
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 158,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                2.37
+              ]
+            },
+            "allIn": {
+              "count": 0,
+              "opportunities": 158,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                2.37
+              ]
+            }
+          },
+          "turn": {
+            "totalAggressions": 210,
+            "underbet": {
+              "count": 44,
+              "opportunities": 210,
+              "ratePct": 20.95,
+              "wilson95Pct": [
+                15.99,
+                26.95
+              ]
+            },
+            "standard": {
+              "count": 163,
+              "opportunities": 210,
+              "ratePct": 77.62,
+              "wilson95Pct": [
+                71.51,
+                82.73
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 210,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.8
+              ]
+            },
+            "allIn": {
+              "count": 3,
+              "opportunities": 210,
+              "ratePct": 1.43,
+              "wilson95Pct": [
+                0.49,
+                4.12
+              ]
+            }
+          },
+          "river": {
+            "totalAggressions": 240,
+            "underbet": {
+              "count": 0,
+              "opportunities": 240,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.58
+              ]
+            },
+            "standard": {
+              "count": 107,
+              "opportunities": 240,
+              "ratePct": 44.58,
+              "wilson95Pct": [
+                38.43,
+                50.91
+              ]
+            },
+            "overbet": {
+              "count": 123,
+              "opportunities": 240,
+              "ratePct": 51.25,
+              "wilson95Pct": [
+                44.96,
+                57.5
+              ]
+            },
+            "allIn": {
+              "count": 10,
+              "opportunities": 240,
+              "ratePct": 4.17,
+              "wilson95Pct": [
+                2.28,
+                7.5
+              ]
+            }
+          }
+        }
+      },
+      "nit": {
+        "hands": 6000,
+        "decisions": 9159,
+        "vpip": {
+          "count": 1506,
+          "opportunities": 6000,
+          "ratePct": 25.1,
+          "wilson95Pct": [
+            24.02,
+            26.21
+          ]
+        },
+        "pfr": {
+          "count": 1039,
+          "opportunities": 6000,
+          "ratePct": 17.32,
+          "wilson95Pct": [
+            16.38,
+            18.29
+          ]
+        },
+        "threeBet": {
+          "count": 206,
+          "opportunities": 2473,
+          "ratePct": 8.33,
+          "wilson95Pct": [
+            7.3,
+            9.48
+          ]
+        },
+        "classes": {
+          "flop": {
+            "pureBluff": {
+              "count": 12,
+              "opportunities": 402,
+              "ratePct": 2.99,
+              "wilson95Pct": [
+                1.72,
+                5.14
+              ]
+            },
+            "semiBluff": {
+              "count": 27,
+              "opportunities": 169,
+              "ratePct": 15.98,
+              "wilson95Pct": [
+                11.22,
+                22.25
+              ]
+            },
+            "thinValue": {
+              "count": 33,
+              "opportunities": 401,
+              "ratePct": 8.23,
+              "wilson95Pct": [
+                5.92,
+                11.33
+              ]
+            },
+            "strongValue": {
+              "count": 64,
+              "opportunities": 94,
+              "ratePct": 68.09,
+              "wilson95Pct": [
+                58.11,
+                76.64
+              ]
+            },
+            "trap": {
+              "count": 30,
+              "opportunities": 94,
+              "ratePct": 31.91,
+              "wilson95Pct": [
+                23.36,
+                41.89
+              ]
+            }
+          },
+          "turn": {
+            "pureBluff": {
+              "count": 5,
+              "opportunities": 159,
+              "ratePct": 3.14,
+              "wilson95Pct": [
+                1.35,
+                7.15
+              ]
+            },
+            "semiBluff": {
+              "count": 43,
+              "opportunities": 292,
+              "ratePct": 14.73,
+              "wilson95Pct": [
+                11.12,
+                19.25
+              ]
+            },
+            "thinValue": {
+              "count": 16,
+              "opportunities": 362,
+              "ratePct": 4.42,
+              "wilson95Pct": [
+                2.74,
+                7.06
+              ]
+            },
+            "strongValue": {
+              "count": 122,
+              "opportunities": 184,
+              "ratePct": 66.3,
+              "wilson95Pct": [
+                59.2,
+                72.74
+              ]
+            },
+            "trap": {
+              "count": 61,
+              "opportunities": 184,
+              "ratePct": 33.15,
+              "wilson95Pct": [
+                26.76,
+                40.24
+              ]
+            }
+          },
+          "river": {
+            "pureBluff": {
+              "count": 1,
+              "opportunities": 57,
+              "ratePct": 1.75,
+              "wilson95Pct": [
+                0.31,
+                9.29
+              ]
+            },
+            "semiBluff": {
+              "count": 29,
+              "opportunities": 279,
+              "ratePct": 10.39,
+              "wilson95Pct": [
+                7.34,
+                14.53
+              ]
+            },
+            "thinValue": {
+              "count": 12,
+              "opportunities": 271,
+              "ratePct": 4.43,
+              "wilson95Pct": [
+                2.55,
+                7.58
+              ]
+            },
+            "strongValue": {
+              "count": 173,
+              "opportunities": 291,
+              "ratePct": 59.45,
+              "wilson95Pct": [
+                53.72,
+                64.93
+              ]
+            },
+            "trap": {
+              "count": 116,
+              "opportunities": 291,
+              "ratePct": 39.86,
+              "wilson95Pct": [
+                34.4,
+                45.58
+              ]
+            }
+          }
+        },
+        "sizing": {
+          "flop": {
+            "totalAggressions": 136,
+            "underbet": {
+              "count": 26,
+              "opportunities": 136,
+              "ratePct": 19.12,
+              "wilson95Pct": [
+                13.39,
+                26.54
+              ]
+            },
+            "standard": {
+              "count": 108,
+              "opportunities": 136,
+              "ratePct": 79.41,
+              "wilson95Pct": [
+                71.85,
+                85.35
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 136,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                2.75
+              ]
+            },
+            "allIn": {
+              "count": 2,
+              "opportunities": 136,
+              "ratePct": 1.47,
+              "wilson95Pct": [
+                0.4,
+                5.2
+              ]
+            }
+          },
+          "turn": {
+            "totalAggressions": 186,
+            "underbet": {
+              "count": 32,
+              "opportunities": 186,
+              "ratePct": 17.2,
+              "wilson95Pct": [
+                12.46,
+                23.28
+              ]
+            },
+            "standard": {
+              "count": 149,
+              "opportunities": 186,
+              "ratePct": 80.11,
+              "wilson95Pct": [
+                73.79,
+                85.21
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 186,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                2.02
+              ]
+            },
+            "allIn": {
+              "count": 5,
+              "opportunities": 186,
+              "ratePct": 2.69,
+              "wilson95Pct": [
+                1.15,
+                6.14
+              ]
+            }
+          },
+          "river": {
+            "totalAggressions": 215,
+            "underbet": {
+              "count": 0,
+              "opportunities": 215,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.76
+              ]
+            },
+            "standard": {
+              "count": 87,
+              "opportunities": 215,
+              "ratePct": 40.47,
+              "wilson95Pct": [
+                34.13,
+                47.14
+              ]
+            },
+            "overbet": {
+              "count": 115,
+              "opportunities": 215,
+              "ratePct": 53.49,
+              "wilson95Pct": [
+                46.82,
+                60.04
+              ]
+            },
+            "allIn": {
+              "count": 13,
+              "opportunities": 215,
+              "ratePct": 6.05,
+              "wilson95Pct": [
+                3.57,
+                10.07
+              ]
+            }
+          }
+        }
+      }
+    },
+    "8": {
+      "pressure": {
+        "hands": 8000,
+        "decisions": 11872,
+        "vpip": {
+          "count": 1860,
+          "opportunities": 8000,
+          "ratePct": 23.25,
+          "wilson95Pct": [
+            22.34,
+            24.19
+          ]
+        },
+        "pfr": {
+          "count": 1358,
+          "opportunities": 8000,
+          "ratePct": 16.98,
+          "wilson95Pct": [
+            16.17,
+            17.81
+          ]
+        },
+        "threeBet": {
+          "count": 361,
+          "opportunities": 3319,
+          "ratePct": 10.88,
+          "wilson95Pct": [
+            9.86,
+            11.98
+          ]
+        },
+        "classes": {
+          "flop": {
+            "pureBluff": {
+              "count": 73,
+              "opportunities": 413,
+              "ratePct": 17.68,
+              "wilson95Pct": [
+                14.3,
+                21.65
+              ]
+            },
+            "semiBluff": {
+              "count": 56,
+              "opportunities": 214,
+              "ratePct": 26.17,
+              "wilson95Pct": [
+                20.74,
+                32.44
+              ]
+            },
+            "thinValue": {
+              "count": 49,
+              "opportunities": 510,
+              "ratePct": 9.61,
+              "wilson95Pct": [
+                7.34,
+                12.48
+              ]
+            },
+            "strongValue": {
+              "count": 91,
+              "opportunities": 110,
+              "ratePct": 82.73,
+              "wilson95Pct": [
+                74.59,
+                88.65
+              ]
+            },
+            "trap": {
+              "count": 19,
+              "opportunities": 110,
+              "ratePct": 17.27,
+              "wilson95Pct": [
+                11.35,
+                25.41
+              ]
+            }
+          },
+          "turn": {
+            "pureBluff": {
+              "count": 26,
+              "opportunities": 174,
+              "ratePct": 14.94,
+              "wilson95Pct": [
+                10.41,
+                20.99
+              ]
+            },
+            "semiBluff": {
+              "count": 77,
+              "opportunities": 346,
+              "ratePct": 22.25,
+              "wilson95Pct": [
+                18.19,
+                26.93
+              ]
+            },
+            "thinValue": {
+              "count": 23,
+              "opportunities": 440,
+              "ratePct": 5.23,
+              "wilson95Pct": [
+                3.51,
+                7.72
+              ]
+            },
+            "strongValue": {
+              "count": 151,
+              "opportunities": 205,
+              "ratePct": 73.66,
+              "wilson95Pct": [
+                67.23,
+                79.21
+              ]
+            },
+            "trap": {
+              "count": 52,
+              "opportunities": 205,
+              "ratePct": 25.37,
+              "wilson95Pct": [
+                19.9,
+                31.74
+              ]
+            }
+          },
+          "river": {
+            "pureBluff": {
+              "count": 6,
+              "opportunities": 68,
+              "ratePct": 8.82,
+              "wilson95Pct": [
+                4.11,
+                17.94
+              ]
+            },
+            "semiBluff": {
+              "count": 35,
+              "opportunities": 308,
+              "ratePct": 11.36,
+              "wilson95Pct": [
+                8.29,
+                15.39
+              ]
+            },
+            "thinValue": {
+              "count": 15,
+              "opportunities": 322,
+              "ratePct": 4.66,
+              "wilson95Pct": [
+                2.84,
+                7.54
+              ]
+            },
+            "strongValue": {
+              "count": 214,
+              "opportunities": 308,
+              "ratePct": 69.48,
+              "wilson95Pct": [
+                64.12,
+                74.36
+              ]
+            },
+            "trap": {
+              "count": 94,
+              "opportunities": 308,
+              "ratePct": 30.52,
+              "wilson95Pct": [
+                25.64,
+                35.88
+              ]
+            }
+          }
+        },
+        "sizing": {
+          "flop": {
+            "totalAggressions": 269,
+            "underbet": {
+              "count": 71,
+              "opportunities": 269,
+              "ratePct": 26.39,
+              "wilson95Pct": [
+                21.49,
+                31.97
+              ]
+            },
+            "standard": {
+              "count": 197,
+              "opportunities": 269,
+              "ratePct": 73.23,
+              "wilson95Pct": [
+                67.64,
+                78.17
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 269,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.41
+              ]
+            },
+            "allIn": {
+              "count": 1,
+              "opportunities": 269,
+              "ratePct": 0.37,
+              "wilson95Pct": [
+                0.07,
+                2.08
+              ]
+            }
+          },
+          "turn": {
+            "totalAggressions": 277,
+            "underbet": {
+              "count": 54,
+              "opportunities": 277,
+              "ratePct": 19.49,
+              "wilson95Pct": [
+                15.26,
+                24.56
+              ]
+            },
+            "standard": {
+              "count": 216,
+              "opportunities": 277,
+              "ratePct": 77.98,
+              "wilson95Pct": [
+                72.73,
+                82.46
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 277,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.37
+              ]
+            },
+            "allIn": {
+              "count": 7,
+              "opportunities": 277,
+              "ratePct": 2.53,
+              "wilson95Pct": [
+                1.23,
+                5.12
+              ]
+            }
+          },
+          "river": {
+            "totalAggressions": 270,
+            "underbet": {
+              "count": 0,
+              "opportunities": 270,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.4
+              ]
+            },
+            "standard": {
+              "count": 106,
+              "opportunities": 270,
+              "ratePct": 39.26,
+              "wilson95Pct": [
+                33.62,
+                45.2
+              ]
+            },
+            "overbet": {
+              "count": 139,
+              "opportunities": 270,
+              "ratePct": 51.48,
+              "wilson95Pct": [
+                45.54,
+                57.38
+              ]
+            },
+            "allIn": {
+              "count": 25,
+              "opportunities": 270,
+              "ratePct": 9.26,
+              "wilson95Pct": [
+                6.35,
+                13.31
+              ]
+            }
+          }
+        }
+      },
+      "balanced": {
+        "hands": 8000,
+        "decisions": 11941,
+        "vpip": {
+          "count": 1844,
+          "opportunities": 8000,
+          "ratePct": 23.05,
+          "wilson95Pct": [
+            22.14,
+            23.99
+          ]
+        },
+        "pfr": {
+          "count": 1258,
+          "opportunities": 8000,
+          "ratePct": 15.73,
+          "wilson95Pct": [
+            14.94,
+            16.54
+          ]
+        },
+        "threeBet": {
+          "count": 300,
+          "opportunities": 3359,
+          "ratePct": 8.93,
+          "wilson95Pct": [
+            8.01,
+            9.94
+          ]
+        },
+        "classes": {
+          "flop": {
+            "pureBluff": {
+              "count": 37,
+              "opportunities": 412,
+              "ratePct": 8.98,
+              "wilson95Pct": [
+                6.59,
+                12.13
+              ]
+            },
+            "semiBluff": {
+              "count": 33,
+              "opportunities": 205,
+              "ratePct": 16.1,
+              "wilson95Pct": [
+                11.7,
+                21.74
+              ]
+            },
+            "thinValue": {
+              "count": 36,
+              "opportunities": 553,
+              "ratePct": 6.51,
+              "wilson95Pct": [
+                4.74,
+                8.88
+              ]
+            },
+            "strongValue": {
+              "count": 99,
+              "opportunities": 134,
+              "ratePct": 73.88,
+              "wilson95Pct": [
+                65.85,
+                80.58
+              ]
+            },
+            "trap": {
+              "count": 35,
+              "opportunities": 134,
+              "ratePct": 26.12,
+              "wilson95Pct": [
+                19.42,
+                34.15
+              ]
+            }
+          },
+          "turn": {
+            "pureBluff": {
+              "count": 14,
+              "opportunities": 158,
+              "ratePct": 8.86,
+              "wilson95Pct": [
+                5.35,
+                14.32
+              ]
+            },
+            "semiBluff": {
+              "count": 59,
+              "opportunities": 339,
+              "ratePct": 17.4,
+              "wilson95Pct": [
+                13.74,
+                21.8
+              ]
+            },
+            "thinValue": {
+              "count": 21,
+              "opportunities": 426,
+              "ratePct": 4.93,
+              "wilson95Pct": [
+                3.25,
+                7.42
+              ]
+            },
+            "strongValue": {
+              "count": 183,
+              "opportunities": 258,
+              "ratePct": 70.93,
+              "wilson95Pct": [
+                65.11,
+                76.13
+              ]
+            },
+            "trap": {
+              "count": 75,
+              "opportunities": 258,
+              "ratePct": 29.07,
+              "wilson95Pct": [
+                23.87,
+                34.89
+              ]
+            }
+          },
+          "river": {
+            "pureBluff": {
+              "count": 6,
+              "opportunities": 74,
+              "ratePct": 8.11,
+              "wilson95Pct": [
+                3.77,
+                16.58
+              ]
+            },
+            "semiBluff": {
+              "count": 26,
+              "opportunities": 311,
+              "ratePct": 8.36,
+              "wilson95Pct": [
+                5.77,
+                11.97
+              ]
+            },
+            "thinValue": {
+              "count": 8,
+              "opportunities": 312,
+              "ratePct": 2.56,
+              "wilson95Pct": [
+                1.3,
+                4.98
+              ]
+            },
+            "strongValue": {
+              "count": 239,
+              "opportunities": 343,
+              "ratePct": 69.68,
+              "wilson95Pct": [
+                64.62,
+                74.3
+              ]
+            },
+            "trap": {
+              "count": 101,
+              "opportunities": 343,
+              "ratePct": 29.45,
+              "wilson95Pct": [
+                24.87,
+                34.48
+              ]
+            }
+          }
+        },
+        "sizing": {
+          "flop": {
+            "totalAggressions": 205,
+            "underbet": {
+              "count": 44,
+              "opportunities": 205,
+              "ratePct": 21.46,
+              "wilson95Pct": [
+                16.4,
+                27.58
+              ]
+            },
+            "standard": {
+              "count": 158,
+              "opportunities": 205,
+              "ratePct": 77.07,
+              "wilson95Pct": [
+                70.85,
+                82.3
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 205,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.84
+              ]
+            },
+            "allIn": {
+              "count": 3,
+              "opportunities": 205,
+              "ratePct": 1.46,
+              "wilson95Pct": [
+                0.5,
+                4.21
+              ]
+            }
+          },
+          "turn": {
+            "totalAggressions": 277,
+            "underbet": {
+              "count": 40,
+              "opportunities": 277,
+              "ratePct": 14.44,
+              "wilson95Pct": [
+                10.79,
+                19.07
+              ]
+            },
+            "standard": {
+              "count": 228,
+              "opportunities": 277,
+              "ratePct": 82.31,
+              "wilson95Pct": [
+                77.38,
+                86.35
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 277,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.37
+              ]
+            },
+            "allIn": {
+              "count": 9,
+              "opportunities": 277,
+              "ratePct": 3.25,
+              "wilson95Pct": [
+                1.72,
+                6.06
+              ]
+            }
+          },
+          "river": {
+            "totalAggressions": 279,
+            "underbet": {
+              "count": 0,
+              "opportunities": 279,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.36
+              ]
+            },
+            "standard": {
+              "count": 94,
+              "opportunities": 279,
+              "ratePct": 33.69,
+              "wilson95Pct": [
+                28.4,
+                39.43
+              ]
+            },
+            "overbet": {
+              "count": 156,
+              "opportunities": 279,
+              "ratePct": 55.91,
+              "wilson95Pct": [
+                50.05,
+                61.62
+              ]
+            },
+            "allIn": {
+              "count": 29,
+              "opportunities": 279,
+              "ratePct": 10.39,
+              "wilson95Pct": [
+                7.34,
+                14.53
+              ]
+            }
+          }
+        }
+      },
+      "value": {
+        "hands": 8000,
+        "decisions": 11626,
+        "vpip": {
+          "count": 1725,
+          "opportunities": 8000,
+          "ratePct": 21.56,
+          "wilson95Pct": [
+            20.68,
+            22.48
+          ]
+        },
+        "pfr": {
+          "count": 1175,
+          "opportunities": 8000,
+          "ratePct": 14.69,
+          "wilson95Pct": [
+            13.93,
+            15.48
+          ]
+        },
+        "threeBet": {
+          "count": 274,
+          "opportunities": 3398,
+          "ratePct": 8.06,
+          "wilson95Pct": [
+            7.19,
+            9.03
+          ]
+        },
+        "classes": {
+          "flop": {
+            "pureBluff": {
+              "count": 19,
+              "opportunities": 393,
+              "ratePct": 4.83,
+              "wilson95Pct": [
+                3.12,
+                7.43
+              ]
+            },
+            "semiBluff": {
+              "count": 34,
+              "opportunities": 201,
+              "ratePct": 16.92,
+              "wilson95Pct": [
+                12.36,
+                22.71
+              ]
+            },
+            "thinValue": {
+              "count": 37,
+              "opportunities": 494,
+              "ratePct": 7.49,
+              "wilson95Pct": [
+                5.48,
+                10.15
+              ]
+            },
+            "strongValue": {
+              "count": 76,
+              "opportunities": 112,
+              "ratePct": 67.86,
+              "wilson95Pct": [
+                58.74,
+                75.79
+              ]
+            },
+            "trap": {
+              "count": 35,
+              "opportunities": 112,
+              "ratePct": 31.25,
+              "wilson95Pct": [
+                23.41,
+                40.34
+              ]
+            }
+          },
+          "turn": {
+            "pureBluff": {
+              "count": 16,
+              "opportunities": 152,
+              "ratePct": 10.53,
+              "wilson95Pct": [
+                6.58,
+                16.42
+              ]
+            },
+            "semiBluff": {
+              "count": 39,
+              "opportunities": 343,
+              "ratePct": 11.37,
+              "wilson95Pct": [
+                8.43,
+                15.17
+              ]
+            },
+            "thinValue": {
+              "count": 21,
+              "opportunities": 391,
+              "ratePct": 5.37,
+              "wilson95Pct": [
+                3.54,
+                8.07
+              ]
+            },
+            "strongValue": {
+              "count": 142,
+              "opportunities": 216,
+              "ratePct": 65.74,
+              "wilson95Pct": [
+                59.19,
+                71.75
+              ]
+            },
+            "trap": {
+              "count": 74,
+              "opportunities": 216,
+              "ratePct": 34.26,
+              "wilson95Pct": [
+                28.25,
+                40.81
+              ]
+            }
+          },
+          "river": {
+            "pureBluff": {
+              "count": 5,
+              "opportunities": 63,
+              "ratePct": 7.94,
+              "wilson95Pct": [
+                3.44,
+                17.27
+              ]
+            },
+            "semiBluff": {
+              "count": 33,
+              "opportunities": 299,
+              "ratePct": 11.04,
+              "wilson95Pct": [
+                7.97,
+                15.09
+              ]
+            },
+            "thinValue": {
+              "count": 13,
+              "opportunities": 288,
+              "ratePct": 4.51,
+              "wilson95Pct": [
+                2.66,
+                7.57
+              ]
+            },
+            "strongValue": {
+              "count": 209,
+              "opportunities": 313,
+              "ratePct": 66.77,
+              "wilson95Pct": [
+                61.38,
+                71.76
+              ]
+            },
+            "trap": {
+              "count": 100,
+              "opportunities": 313,
+              "ratePct": 31.95,
+              "wilson95Pct": [
+                27.03,
+                37.31
+              ]
+            }
+          }
+        },
+        "sizing": {
+          "flop": {
+            "totalAggressions": 166,
+            "underbet": {
+              "count": 42,
+              "opportunities": 166,
+              "ratePct": 25.3,
+              "wilson95Pct": [
+                19.3,
+                32.42
+              ]
+            },
+            "standard": {
+              "count": 123,
+              "opportunities": 166,
+              "ratePct": 74.1,
+              "wilson95Pct": [
+                66.94,
+                80.16
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 166,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                2.26
+              ]
+            },
+            "allIn": {
+              "count": 1,
+              "opportunities": 166,
+              "ratePct": 0.6,
+              "wilson95Pct": [
+                0.11,
+                3.33
+              ]
+            }
+          },
+          "turn": {
+            "totalAggressions": 218,
+            "underbet": {
+              "count": 46,
+              "opportunities": 218,
+              "ratePct": 21.1,
+              "wilson95Pct": [
+                16.21,
+                26.99
+              ]
+            },
+            "standard": {
+              "count": 169,
+              "opportunities": 218,
+              "ratePct": 77.52,
+              "wilson95Pct": [
+                71.53,
+                82.56
+              ]
+            },
+            "overbet": {
+              "count": 1,
+              "opportunities": 218,
+              "ratePct": 0.46,
+              "wilson95Pct": [
+                0.08,
+                2.55
+              ]
+            },
+            "allIn": {
+              "count": 2,
+              "opportunities": 218,
+              "ratePct": 0.92,
+              "wilson95Pct": [
+                0.25,
+                3.28
+              ]
+            }
+          },
+          "river": {
+            "totalAggressions": 260,
+            "underbet": {
+              "count": 0,
+              "opportunities": 260,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.46
+              ]
+            },
+            "standard": {
+              "count": 101,
+              "opportunities": 260,
+              "ratePct": 38.85,
+              "wilson95Pct": [
+                33.13,
+                44.89
+              ]
+            },
+            "overbet": {
+              "count": 147,
+              "opportunities": 260,
+              "ratePct": 56.54,
+              "wilson95Pct": [
+                50.46,
+                62.43
+              ]
+            },
+            "allIn": {
+              "count": 12,
+              "opportunities": 260,
+              "ratePct": 4.62,
+              "wilson95Pct": [
+                2.66,
+                7.89
+              ]
+            }
+          }
+        }
+      },
+      "trap": {
+        "hands": 8000,
+        "decisions": 12120,
+        "vpip": {
+          "count": 1869,
+          "opportunities": 8000,
+          "ratePct": 23.36,
+          "wilson95Pct": [
+            22.45,
+            24.3
+          ]
+        },
+        "pfr": {
+          "count": 1276,
+          "opportunities": 8000,
+          "ratePct": 15.95,
+          "wilson95Pct": [
+            15.16,
+            16.77
+          ]
+        },
+        "threeBet": {
+          "count": 316,
+          "opportunities": 3419,
+          "ratePct": 9.24,
+          "wilson95Pct": [
+            8.32,
+            10.26
+          ]
+        },
+        "classes": {
+          "flop": {
+            "pureBluff": {
+              "count": 16,
+              "opportunities": 448,
+              "ratePct": 3.57,
+              "wilson95Pct": [
+                2.21,
+                5.72
+              ]
+            },
+            "semiBluff": {
+              "count": 29,
+              "opportunities": 241,
+              "ratePct": 12.03,
+              "wilson95Pct": [
+                8.51,
+                16.75
+              ]
+            },
+            "thinValue": {
+              "count": 29,
+              "opportunities": 520,
+              "ratePct": 5.58,
+              "wilson95Pct": [
+                3.91,
+                7.89
+              ]
+            },
+            "strongValue": {
+              "count": 84,
+              "opportunities": 123,
+              "ratePct": 68.29,
+              "wilson95Pct": [
+                59.62,
+                75.86
+              ]
+            },
+            "trap": {
+              "count": 38,
+              "opportunities": 123,
+              "ratePct": 30.89,
+              "wilson95Pct": [
+                23.41,
+                39.53
+              ]
+            }
+          },
+          "turn": {
+            "pureBluff": {
+              "count": 6,
+              "opportunities": 189,
+              "ratePct": 3.17,
+              "wilson95Pct": [
+                1.46,
+                6.75
+              ]
+            },
+            "semiBluff": {
+              "count": 55,
+              "opportunities": 374,
+              "ratePct": 14.71,
+              "wilson95Pct": [
+                11.48,
+                18.65
+              ]
+            },
+            "thinValue": {
+              "count": 17,
+              "opportunities": 458,
+              "ratePct": 3.71,
+              "wilson95Pct": [
+                2.33,
+                5.86
+              ]
+            },
+            "strongValue": {
+              "count": 161,
+              "opportunities": 234,
+              "ratePct": 68.8,
+              "wilson95Pct": [
+                62.6,
+                74.4
+              ]
+            },
+            "trap": {
+              "count": 71,
+              "opportunities": 234,
+              "ratePct": 30.34,
+              "wilson95Pct": [
+                24.81,
+                36.51
+              ]
+            }
+          },
+          "river": {
+            "pureBluff": {
+              "count": 7,
+              "opportunities": 76,
+              "ratePct": 9.21,
+              "wilson95Pct": [
+                4.53,
+                17.81
+              ]
+            },
+            "semiBluff": {
+              "count": 21,
+              "opportunities": 320,
+              "ratePct": 6.56,
+              "wilson95Pct": [
+                4.33,
+                9.82
+              ]
+            },
+            "thinValue": {
+              "count": 13,
+              "opportunities": 316,
+              "ratePct": 4.11,
+              "wilson95Pct": [
+                2.42,
+                6.91
+              ]
+            },
+            "strongValue": {
+              "count": 248,
+              "opportunities": 392,
+              "ratePct": 63.27,
+              "wilson95Pct": [
+                58.39,
+                67.89
+              ]
+            },
+            "trap": {
+              "count": 144,
+              "opportunities": 392,
+              "ratePct": 36.73,
+              "wilson95Pct": [
+                32.11,
+                41.61
+              ]
+            }
+          }
+        },
+        "sizing": {
+          "flop": {
+            "totalAggressions": 158,
+            "underbet": {
+              "count": 29,
+              "opportunities": 158,
+              "ratePct": 18.35,
+              "wilson95Pct": [
+                13.09,
+                25.12
+              ]
+            },
+            "standard": {
+              "count": 128,
+              "opportunities": 158,
+              "ratePct": 81.01,
+              "wilson95Pct": [
+                74.19,
+                86.36
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 158,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                2.37
+              ]
+            },
+            "allIn": {
+              "count": 1,
+              "opportunities": 158,
+              "ratePct": 0.63,
+              "wilson95Pct": [
+                0.11,
+                3.5
+              ]
+            }
+          },
+          "turn": {
+            "totalAggressions": 239,
+            "underbet": {
+              "count": 41,
+              "opportunities": 239,
+              "ratePct": 17.15,
+              "wilson95Pct": [
+                12.9,
+                22.44
+              ]
+            },
+            "standard": {
+              "count": 194,
+              "opportunities": 239,
+              "ratePct": 81.17,
+              "wilson95Pct": [
+                75.74,
+                85.62
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 239,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.58
+              ]
+            },
+            "allIn": {
+              "count": 4,
+              "opportunities": 239,
+              "ratePct": 1.67,
+              "wilson95Pct": [
+                0.65,
+                4.22
+              ]
+            }
+          },
+          "river": {
+            "totalAggressions": 289,
+            "underbet": {
+              "count": 0,
+              "opportunities": 289,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.31
+              ]
+            },
+            "standard": {
+              "count": 103,
+              "opportunities": 289,
+              "ratePct": 35.64,
+              "wilson95Pct": [
+                30.34,
+                41.32
+              ]
+            },
+            "overbet": {
+              "count": 167,
+              "opportunities": 289,
+              "ratePct": 57.79,
+              "wilson95Pct": [
+                52.03,
+                63.34
+              ]
+            },
+            "allIn": {
+              "count": 19,
+              "opportunities": 289,
+              "ratePct": 6.57,
+              "wilson95Pct": [
+                4.25,
+                10.04
+              ]
+            }
+          }
+        }
+      },
+      "nit": {
+        "hands": 8000,
+        "decisions": 11607,
+        "vpip": {
+          "count": 1627,
+          "opportunities": 8000,
+          "ratePct": 20.34,
+          "wilson95Pct": [
+            19.47,
+            21.23
+          ]
+        },
+        "pfr": {
+          "count": 1084,
+          "opportunities": 8000,
+          "ratePct": 13.55,
+          "wilson95Pct": [
+            12.82,
+            14.32
+          ]
+        },
+        "threeBet": {
+          "count": 245,
+          "opportunities": 3407,
+          "ratePct": 7.19,
+          "wilson95Pct": [
+            6.37,
+            8.11
+          ]
+        },
+        "classes": {
+          "flop": {
+            "pureBluff": {
+              "count": 9,
+              "opportunities": 372,
+              "ratePct": 2.42,
+              "wilson95Pct": [
+                1.28,
+                4.53
+              ]
+            },
+            "semiBluff": {
+              "count": 33,
+              "opportunities": 176,
+              "ratePct": 18.75,
+              "wilson95Pct": [
+                13.67,
+                25.16
+              ]
+            },
+            "thinValue": {
+              "count": 31,
+              "opportunities": 495,
+              "ratePct": 6.26,
+              "wilson95Pct": [
+                4.45,
+                8.75
+              ]
+            },
+            "strongValue": {
+              "count": 86,
+              "opportunities": 120,
+              "ratePct": 71.67,
+              "wilson95Pct": [
+                63.03,
+                78.96
+              ]
+            },
+            "trap": {
+              "count": 34,
+              "opportunities": 120,
+              "ratePct": 28.33,
+              "wilson95Pct": [
+                21.04,
+                36.97
+              ]
+            }
+          },
+          "turn": {
+            "pureBluff": {
+              "count": 3,
+              "opportunities": 165,
+              "ratePct": 1.82,
+              "wilson95Pct": [
+                0.62,
+                5.21
+              ]
+            },
+            "semiBluff": {
+              "count": 35,
+              "opportunities": 323,
+              "ratePct": 10.84,
+              "wilson95Pct": [
+                7.9,
+                14.7
+              ]
+            },
+            "thinValue": {
+              "count": 24,
+              "opportunities": 390,
+              "ratePct": 6.15,
+              "wilson95Pct": [
+                4.17,
+                8.99
+              ]
+            },
+            "strongValue": {
+              "count": 162,
+              "opportunities": 243,
+              "ratePct": 66.67,
+              "wilson95Pct": [
+                60.52,
+                72.29
+              ]
+            },
+            "trap": {
+              "count": 78,
+              "opportunities": 243,
+              "ratePct": 32.1,
+              "wilson95Pct": [
+                26.55,
+                38.21
+              ]
+            }
+          },
+          "river": {
+            "pureBluff": {
+              "count": 1,
+              "opportunities": 47,
+              "ratePct": 2.13,
+              "wilson95Pct": [
+                0.38,
+                11.11
+              ]
+            },
+            "semiBluff": {
+              "count": 21,
+              "opportunities": 322,
+              "ratePct": 6.52,
+              "wilson95Pct": [
+                4.3,
+                9.76
+              ]
+            },
+            "thinValue": {
+              "count": 6,
+              "opportunities": 256,
+              "ratePct": 2.34,
+              "wilson95Pct": [
+                1.08,
+                5.02
+              ]
+            },
+            "strongValue": {
+              "count": 231,
+              "opportunities": 345,
+              "ratePct": 66.96,
+              "wilson95Pct": [
+                61.83,
+                71.71
+              ]
+            },
+            "trap": {
+              "count": 114,
+              "opportunities": 345,
+              "ratePct": 33.04,
+              "wilson95Pct": [
+                28.29,
+                38.17
+              ]
+            }
+          }
+        },
+        "sizing": {
+          "flop": {
+            "totalAggressions": 159,
+            "underbet": {
+              "count": 35,
+              "opportunities": 159,
+              "ratePct": 22.01,
+              "wilson95Pct": [
+                16.27,
+                29.07
+              ]
+            },
+            "standard": {
+              "count": 123,
+              "opportunities": 159,
+              "ratePct": 77.36,
+              "wilson95Pct": [
+                70.25,
+                83.17
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 159,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                2.36
+              ]
+            },
+            "allIn": {
+              "count": 1,
+              "opportunities": 159,
+              "ratePct": 0.63,
+              "wilson95Pct": [
+                0.11,
+                3.48
+              ]
+            }
+          },
+          "turn": {
+            "totalAggressions": 224,
+            "underbet": {
+              "count": 36,
+              "opportunities": 224,
+              "ratePct": 16.07,
+              "wilson95Pct": [
+                11.84,
+                21.45
+              ]
+            },
+            "standard": {
+              "count": 186,
+              "opportunities": 224,
+              "ratePct": 83.04,
+              "wilson95Pct": [
+                77.57,
+                87.38
+              ]
+            },
+            "overbet": {
+              "count": 0,
+              "opportunities": 224,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.69
+              ]
+            },
+            "allIn": {
+              "count": 2,
+              "opportunities": 224,
+              "ratePct": 0.89,
+              "wilson95Pct": [
+                0.25,
+                3.2
+              ]
+            }
+          },
+          "river": {
+            "totalAggressions": 259,
+            "underbet": {
+              "count": 0,
+              "opportunities": 259,
+              "ratePct": 0,
+              "wilson95Pct": [
+                0,
+                1.46
+              ]
+            },
+            "standard": {
+              "count": 98,
+              "opportunities": 259,
+              "ratePct": 37.84,
+              "wilson95Pct": [
+                32.15,
+                43.88
+              ]
+            },
+            "overbet": {
+              "count": 145,
+              "opportunities": 259,
+              "ratePct": 55.98,
+              "wilson95Pct": [
+                49.9,
+                61.9
+              ]
+            },
+            "allIn": {
+              "count": 16,
+              "opportunities": 259,
+              "ratePct": 6.18,
+              "wilson95Pct": [
+                3.84,
+                9.8
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "pooled": {
+    "pressure": {
+      "hands": 16000,
+      "decisions": 26253,
+      "vpip": {
+        "count": 4930,
+        "opportunities": 16000,
+        "ratePct": 30.81,
+        "wilson95Pct": [
+          30.1,
+          31.53
+        ]
+      },
+      "pfr": {
+        "count": 3367,
+        "opportunities": 16000,
+        "ratePct": 21.04,
+        "wilson95Pct": [
+          20.42,
+          21.68
+        ]
+      },
+      "threeBet": {
+        "count": 737,
+        "opportunities": 6398,
+        "ratePct": 11.52,
+        "wilson95Pct": [
+          10.76,
+          12.32
+        ]
+      },
+      "classes": {
+        "flop": {
+          "pureBluff": {
+            "count": 206,
+            "opportunities": 1283,
+            "ratePct": 16.06,
+            "wilson95Pct": [
+              14.15,
+              18.17
+            ]
+          },
+          "semiBluff": {
+            "count": 167,
+            "opportunities": 606,
+            "ratePct": 27.56,
+            "wilson95Pct": [
+              24.15,
+              31.25
+            ]
+          },
+          "thinValue": {
+            "count": 114,
+            "opportunities": 1377,
+            "ratePct": 8.28,
+            "wilson95Pct": [
+              6.94,
+              9.85
+            ]
+          },
+          "strongValue": {
+            "count": 231,
+            "opportunities": 278,
+            "ratePct": 83.09,
+            "wilson95Pct": [
+              78.24,
+              87.04
+            ]
+          },
+          "trap": {
+            "count": 46,
+            "opportunities": 278,
+            "ratePct": 16.55,
+            "wilson95Pct": [
+              12.64,
+              21.37
+            ]
+          }
+        },
+        "turn": {
+          "pureBluff": {
+            "count": 71,
+            "opportunities": 548,
+            "ratePct": 12.96,
+            "wilson95Pct": [
+              10.4,
+              16.03
+            ]
+          },
+          "semiBluff": {
+            "count": 218,
+            "opportunities": 1023,
+            "ratePct": 21.31,
+            "wilson95Pct": [
+              18.91,
+              23.92
+            ]
+          },
+          "thinValue": {
+            "count": 52,
+            "opportunities": 1169,
+            "ratePct": 4.45,
+            "wilson95Pct": [
+              3.41,
+              5.79
+            ]
+          },
+          "strongValue": {
+            "count": 386,
+            "opportunities": 504,
+            "ratePct": 76.59,
+            "wilson95Pct": [
+              72.7,
+              80.07
+            ]
+          },
+          "trap": {
+            "count": 116,
+            "opportunities": 504,
+            "ratePct": 23.02,
+            "wilson95Pct": [
+              19.55,
+              26.89
+            ]
+          }
+        },
+        "river": {
+          "pureBluff": {
+            "count": 30,
+            "opportunities": 236,
+            "ratePct": 12.71,
+            "wilson95Pct": [
+              9.05,
+              17.57
+            ]
+          },
+          "semiBluff": {
+            "count": 122,
+            "opportunities": 924,
+            "ratePct": 13.2,
+            "wilson95Pct": [
+              11.17,
+              15.54
+            ]
+          },
+          "thinValue": {
+            "count": 27,
+            "opportunities": 778,
+            "ratePct": 3.47,
+            "wilson95Pct": [
+              2.4,
+              5
+            ]
+          },
+          "strongValue": {
+            "count": 603,
+            "opportunities": 820,
+            "ratePct": 73.54,
+            "wilson95Pct": [
+              70.41,
+              76.44
+            ]
+          },
+          "trap": {
+            "count": 213,
+            "opportunities": 820,
+            "ratePct": 25.98,
+            "wilson95Pct": [
+              23.09,
+              29.08
+            ]
+          }
+        }
+      },
+      "sizing": {
+        "flop": {
+          "totalAggressions": 718,
+          "underbet": {
+            "count": 157,
+            "opportunities": 718,
+            "ratePct": 21.87,
+            "wilson95Pct": [
+              19,
+              25.04
+            ]
+          },
+          "standard": {
+            "count": 557,
+            "opportunities": 718,
+            "ratePct": 77.58,
+            "wilson95Pct": [
+              74.38,
+              80.48
+            ]
+          },
+          "overbet": {
+            "count": 0,
+            "opportunities": 718,
+            "ratePct": 0,
+            "wilson95Pct": [
+              0,
+              0.53
+            ]
+          },
+          "allIn": {
+            "count": 4,
+            "opportunities": 718,
+            "ratePct": 0.56,
+            "wilson95Pct": [
+              0.22,
+              1.42
+            ]
+          }
+        },
+        "turn": {
+          "totalAggressions": 727,
+          "underbet": {
+            "count": 146,
+            "opportunities": 727,
+            "ratePct": 20.08,
+            "wilson95Pct": [
+              17.33,
+              23.15
+            ]
+          },
+          "standard": {
+            "count": 572,
+            "opportunities": 727,
+            "ratePct": 78.68,
+            "wilson95Pct": [
+              75.56,
+              81.5
+            ]
+          },
+          "overbet": {
+            "count": 0,
+            "opportunities": 727,
+            "ratePct": 0,
+            "wilson95Pct": [
+              0,
+              0.53
+            ]
+          },
+          "allIn": {
+            "count": 9,
+            "opportunities": 727,
+            "ratePct": 1.24,
+            "wilson95Pct": [
+              0.65,
+              2.34
+            ]
+          }
+        },
+        "river": {
+          "totalAggressions": 782,
+          "underbet": {
+            "count": 0,
+            "opportunities": 782,
+            "ratePct": 0,
+            "wilson95Pct": [
+              0,
+              0.49
+            ]
+          },
+          "standard": {
+            "count": 362,
+            "opportunities": 782,
+            "ratePct": 46.29,
+            "wilson95Pct": [
+              42.82,
+              49.8
+            ]
+          },
+          "overbet": {
+            "count": 379,
+            "opportunities": 782,
+            "ratePct": 48.47,
+            "wilson95Pct": [
+              44.98,
+              51.97
+            ]
+          },
+          "allIn": {
+            "count": 41,
+            "opportunities": 782,
+            "ratePct": 5.24,
+            "wilson95Pct": [
+              3.89,
+              7.04
+            ]
+          }
+        }
+      }
+    },
+    "balanced": {
+      "hands": 16000,
+      "decisions": 26223,
+      "vpip": {
+        "count": 4763,
+        "opportunities": 16000,
+        "ratePct": 29.77,
+        "wilson95Pct": [
+          29.07,
+          30.48
+        ]
+      },
+      "pfr": {
+        "count": 3095,
+        "opportunities": 16000,
+        "ratePct": 19.34,
+        "wilson95Pct": [
+          18.74,
+          19.96
+        ]
+      },
+      "threeBet": {
+        "count": 614,
+        "opportunities": 6527,
+        "ratePct": 9.41,
+        "wilson95Pct": [
+          8.72,
+          10.14
+        ]
+      },
+      "classes": {
+        "flop": {
+          "pureBluff": {
+            "count": 114,
+            "opportunities": 1298,
+            "ratePct": 8.78,
+            "wilson95Pct": [
+              7.36,
+              10.45
+            ]
+          },
+          "semiBluff": {
+            "count": 127,
+            "opportunities": 572,
+            "ratePct": 22.2,
+            "wilson95Pct": [
+              18.99,
+              25.79
+            ]
+          },
+          "thinValue": {
+            "count": 82,
+            "opportunities": 1340,
+            "ratePct": 6.12,
+            "wilson95Pct": [
+              4.96,
+              7.53
+            ]
+          },
+          "strongValue": {
+            "count": 254,
+            "opportunities": 338,
+            "ratePct": 75.15,
+            "wilson95Pct": [
+              70.28,
+              79.46
+            ]
+          },
+          "trap": {
+            "count": 82,
+            "opportunities": 338,
+            "ratePct": 24.26,
+            "wilson95Pct": [
+              20,
+              29.1
+            ]
+          }
+        },
+        "turn": {
+          "pureBluff": {
+            "count": 43,
+            "opportunities": 563,
+            "ratePct": 7.64,
+            "wilson95Pct": [
+              5.72,
+              10.13
+            ]
+          },
+          "semiBluff": {
+            "count": 163,
+            "opportunities": 911,
+            "ratePct": 17.89,
+            "wilson95Pct": [
+              15.54,
+              20.51
+            ]
+          },
+          "thinValue": {
+            "count": 48,
+            "opportunities": 1081,
+            "ratePct": 4.44,
+            "wilson95Pct": [
+              3.37,
+              5.84
+            ]
+          },
+          "strongValue": {
+            "count": 462,
+            "opportunities": 649,
+            "ratePct": 71.19,
+            "wilson95Pct": [
+              67.59,
+              74.54
+            ]
+          },
+          "trap": {
+            "count": 186,
+            "opportunities": 649,
+            "ratePct": 28.66,
+            "wilson95Pct": [
+              25.31,
+              32.26
+            ]
+          }
+        },
+        "river": {
+          "pureBluff": {
+            "count": 15,
+            "opportunities": 231,
+            "ratePct": 6.49,
+            "wilson95Pct": [
+              3.97,
+              10.44
+            ]
+          },
+          "semiBluff": {
+            "count": 88,
+            "opportunities": 882,
+            "ratePct": 9.98,
+            "wilson95Pct": [
+              8.17,
+              12.13
+            ]
+          },
+          "thinValue": {
+            "count": 20,
+            "opportunities": 770,
+            "ratePct": 2.6,
+            "wilson95Pct": [
+              1.69,
+              3.98
+            ]
+          },
+          "strongValue": {
+            "count": 605,
+            "opportunities": 889,
+            "ratePct": 68.05,
+            "wilson95Pct": [
+              64.92,
+              71.04
+            ]
+          },
+          "trap": {
+            "count": 278,
+            "opportunities": 889,
+            "ratePct": 31.27,
+            "wilson95Pct": [
+              28.31,
+              34.39
+            ]
+          }
+        }
+      },
+      "sizing": {
+        "flop": {
+          "totalAggressions": 577,
+          "underbet": {
+            "count": 125,
+            "opportunities": 577,
+            "ratePct": 21.66,
+            "wilson95Pct": [
+              18.5,
+              25.21
+            ]
+          },
+          "standard": {
+            "count": 448,
+            "opportunities": 577,
+            "ratePct": 77.64,
+            "wilson95Pct": [
+              74.07,
+              80.85
+            ]
+          },
+          "overbet": {
+            "count": 0,
+            "opportunities": 577,
+            "ratePct": 0,
+            "wilson95Pct": [
+              0,
+              0.66
+            ]
+          },
+          "allIn": {
+            "count": 4,
+            "opportunities": 577,
+            "ratePct": 0.69,
+            "wilson95Pct": [
+              0.27,
+              1.77
+            ]
+          }
+        },
+        "turn": {
+          "totalAggressions": 716,
+          "underbet": {
+            "count": 111,
+            "opportunities": 716,
+            "ratePct": 15.5,
+            "wilson95Pct": [
+              13.04,
+              18.34
+            ]
+          },
+          "standard": {
+            "count": 591,
+            "opportunities": 716,
+            "ratePct": 82.54,
+            "wilson95Pct": [
+              79.59,
+              85.15
+            ]
+          },
+          "overbet": {
+            "count": 0,
+            "opportunities": 716,
+            "ratePct": 0,
+            "wilson95Pct": [
+              0,
+              0.53
+            ]
+          },
+          "allIn": {
+            "count": 14,
+            "opportunities": 716,
+            "ratePct": 1.96,
+            "wilson95Pct": [
+              1.17,
+              3.26
+            ]
+          }
+        },
+        "river": {
+          "totalAggressions": 728,
+          "underbet": {
+            "count": 0,
+            "opportunities": 728,
+            "ratePct": 0,
+            "wilson95Pct": [
+              0,
+              0.52
+            ]
+          },
+          "standard": {
+            "count": 304,
+            "opportunities": 728,
+            "ratePct": 41.76,
+            "wilson95Pct": [
+              38.23,
+              45.37
+            ]
+          },
+          "overbet": {
+            "count": 376,
+            "opportunities": 728,
+            "ratePct": 51.65,
+            "wilson95Pct": [
+              48.02,
+              55.26
+            ]
+          },
+          "allIn": {
+            "count": 48,
+            "opportunities": 728,
+            "ratePct": 6.59,
+            "wilson95Pct": [
+              5.01,
+              8.63
+            ]
+          }
+        }
+      }
+    },
+    "value": {
+      "hands": 16000,
+      "decisions": 25711,
+      "vpip": {
+        "count": 4545,
+        "opportunities": 16000,
+        "ratePct": 28.41,
+        "wilson95Pct": [
+          27.71,
+          29.11
+        ]
+      },
+      "pfr": {
+        "count": 2957,
+        "opportunities": 16000,
+        "ratePct": 18.48,
+        "wilson95Pct": [
+          17.89,
+          19.09
+        ]
+      },
+      "threeBet": {
+        "count": 581,
+        "opportunities": 6491,
+        "ratePct": 8.95,
+        "wilson95Pct": [
+          8.28,
+          9.67
+        ]
+      },
+      "classes": {
+        "flop": {
+          "pureBluff": {
+            "count": 70,
+            "opportunities": 1256,
+            "ratePct": 5.57,
+            "wilson95Pct": [
+              4.43,
+              6.98
+            ]
+          },
+          "semiBluff": {
+            "count": 121,
+            "opportunities": 603,
+            "ratePct": 20.07,
+            "wilson95Pct": [
+              17.06,
+              23.45
+            ]
+          },
+          "thinValue": {
+            "count": 86,
+            "opportunities": 1252,
+            "ratePct": 6.87,
+            "wilson95Pct": [
+              5.6,
+              8.41
+            ]
+          },
+          "strongValue": {
+            "count": 198,
+            "opportunities": 288,
+            "ratePct": 68.75,
+            "wilson95Pct": [
+              63.18,
+              73.83
+            ]
+          },
+          "trap": {
+            "count": 88,
+            "opportunities": 288,
+            "ratePct": 30.56,
+            "wilson95Pct": [
+              25.52,
+              36.1
+            ]
+          }
+        },
+        "turn": {
+          "pureBluff": {
+            "count": 37,
+            "opportunities": 565,
+            "ratePct": 6.55,
+            "wilson95Pct": [
+              4.79,
+              8.9
+            ]
+          },
+          "semiBluff": {
+            "count": 122,
+            "opportunities": 965,
+            "ratePct": 12.64,
+            "wilson95Pct": [
+              10.69,
+              14.89
+            ]
+          },
+          "thinValue": {
+            "count": 42,
+            "opportunities": 1009,
+            "ratePct": 4.16,
+            "wilson95Pct": [
+              3.09,
+              5.58
+            ]
+          },
+          "strongValue": {
+            "count": 390,
+            "opportunities": 570,
+            "ratePct": 68.42,
+            "wilson95Pct": [
+              64.49,
+              72.1
+            ]
+          },
+          "trap": {
+            "count": 179,
+            "opportunities": 570,
+            "ratePct": 31.4,
+            "wilson95Pct": [
+              27.73,
+              35.33
+            ]
+          }
+        },
+        "river": {
+          "pureBluff": {
+            "count": 17,
+            "opportunities": 250,
+            "ratePct": 6.8,
+            "wilson95Pct": [
+              4.29,
+              10.62
+            ]
+          },
+          "semiBluff": {
+            "count": 94,
+            "opportunities": 884,
+            "ratePct": 10.63,
+            "wilson95Pct": [
+              8.77,
+              12.84
+            ]
+          },
+          "thinValue": {
+            "count": 21,
+            "opportunities": 703,
+            "ratePct": 2.99,
+            "wilson95Pct": [
+              1.96,
+              4.52
+            ]
+          },
+          "strongValue": {
+            "count": 563,
+            "opportunities": 842,
+            "ratePct": 66.86,
+            "wilson95Pct": [
+              63.61,
+              69.96
+            ]
+          },
+          "trap": {
+            "count": 271,
+            "opportunities": 842,
+            "ratePct": 32.19,
+            "wilson95Pct": [
+              29.12,
+              35.42
+            ]
+          }
+        }
+      },
+      "sizing": {
+        "flop": {
+          "totalAggressions": 475,
+          "underbet": {
+            "count": 102,
+            "opportunities": 475,
+            "ratePct": 21.47,
+            "wilson95Pct": [
+              18.02,
+              25.39
+            ]
+          },
+          "standard": {
+            "count": 371,
+            "opportunities": 475,
+            "ratePct": 78.11,
+            "wilson95Pct": [
+              74.17,
+              81.59
+            ]
+          },
+          "overbet": {
+            "count": 0,
+            "opportunities": 475,
+            "ratePct": 0,
+            "wilson95Pct": [
+              0,
+              0.8
+            ]
+          },
+          "allIn": {
+            "count": 2,
+            "opportunities": 475,
+            "ratePct": 0.42,
+            "wilson95Pct": [
+              0.12,
+              1.52
+            ]
+          }
+        },
+        "turn": {
+          "totalAggressions": 591,
+          "underbet": {
+            "count": 110,
+            "opportunities": 591,
+            "ratePct": 18.61,
+            "wilson95Pct": [
+              15.68,
+              21.95
+            ]
+          },
+          "standard": {
+            "count": 475,
+            "opportunities": 591,
+            "ratePct": 80.37,
+            "wilson95Pct": [
+              76.98,
+              83.37
+            ]
+          },
+          "overbet": {
+            "count": 1,
+            "opportunities": 591,
+            "ratePct": 0.17,
+            "wilson95Pct": [
+              0.03,
+              0.95
+            ]
+          },
+          "allIn": {
+            "count": 5,
+            "opportunities": 591,
+            "ratePct": 0.85,
+            "wilson95Pct": [
+              0.36,
+              1.97
+            ]
+          }
+        },
+        "river": {
+          "totalAggressions": 695,
+          "underbet": {
+            "count": 0,
+            "opportunities": 695,
+            "ratePct": 0,
+            "wilson95Pct": [
+              0,
+              0.55
+            ]
+          },
+          "standard": {
+            "count": 318,
+            "opportunities": 695,
+            "ratePct": 45.76,
+            "wilson95Pct": [
+              42.08,
+              49.47
+            ]
+          },
+          "overbet": {
+            "count": 352,
+            "opportunities": 695,
+            "ratePct": 50.65,
+            "wilson95Pct": [
+              46.94,
+              54.35
+            ]
+          },
+          "allIn": {
+            "count": 25,
+            "opportunities": 695,
+            "ratePct": 3.6,
+            "wilson95Pct": [
+              2.45,
+              5.26
+            ]
+          }
+        }
+      }
+    },
+    "trap": {
+      "hands": 16000,
+      "decisions": 26501,
+      "vpip": {
+        "count": 4795,
+        "opportunities": 16000,
+        "ratePct": 29.97,
+        "wilson95Pct": [
+          29.26,
+          30.68
+        ]
+      },
+      "pfr": {
+        "count": 3119,
+        "opportunities": 16000,
+        "ratePct": 19.49,
+        "wilson95Pct": [
+          18.89,
+          20.11
+        ]
+      },
+      "threeBet": {
+        "count": 608,
+        "opportunities": 6501,
+        "ratePct": 9.35,
+        "wilson95Pct": [
+          8.67,
+          10.08
+        ]
+      },
+      "classes": {
+        "flop": {
+          "pureBluff": {
+            "count": 50,
+            "opportunities": 1353,
+            "ratePct": 3.7,
+            "wilson95Pct": [
+              2.81,
+              4.84
+            ]
+          },
+          "semiBluff": {
+            "count": 97,
+            "opportunities": 643,
+            "ratePct": 15.09,
+            "wilson95Pct": [
+              12.53,
+              18.06
+            ]
+          },
+          "thinValue": {
+            "count": 62,
+            "opportunities": 1286,
+            "ratePct": 4.82,
+            "wilson95Pct": [
+              3.78,
+              6.13
+            ]
+          },
+          "strongValue": {
+            "count": 236,
+            "opportunities": 325,
+            "ratePct": 72.62,
+            "wilson95Pct": [
+              67.52,
+              77.18
+            ]
+          },
+          "trap": {
+            "count": 88,
+            "opportunities": 325,
+            "ratePct": 27.08,
+            "wilson95Pct": [
+              22.53,
+              32.15
+            ]
+          }
+        },
+        "turn": {
+          "pureBluff": {
+            "count": 29,
+            "opportunities": 601,
+            "ratePct": 4.83,
+            "wilson95Pct": [
+              3.38,
+              6.84
+            ]
+          },
+          "semiBluff": {
+            "count": 151,
+            "opportunities": 1027,
+            "ratePct": 14.7,
+            "wilson95Pct": [
+              12.67,
+              17
+            ]
+          },
+          "thinValue": {
+            "count": 40,
+            "opportunities": 1120,
+            "ratePct": 3.57,
+            "wilson95Pct": [
+              2.63,
+              4.83
+            ]
+          },
+          "strongValue": {
+            "count": 425,
+            "opportunities": 609,
+            "ratePct": 69.79,
+            "wilson95Pct": [
+              66.02,
+              73.3
+            ]
+          },
+          "trap": {
+            "count": 182,
+            "opportunities": 609,
+            "ratePct": 29.89,
+            "wilson95Pct": [
+              26.38,
+              33.64
+            ]
+          }
+        },
+        "river": {
+          "pureBluff": {
+            "count": 11,
+            "opportunities": 254,
+            "ratePct": 4.33,
+            "wilson95Pct": [
+              2.44,
+              7.59
+            ]
+          },
+          "semiBluff": {
+            "count": 85,
+            "opportunities": 933,
+            "ratePct": 9.11,
+            "wilson95Pct": [
+              7.43,
+              11.13
+            ]
+          },
+          "thinValue": {
+            "count": 23,
+            "opportunities": 750,
+            "ratePct": 3.07,
+            "wilson95Pct": [
+              2.05,
+              4.56
+            ]
+          },
+          "strongValue": {
+            "count": 612,
+            "opportunities": 942,
+            "ratePct": 64.97,
+            "wilson95Pct": [
+              61.87,
+              67.95
+            ]
+          },
+          "trap": {
+            "count": 325,
+            "opportunities": 942,
+            "ratePct": 34.5,
+            "wilson95Pct": [
+              31.53,
+              37.59
+            ]
+          }
+        }
+      },
+      "sizing": {
+        "flop": {
+          "totalAggressions": 445,
+          "underbet": {
+            "count": 96,
+            "opportunities": 445,
+            "ratePct": 21.57,
+            "wilson95Pct": [
+              18,
+              25.63
+            ]
+          },
+          "standard": {
+            "count": 348,
+            "opportunities": 445,
+            "ratePct": 78.2,
+            "wilson95Pct": [
+              74.13,
+              81.79
+            ]
+          },
+          "overbet": {
+            "count": 0,
+            "opportunities": 445,
+            "ratePct": 0,
+            "wilson95Pct": [
+              0,
+              0.86
+            ]
+          },
+          "allIn": {
+            "count": 1,
+            "opportunities": 445,
+            "ratePct": 0.22,
+            "wilson95Pct": [
+              0.04,
+              1.26
+            ]
+          }
+        },
+        "turn": {
+          "totalAggressions": 645,
+          "underbet": {
+            "count": 118,
+            "opportunities": 645,
+            "ratePct": 18.29,
+            "wilson95Pct": [
+              15.5,
+              21.46
+            ]
+          },
+          "standard": {
+            "count": 520,
+            "opportunities": 645,
+            "ratePct": 80.62,
+            "wilson95Pct": [
+              77.39,
+              83.49
+            ]
+          },
+          "overbet": {
+            "count": 0,
+            "opportunities": 645,
+            "ratePct": 0,
+            "wilson95Pct": [
+              0,
+              0.59
+            ]
+          },
+          "allIn": {
+            "count": 7,
+            "opportunities": 645,
+            "ratePct": 1.09,
+            "wilson95Pct": [
+              0.53,
+              2.22
+            ]
+          }
+        },
+        "river": {
+          "totalAggressions": 731,
+          "underbet": {
+            "count": 0,
+            "opportunities": 731,
+            "ratePct": 0,
+            "wilson95Pct": [
+              0,
+              0.52
+            ]
+          },
+          "standard": {
+            "count": 319,
+            "opportunities": 731,
+            "ratePct": 43.64,
+            "wilson95Pct": [
+              40.09,
+              47.26
+            ]
+          },
+          "overbet": {
+            "count": 381,
+            "opportunities": 731,
+            "ratePct": 52.12,
+            "wilson95Pct": [
+              48.5,
+              55.72
+            ]
+          },
+          "allIn": {
+            "count": 31,
+            "opportunities": 731,
+            "ratePct": 4.24,
+            "wilson95Pct": [
+              3,
+              5.96
+            ]
+          }
+        }
+      }
+    },
+    "nit": {
+      "hands": 16000,
+      "decisions": 25706,
+      "vpip": {
+        "count": 4371,
+        "opportunities": 16000,
+        "ratePct": 27.32,
+        "wilson95Pct": [
+          26.63,
+          28.01
+        ]
+      },
+      "pfr": {
+        "count": 2823,
+        "opportunities": 16000,
+        "ratePct": 17.64,
+        "wilson95Pct": [
+          17.06,
+          18.24
+        ]
+      },
+      "threeBet": {
+        "count": 525,
+        "opportunities": 6550,
+        "ratePct": 8.02,
+        "wilson95Pct": [
+          7.38,
+          8.7
+        ]
+      },
+      "classes": {
+        "flop": {
+          "pureBluff": {
+            "count": 36,
+            "opportunities": 1231,
+            "ratePct": 2.92,
+            "wilson95Pct": [
+              2.12,
+              4.02
+            ]
+          },
+          "semiBluff": {
+            "count": 91,
+            "opportunities": 540,
+            "ratePct": 16.85,
+            "wilson95Pct": [
+              13.93,
+              20.24
+            ]
+          },
+          "thinValue": {
+            "count": 74,
+            "opportunities": 1251,
+            "ratePct": 5.92,
+            "wilson95Pct": [
+              4.74,
+              7.36
+            ]
+          },
+          "strongValue": {
+            "count": 208,
+            "opportunities": 291,
+            "ratePct": 71.48,
+            "wilson95Pct": [
+              66.04,
+              76.36
+            ]
+          },
+          "trap": {
+            "count": 83,
+            "opportunities": 291,
+            "ratePct": 28.52,
+            "wilson95Pct": [
+              23.64,
+              33.96
+            ]
+          }
+        },
+        "turn": {
+          "pureBluff": {
+            "count": 12,
+            "opportunities": 550,
+            "ratePct": 2.18,
+            "wilson95Pct": [
+              1.25,
+              3.77
+            ]
+          },
+          "semiBluff": {
+            "count": 115,
+            "opportunities": 941,
+            "ratePct": 12.22,
+            "wilson95Pct": [
+              10.28,
+              14.47
+            ]
+          },
+          "thinValue": {
+            "count": 51,
+            "opportunities": 1028,
+            "ratePct": 4.96,
+            "wilson95Pct": [
+              3.79,
+              6.46
+            ]
+          },
+          "strongValue": {
+            "count": 379,
+            "opportunities": 580,
+            "ratePct": 65.34,
+            "wilson95Pct": [
+              61.38,
+              69.11
+            ]
+          },
+          "trap": {
+            "count": 197,
+            "opportunities": 580,
+            "ratePct": 33.97,
+            "wilson95Pct": [
+              30.23,
+              37.91
+            ]
+          }
+        },
+        "river": {
+          "pureBluff": {
+            "count": 2,
+            "opportunities": 191,
+            "ratePct": 1.05,
+            "wilson95Pct": [
+              0.29,
+              3.74
+            ]
+          },
+          "semiBluff": {
+            "count": 78,
+            "opportunities": 904,
+            "ratePct": 8.63,
+            "wilson95Pct": [
+              6.97,
+              10.64
+            ]
+          },
+          "thinValue": {
+            "count": 22,
+            "opportunities": 749,
+            "ratePct": 2.94,
+            "wilson95Pct": [
+              1.95,
+              4.41
+            ]
+          },
+          "strongValue": {
+            "count": 549,
+            "opportunities": 862,
+            "ratePct": 63.69,
+            "wilson95Pct": [
+              60.42,
+              66.83
+            ]
+          },
+          "trap": {
+            "count": 310,
+            "opportunities": 862,
+            "ratePct": 35.96,
+            "wilson95Pct": [
+              32.83,
+              39.22
+            ]
+          }
+        }
+      },
+      "sizing": {
+        "flop": {
+          "totalAggressions": 409,
+          "underbet": {
+            "count": 81,
+            "opportunities": 409,
+            "ratePct": 19.8,
+            "wilson95Pct": [
+              16.23,
+              23.94
+            ]
+          },
+          "standard": {
+            "count": 325,
+            "opportunities": 409,
+            "ratePct": 79.46,
+            "wilson95Pct": [
+              75.28,
+              83.09
+            ]
+          },
+          "overbet": {
+            "count": 0,
+            "opportunities": 409,
+            "ratePct": 0,
+            "wilson95Pct": [
+              0,
+              0.93
+            ]
+          },
+          "allIn": {
+            "count": 3,
+            "opportunities": 409,
+            "ratePct": 0.73,
+            "wilson95Pct": [
+              0.25,
+              2.13
+            ]
+          }
+        },
+        "turn": {
+          "totalAggressions": 557,
+          "underbet": {
+            "count": 86,
+            "opportunities": 557,
+            "ratePct": 15.44,
+            "wilson95Pct": [
+              12.68,
+              18.68
+            ]
+          },
+          "standard": {
+            "count": 464,
+            "opportunities": 557,
+            "ratePct": 83.3,
+            "wilson95Pct": [
+              79.98,
+              86.17
+            ]
+          },
+          "overbet": {
+            "count": 0,
+            "opportunities": 557,
+            "ratePct": 0,
+            "wilson95Pct": [
+              0,
+              0.68
+            ]
+          },
+          "allIn": {
+            "count": 7,
+            "opportunities": 557,
+            "ratePct": 1.26,
+            "wilson95Pct": [
+              0.61,
+              2.57
+            ]
+          }
+        },
+        "river": {
+          "totalAggressions": 651,
+          "underbet": {
+            "count": 0,
+            "opportunities": 651,
+            "ratePct": 0,
+            "wilson95Pct": [
+              0,
+              0.59
+            ]
+          },
+          "standard": {
+            "count": 294,
+            "opportunities": 651,
+            "ratePct": 45.16,
+            "wilson95Pct": [
+              41.38,
+              49
+            ]
+          },
+          "overbet": {
+            "count": 328,
+            "opportunities": 651,
+            "ratePct": 50.38,
+            "wilson95Pct": [
+              46.55,
+              54.21
+            ]
+          },
+          "allIn": {
+            "count": 29,
+            "opportunities": 651,
+            "ratePct": 4.45,
+            "wilson95Pct": [
+              3.12,
+              6.32
+            ]
+          }
+        }
+      }
+    }
+  },
+  "conclusion": "**Not supported literally.** All personas voluntarily entered a material share of hands (pooled VPIP range **27.32%–30.81%**), and the logged postflop tables contain non-zero pure- and semi-bluff aggression. The narrower impression that the pool is selective has some support only in the relative sense shown by persona/table VPIP and PFR; the telemetry cannot call every entered hand “strong” because preflop strength was not part of the requested postflop operational classifier."
+}

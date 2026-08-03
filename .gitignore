@@ -1,0 +1,6 @@
+*.zip
+*.wasm
+*.gz
+*.d.ts
+spikes/001-rs-poker-integration/wasm-core/pkg/
+spikes/001-rs-poker-integration/wasm-core/pkg-node/

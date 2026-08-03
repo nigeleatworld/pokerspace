@@ -1,0 +1,14 @@
+[package]
+name = "rs-poker-river-room-probe"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+async-trait = "0.1"
+rand = "0.10.1"
+tokio = { version = "1.43", features = ["rt-multi-thread", "macros", "time"] }
+rs_poker = { git = "https://github.com/elliottneilclark/rs-poker", rev = "c9fff5de185ece2c148e6bd84c552b3ac93ec060", default-features = false, features = ["arena", "serde"] }
+
+# Consumer-side workaround required before rand/getrandom will target browsers.
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+getrandom = { version = "0.4", features = ["wasm_js"] }

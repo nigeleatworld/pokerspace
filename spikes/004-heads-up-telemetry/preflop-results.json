@@ -1,0 +1,1999 @@
+{
+  "runAt": "2026-08-02T06:21:52.128Z",
+  "coreSha256": "4752b94934c65e9071f31386448320621a915e758b3d946b0b9ec6149609fe8d",
+  "config": {
+    "samplesPerOrderedPair": 400,
+    "orderedPairs": 25,
+    "handsPerMode": 60000,
+    "totalHands": 120000,
+    "stacks": [
+      5,
+      10,
+      15,
+      25,
+      40,
+      60
+    ],
+    "styles": [
+      "pressure",
+      "balanced",
+      "value",
+      "trap",
+      "nit"
+    ],
+    "seed": 20260802
+  },
+  "metrics": {
+    "live8|5|pressure|SB": {
+      "decisions": 2000,
+      "raisePct": 60.1,
+      "limpOrCallPct": 30.1,
+      "foldPct": 9.8,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 90.07,
+      "meanRaiseWeightPct": 60.1,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|5|pressure|BB": {
+      "decisions": 1768,
+      "raisePct": 15.38,
+      "limpOrCallPct": 9.22,
+      "foldPct": 49.43,
+      "foldToOpenPct": 74.76,
+      "threeBetPct": 11.29,
+      "callOpenPct": 13.94,
+      "meanContinueWeightPct": 26.59,
+      "meanRaiseWeightPct": 15.15,
+      "positionLabels": {
+        "SB": 259,
+        "BB": 257,
+        "UTG": 255,
+        "MP": 491,
+        "HJ": 255,
+        "CO": 251
+      }
+    },
+    "live8|5|balanced|BB": {
+      "decisions": 1740,
+      "raisePct": 12.7,
+      "limpOrCallPct": 10.98,
+      "foldPct": 50.69,
+      "foldToOpenPct": 76.17,
+      "threeBetPct": 7.34,
+      "callOpenPct": 16.49,
+      "meanContinueWeightPct": 25.82,
+      "meanRaiseWeightPct": 12.69,
+      "positionLabels": {
+        "BB": 247,
+        "UTG": 253,
+        "MP": 498,
+        "HJ": 248,
+        "CO": 246,
+        "SB": 248
+      }
+    },
+    "live8|5|value|BB": {
+      "decisions": 1786,
+      "raisePct": 11.31,
+      "limpOrCallPct": 10.41,
+      "foldPct": 53.19,
+      "foldToOpenPct": 76.43,
+      "threeBetPct": 8.61,
+      "callOpenPct": 14.96,
+      "meanContinueWeightPct": 24.53,
+      "meanRaiseWeightPct": 11.51,
+      "positionLabels": {
+        "SB": 258,
+        "UTG": 246,
+        "MP": 516,
+        "HJ": 262,
+        "CO": 250,
+        "BB": 254
+      }
+    },
+    "live8|5|trap|BB": {
+      "decisions": 1739,
+      "raisePct": 12.88,
+      "limpOrCallPct": 10.7,
+      "foldPct": 50.89,
+      "foldToOpenPct": 74.18,
+      "threeBetPct": 10.23,
+      "callOpenPct": 15.59,
+      "meanContinueWeightPct": 25.91,
+      "meanRaiseWeightPct": 12.95,
+      "positionLabels": {
+        "SB": 247,
+        "UTG": 260,
+        "MP": 484,
+        "HJ": 246,
+        "CO": 257,
+        "BB": 245
+      }
+    },
+    "live8|5|nit|BB": {
+      "decisions": 1751,
+      "raisePct": 10.34,
+      "limpOrCallPct": 9.88,
+      "foldPct": 50.37,
+      "foldToOpenPct": 77.85,
+      "threeBetPct": 6.88,
+      "callOpenPct": 15.27,
+      "meanContinueWeightPct": 22.24,
+      "meanRaiseWeightPct": 10.18,
+      "positionLabels": {
+        "SB": 250,
+        "BB": 237,
+        "UTG": 237,
+        "MP": 512,
+        "HJ": 256,
+        "CO": 259
+      }
+    },
+    "live8|5|balanced|SB": {
+      "decisions": 2000,
+      "raisePct": 59.05,
+      "limpOrCallPct": 28.5,
+      "foldPct": 12.45,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 87.39,
+      "meanRaiseWeightPct": 58.99,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|5|value|SB": {
+      "decisions": 2000,
+      "raisePct": 57.35,
+      "limpOrCallPct": 29.2,
+      "foldPct": 13.45,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 86.92,
+      "meanRaiseWeightPct": 57.14,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|5|trap|SB": {
+      "decisions": 2000,
+      "raisePct": 60.6,
+      "limpOrCallPct": 28,
+      "foldPct": 11.4,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 88.89,
+      "meanRaiseWeightPct": 61.09,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|5|nit|SB": {
+      "decisions": 2000,
+      "raisePct": 57.7,
+      "limpOrCallPct": 28.6,
+      "foldPct": 13.7,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 86.17,
+      "meanRaiseWeightPct": 57.41,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|10|pressure|SB": {
+      "decisions": 2000,
+      "raisePct": 62.1,
+      "limpOrCallPct": 28.35,
+      "foldPct": 9.55,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 90.51,
+      "meanRaiseWeightPct": 62.37,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|10|pressure|BB": {
+      "decisions": 1752,
+      "raisePct": 13.24,
+      "limpOrCallPct": 11.36,
+      "foldPct": 51.03,
+      "foldToOpenPct": 73.16,
+      "threeBetPct": 10.56,
+      "callOpenPct": 16.28,
+      "meanContinueWeightPct": 26.62,
+      "meanRaiseWeightPct": 13.15,
+      "positionLabels": {
+        "SB": 262,
+        "BB": 247,
+        "UTG": 248,
+        "MP": 501,
+        "HJ": 252,
+        "CO": 242
+      }
+    },
+    "live8|10|balanced|BB": {
+      "decisions": 1771,
+      "raisePct": 12.93,
+      "limpOrCallPct": 10.39,
+      "foldPct": 52.29,
+      "foldToOpenPct": 76.03,
+      "threeBetPct": 8.87,
+      "callOpenPct": 15.11,
+      "meanContinueWeightPct": 24.94,
+      "meanRaiseWeightPct": 12.93,
+      "positionLabels": {
+        "SB": 250,
+        "BB": 244,
+        "UTG": 253,
+        "MP": 507,
+        "HJ": 265,
+        "CO": 252
+      }
+    },
+    "live8|10|value|BB": {
+      "decisions": 1759,
+      "raisePct": 12.62,
+      "limpOrCallPct": 10.46,
+      "foldPct": 49.46,
+      "foldToOpenPct": 76.12,
+      "threeBetPct": 7.79,
+      "callOpenPct": 16.1,
+      "meanContinueWeightPct": 25.71,
+      "meanRaiseWeightPct": 12.67,
+      "positionLabels": {
+        "SB": 255,
+        "BB": 241,
+        "UTG": 257,
+        "MP": 504,
+        "HJ": 259,
+        "CO": 243
+      }
+    },
+    "live8|10|trap|BB": {
+      "decisions": 1764,
+      "raisePct": 14.46,
+      "limpOrCallPct": 9.24,
+      "foldPct": 47.96,
+      "foldToOpenPct": 74.67,
+      "threeBetPct": 10.94,
+      "callOpenPct": 14.39,
+      "meanContinueWeightPct": 25.9,
+      "meanRaiseWeightPct": 14.27,
+      "positionLabels": {
+        "SB": 259,
+        "BB": 247,
+        "UTG": 251,
+        "MP": 502,
+        "HJ": 253,
+        "CO": 252
+      }
+    },
+    "live8|10|nit|BB": {
+      "decisions": 1758,
+      "raisePct": 10.75,
+      "limpOrCallPct": 10.3,
+      "foldPct": 52.62,
+      "foldToOpenPct": 78.13,
+      "threeBetPct": 6.59,
+      "callOpenPct": 15.29,
+      "meanContinueWeightPct": 23.11,
+      "meanRaiseWeightPct": 11.06,
+      "positionLabels": {
+        "SB": 252,
+        "BB": 252,
+        "MP": 503,
+        "CO": 256,
+        "UTG": 254,
+        "HJ": 241
+      }
+    },
+    "live8|10|balanced|SB": {
+      "decisions": 2000,
+      "raisePct": 56.4,
+      "limpOrCallPct": 32.1,
+      "foldPct": 11.5,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 88.29,
+      "meanRaiseWeightPct": 56.39,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|10|value|SB": {
+      "decisions": 2000,
+      "raisePct": 61,
+      "limpOrCallPct": 25.8,
+      "foldPct": 13.2,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 86.93,
+      "meanRaiseWeightPct": 61.2,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|10|trap|SB": {
+      "decisions": 2000,
+      "raisePct": 59.1,
+      "limpOrCallPct": 30.15,
+      "foldPct": 10.75,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 88.79,
+      "meanRaiseWeightPct": 58.83,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|10|nit|SB": {
+      "decisions": 2000,
+      "raisePct": 56.4,
+      "limpOrCallPct": 28.8,
+      "foldPct": 14.8,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 85.31,
+      "meanRaiseWeightPct": 56.45,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|15|pressure|SB": {
+      "decisions": 2000,
+      "raisePct": 63.15,
+      "limpOrCallPct": 25.75,
+      "foldPct": 11.1,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 89.2,
+      "meanRaiseWeightPct": 63.44,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|15|pressure|BB": {
+      "decisions": 1770,
+      "raisePct": 14.35,
+      "limpOrCallPct": 11.69,
+      "foldPct": 50.45,
+      "foldToOpenPct": 72.25,
+      "threeBetPct": 11,
+      "callOpenPct": 16.75,
+      "meanContinueWeightPct": 28.04,
+      "meanRaiseWeightPct": 14.37,
+      "positionLabels": {
+        "SB": 255,
+        "UTG": 253,
+        "MP": 505,
+        "HJ": 238,
+        "CO": 260,
+        "BB": 259
+      }
+    },
+    "live8|15|balanced|BB": {
+      "decisions": 1750,
+      "raisePct": 13.66,
+      "limpOrCallPct": 10.17,
+      "foldPct": 50.34,
+      "foldToOpenPct": 74.79,
+      "threeBetPct": 10.1,
+      "callOpenPct": 15.11,
+      "meanContinueWeightPct": 26.41,
+      "meanRaiseWeightPct": 13.81,
+      "positionLabels": {
+        "SB": 249,
+        "BB": 251,
+        "UTG": 251,
+        "MP": 495,
+        "HJ": 255,
+        "CO": 249
+      }
+    },
+    "live8|15|value|BB": {
+      "decisions": 1750,
+      "raisePct": 11.43,
+      "limpOrCallPct": 10.91,
+      "foldPct": 56.23,
+      "foldToOpenPct": 77.18,
+      "threeBetPct": 7.84,
+      "callOpenPct": 14.98,
+      "meanContinueWeightPct": 24.97,
+      "meanRaiseWeightPct": 11.51,
+      "positionLabels": {
+        "BB": 252,
+        "UTG": 244,
+        "MP": 502,
+        "HJ": 249,
+        "CO": 246,
+        "SB": 257
+      }
+    },
+    "live8|15|trap|BB": {
+      "decisions": 1740,
+      "raisePct": 13.45,
+      "limpOrCallPct": 10.86,
+      "foldPct": 48.56,
+      "foldToOpenPct": 72.78,
+      "threeBetPct": 10.94,
+      "callOpenPct": 16.28,
+      "meanContinueWeightPct": 26.37,
+      "meanRaiseWeightPct": 12.95,
+      "positionLabels": {
+        "BB": 252,
+        "UTG": 253,
+        "MP": 494,
+        "HJ": 242,
+        "CO": 245,
+        "SB": 254
+      }
+    },
+    "live8|15|nit|BB": {
+      "decisions": 1739,
+      "raisePct": 10.06,
+      "limpOrCallPct": 10.87,
+      "foldPct": 52.33,
+      "foldToOpenPct": 77.51,
+      "threeBetPct": 6.39,
+      "callOpenPct": 16.1,
+      "meanContinueWeightPct": 23.4,
+      "meanRaiseWeightPct": 10.14,
+      "positionLabels": {
+        "SB": 249,
+        "BB": 237,
+        "UTG": 252,
+        "MP": 509,
+        "CO": 246,
+        "HJ": 246
+      }
+    },
+    "live8|15|balanced|SB": {
+      "decisions": 2000,
+      "raisePct": 59.6,
+      "limpOrCallPct": 27.8,
+      "foldPct": 12.6,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 87.32,
+      "meanRaiseWeightPct": 59.43,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|15|value|SB": {
+      "decisions": 2000,
+      "raisePct": 59.7,
+      "limpOrCallPct": 26.55,
+      "foldPct": 13.75,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 86.21,
+      "meanRaiseWeightPct": 60.07,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|15|trap|SB": {
+      "decisions": 2000,
+      "raisePct": 61.4,
+      "limpOrCallPct": 27.7,
+      "foldPct": 10.9,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 88.51,
+      "meanRaiseWeightPct": 61.49,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|15|nit|SB": {
+      "decisions": 2000,
+      "raisePct": 57.35,
+      "limpOrCallPct": 28.45,
+      "foldPct": 14.2,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 85.68,
+      "meanRaiseWeightPct": 57.33,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|25|pressure|SB": {
+      "decisions": 2000,
+      "raisePct": 59.6,
+      "limpOrCallPct": 29.8,
+      "foldPct": 10.6,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 89.5,
+      "meanRaiseWeightPct": 60.25,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|25|pressure|BB": {
+      "decisions": 1742,
+      "raisePct": 14.29,
+      "limpOrCallPct": 11.19,
+      "foldPct": 48.45,
+      "foldToOpenPct": 72.2,
+      "threeBetPct": 11.12,
+      "callOpenPct": 16.68,
+      "meanContinueWeightPct": 27.74,
+      "meanRaiseWeightPct": 14.5,
+      "positionLabels": {
+        "SB": 255,
+        "BB": 246,
+        "UTG": 251,
+        "MP": 491,
+        "HJ": 248,
+        "CO": 251
+      }
+    },
+    "live8|25|balanced|BB": {
+      "decisions": 1746,
+      "raisePct": 14.78,
+      "limpOrCallPct": 9.91,
+      "foldPct": 50.06,
+      "foldToOpenPct": 73.88,
+      "threeBetPct": 11.5,
+      "callOpenPct": 14.62,
+      "meanContinueWeightPct": 27.27,
+      "meanRaiseWeightPct": 14.81,
+      "positionLabels": {
+        "SB": 257,
+        "BB": 246,
+        "UTG": 252,
+        "MP": 491,
+        "HJ": 250,
+        "CO": 250
+      }
+    },
+    "live8|25|value|BB": {
+      "decisions": 1771,
+      "raisePct": 12.25,
+      "limpOrCallPct": 10.95,
+      "foldPct": 51.27,
+      "foldToOpenPct": 75.73,
+      "threeBetPct": 8.09,
+      "callOpenPct": 16.18,
+      "meanContinueWeightPct": 25.38,
+      "meanRaiseWeightPct": 12.26,
+      "positionLabels": {
+        "SB": 262,
+        "BB": 247,
+        "UTG": 251,
+        "MP": 504,
+        "HJ": 251,
+        "CO": 256
+      }
+    },
+    "live8|25|trap|BB": {
+      "decisions": 1737,
+      "raisePct": 14.28,
+      "limpOrCallPct": 11.05,
+      "foldPct": 49.68,
+      "foldToOpenPct": 73.07,
+      "threeBetPct": 10.67,
+      "callOpenPct": 16.26,
+      "meanContinueWeightPct": 27.3,
+      "meanRaiseWeightPct": 14.36,
+      "positionLabels": {
+        "SB": 247,
+        "BB": 246,
+        "MP": 502,
+        "HJ": 247,
+        "CO": 247,
+        "UTG": 248
+      }
+    },
+    "live8|25|nit|BB": {
+      "decisions": 1739,
+      "raisePct": 8.97,
+      "limpOrCallPct": 11.1,
+      "foldPct": 53.13,
+      "foldToOpenPct": 77.45,
+      "threeBetPct": 6.37,
+      "callOpenPct": 16.18,
+      "meanContinueWeightPct": 22.06,
+      "meanRaiseWeightPct": 9.45,
+      "positionLabels": {
+        "SB": 250,
+        "BB": 244,
+        "MP": 498,
+        "HJ": 252,
+        "UTG": 244,
+        "CO": 251
+      }
+    },
+    "live8|25|balanced|SB": {
+      "decisions": 2000,
+      "raisePct": 61.5,
+      "limpOrCallPct": 26.75,
+      "foldPct": 11.75,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 87.91,
+      "meanRaiseWeightPct": 61.75,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|25|value|SB": {
+      "decisions": 2000,
+      "raisePct": 58.95,
+      "limpOrCallPct": 27.55,
+      "foldPct": 13.5,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 86.36,
+      "meanRaiseWeightPct": 58.68,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|25|trap|SB": {
+      "decisions": 2000,
+      "raisePct": 59.55,
+      "limpOrCallPct": 28.5,
+      "foldPct": 11.95,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 87.97,
+      "meanRaiseWeightPct": 59.63,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|25|nit|SB": {
+      "decisions": 2000,
+      "raisePct": 56.65,
+      "limpOrCallPct": 27.9,
+      "foldPct": 15.45,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 84.77,
+      "meanRaiseWeightPct": 56.57,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|40|pressure|SB": {
+      "decisions": 2000,
+      "raisePct": 63,
+      "limpOrCallPct": 26.95,
+      "foldPct": 10.05,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 89.72,
+      "meanRaiseWeightPct": 63.17,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|40|pressure|BB": {
+      "decisions": 1744,
+      "raisePct": 13.59,
+      "limpOrCallPct": 10.61,
+      "foldPct": 51.55,
+      "foldToOpenPct": 74.17,
+      "threeBetPct": 10.56,
+      "callOpenPct": 15.26,
+      "meanContinueWeightPct": 26.63,
+      "meanRaiseWeightPct": 13.28,
+      "positionLabels": {
+        "BB": 247,
+        "UTG": 259,
+        "MP": 495,
+        "HJ": 247,
+        "CO": 239,
+        "SB": 257
+      }
+    },
+    "live8|40|balanced|BB": {
+      "decisions": 1775,
+      "raisePct": 14.14,
+      "limpOrCallPct": 11.15,
+      "foldPct": 47.21,
+      "foldToOpenPct": 72.24,
+      "threeBetPct": 10.69,
+      "callOpenPct": 17.07,
+      "meanContinueWeightPct": 27.56,
+      "meanRaiseWeightPct": 13.76,
+      "positionLabels": {
+        "SB": 260,
+        "BB": 245,
+        "UTG": 253,
+        "MP": 511,
+        "HJ": 252,
+        "CO": 254
+      }
+    },
+    "live8|40|value|BB": {
+      "decisions": 1767,
+      "raisePct": 11.71,
+      "limpOrCallPct": 11.26,
+      "foldPct": 51.61,
+      "foldToOpenPct": 75.43,
+      "threeBetPct": 8.11,
+      "callOpenPct": 16.46,
+      "meanContinueWeightPct": 25.43,
+      "meanRaiseWeightPct": 11.76,
+      "positionLabels": {
+        "SB": 256,
+        "BB": 259,
+        "UTG": 252,
+        "MP": 501,
+        "HJ": 247,
+        "CO": 252
+      }
+    },
+    "live8|40|trap|BB": {
+      "decisions": 1756,
+      "raisePct": 13.78,
+      "limpOrCallPct": 11.05,
+      "foldPct": 50.4,
+      "foldToOpenPct": 73.75,
+      "threeBetPct": 10.08,
+      "callOpenPct": 16.17,
+      "meanContinueWeightPct": 27.1,
+      "meanRaiseWeightPct": 13.82,
+      "positionLabels": {
+        "SB": 261,
+        "BB": 247,
+        "MP": 502,
+        "HJ": 248,
+        "CO": 252,
+        "UTG": 246
+      }
+    },
+    "live8|40|nit|BB": {
+      "decisions": 1768,
+      "raisePct": 11.6,
+      "limpOrCallPct": 10.69,
+      "foldPct": 52.49,
+      "foldToOpenPct": 76.69,
+      "threeBetPct": 7.69,
+      "callOpenPct": 15.62,
+      "meanContinueWeightPct": 24.96,
+      "meanRaiseWeightPct": 11.86,
+      "positionLabels": {
+        "SB": 254,
+        "BB": 248,
+        "UTG": 258,
+        "MP": 504,
+        "HJ": 247,
+        "CO": 257
+      }
+    },
+    "live8|40|balanced|SB": {
+      "decisions": 2000,
+      "raisePct": 61.7,
+      "limpOrCallPct": 27.05,
+      "foldPct": 11.25,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 88.68,
+      "meanRaiseWeightPct": 61.89,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|40|value|SB": {
+      "decisions": 2000,
+      "raisePct": 57.2,
+      "limpOrCallPct": 29.35,
+      "foldPct": 13.45,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 86.46,
+      "meanRaiseWeightPct": 57.95,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|40|trap|SB": {
+      "decisions": 2000,
+      "raisePct": 61.6,
+      "limpOrCallPct": 27.5,
+      "foldPct": 10.9,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 89.02,
+      "meanRaiseWeightPct": 61.19,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|40|nit|SB": {
+      "decisions": 2000,
+      "raisePct": 56.05,
+      "limpOrCallPct": 30.1,
+      "foldPct": 13.85,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 86.22,
+      "meanRaiseWeightPct": 55.97,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|60|pressure|SB": {
+      "decisions": 2000,
+      "raisePct": 62.65,
+      "limpOrCallPct": 27,
+      "foldPct": 10.35,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 89.74,
+      "meanRaiseWeightPct": 62.71,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|60|pressure|BB": {
+      "decisions": 1759,
+      "raisePct": 15.35,
+      "limpOrCallPct": 10.97,
+      "foldPct": 52.3,
+      "foldToOpenPct": 73.31,
+      "threeBetPct": 11.31,
+      "callOpenPct": 15.38,
+      "meanContinueWeightPct": 28.83,
+      "meanRaiseWeightPct": 15.31,
+      "positionLabels": {
+        "SB": 255,
+        "BB": 249,
+        "UTG": 258,
+        "MP": 498,
+        "HJ": 257,
+        "CO": 242
+      }
+    },
+    "live8|60|balanced|BB": {
+      "decisions": 1750,
+      "raisePct": 13.66,
+      "limpOrCallPct": 10.63,
+      "foldPct": 49.09,
+      "foldToOpenPct": 73.73,
+      "threeBetPct": 10.3,
+      "callOpenPct": 15.97,
+      "meanContinueWeightPct": 26.39,
+      "meanRaiseWeightPct": 13.15,
+      "positionLabels": {
+        "SB": 254,
+        "BB": 244,
+        "MP": 499,
+        "HJ": 247,
+        "CO": 251,
+        "UTG": 255
+      }
+    },
+    "live8|60|value|BB": {
+      "decisions": 1755,
+      "raisePct": 11.51,
+      "limpOrCallPct": 9.63,
+      "foldPct": 51.17,
+      "foldToOpenPct": 78.09,
+      "threeBetPct": 7.22,
+      "callOpenPct": 14.7,
+      "meanContinueWeightPct": 23.17,
+      "meanRaiseWeightPct": 11.49,
+      "positionLabels": {
+        "SB": 252,
+        "BB": 254,
+        "UTG": 256,
+        "MP": 495,
+        "HJ": 247,
+        "CO": 251
+      }
+    },
+    "live8|60|trap|BB": {
+      "decisions": 1769,
+      "raisePct": 12.83,
+      "limpOrCallPct": 10.46,
+      "foldPct": 51.72,
+      "foldToOpenPct": 75.25,
+      "threeBetPct": 9.54,
+      "callOpenPct": 15.21,
+      "meanContinueWeightPct": 25.93,
+      "meanRaiseWeightPct": 12.79,
+      "positionLabels": {
+        "SB": 263,
+        "BB": 245,
+        "UTG": 254,
+        "MP": 492,
+        "HJ": 263,
+        "CO": 252
+      }
+    },
+    "live8|60|nit|BB": {
+      "decisions": 1748,
+      "raisePct": 11.84,
+      "limpOrCallPct": 10.81,
+      "foldPct": 53.26,
+      "foldToOpenPct": 76.12,
+      "threeBetPct": 8.42,
+      "callOpenPct": 15.45,
+      "meanContinueWeightPct": 25.04,
+      "meanRaiseWeightPct": 11.85,
+      "positionLabels": {
+        "SB": 246,
+        "BB": 245,
+        "UTG": 258,
+        "MP": 495,
+        "HJ": 254,
+        "CO": 250
+      }
+    },
+    "live8|60|balanced|SB": {
+      "decisions": 2000,
+      "raisePct": 59.85,
+      "limpOrCallPct": 27.8,
+      "foldPct": 12.35,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 87.63,
+      "meanRaiseWeightPct": 59.68,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|60|value|SB": {
+      "decisions": 2000,
+      "raisePct": 59.7,
+      "limpOrCallPct": 28,
+      "foldPct": 12.3,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 87.57,
+      "meanRaiseWeightPct": 60.03,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|60|trap|SB": {
+      "decisions": 2000,
+      "raisePct": 61.3,
+      "limpOrCallPct": 27.4,
+      "foldPct": 11.3,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 88.6,
+      "meanRaiseWeightPct": 61.51,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "live8|60|nit|SB": {
+      "decisions": 2000,
+      "raisePct": 56.95,
+      "limpOrCallPct": 28.4,
+      "foldPct": 14.65,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 85.25,
+      "meanRaiseWeightPct": 57.1,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|5|pressure|SB": {
+      "decisions": 2000,
+      "raisePct": 61.5,
+      "limpOrCallPct": 27.9,
+      "foldPct": 10.6,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 89.59,
+      "meanRaiseWeightPct": 61.7,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|5|pressure|BB": {
+      "decisions": 1745,
+      "raisePct": 15.99,
+      "limpOrCallPct": 31.23,
+      "foldPct": 25.67,
+      "foldToOpenPct": 38.52,
+      "threeBetPct": 14.62,
+      "callOpenPct": 46.86,
+      "meanContinueWeightPct": 49.94,
+      "meanRaiseWeightPct": 15.8,
+      "positionLabels": {
+        "BB": 1745
+      }
+    },
+    "correctedHU|5|balanced|BB": {
+      "decisions": 1753,
+      "raisePct": 15.29,
+      "limpOrCallPct": 33.26,
+      "foldPct": 26.35,
+      "foldToOpenPct": 37.87,
+      "threeBetPct": 14.34,
+      "callOpenPct": 47.79,
+      "meanContinueWeightPct": 51.05,
+      "meanRaiseWeightPct": 15.24,
+      "positionLabels": {
+        "BB": 1753
+      }
+    },
+    "correctedHU|5|value|BB": {
+      "decisions": 1778,
+      "raisePct": 13.61,
+      "limpOrCallPct": 30.82,
+      "foldPct": 30.71,
+      "foldToOpenPct": 44.35,
+      "threeBetPct": 11.13,
+      "callOpenPct": 44.52,
+      "meanContinueWeightPct": 47.08,
+      "meanRaiseWeightPct": 14.17,
+      "positionLabels": {
+        "BB": 1778
+      }
+    },
+    "correctedHU|5|trap|BB": {
+      "decisions": 1762,
+      "raisePct": 17.37,
+      "limpOrCallPct": 32.18,
+      "foldPct": 25.65,
+      "foldToOpenPct": 37.79,
+      "threeBetPct": 14.8,
+      "callOpenPct": 47.41,
+      "meanContinueWeightPct": 51.95,
+      "meanRaiseWeightPct": 17.52,
+      "positionLabels": {
+        "BB": 1762
+      }
+    },
+    "correctedHU|5|nit|BB": {
+      "decisions": 1767,
+      "raisePct": 15.28,
+      "limpOrCallPct": 32.71,
+      "foldPct": 29.37,
+      "foldToOpenPct": 41.09,
+      "threeBetPct": 13.14,
+      "callOpenPct": 45.76,
+      "meanContinueWeightPct": 50.12,
+      "meanRaiseWeightPct": 15.01,
+      "positionLabels": {
+        "BB": 1767
+      }
+    },
+    "correctedHU|5|balanced|SB": {
+      "decisions": 2000,
+      "raisePct": 65.1,
+      "limpOrCallPct": 23.55,
+      "foldPct": 11.35,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 89,
+      "meanRaiseWeightPct": 65.35,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|5|value|SB": {
+      "decisions": 2000,
+      "raisePct": 60.7,
+      "limpOrCallPct": 27.6,
+      "foldPct": 11.7,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 88.17,
+      "meanRaiseWeightPct": 60.48,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|5|trap|SB": {
+      "decisions": 2000,
+      "raisePct": 59.55,
+      "limpOrCallPct": 28.9,
+      "foldPct": 11.55,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 88.33,
+      "meanRaiseWeightPct": 59.34,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|5|nit|SB": {
+      "decisions": 2000,
+      "raisePct": 56.8,
+      "limpOrCallPct": 28.65,
+      "foldPct": 14.55,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 85.19,
+      "meanRaiseWeightPct": 56.97,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|10|pressure|SB": {
+      "decisions": 2000,
+      "raisePct": 62.85,
+      "limpOrCallPct": 26.1,
+      "foldPct": 11.05,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 88.85,
+      "meanRaiseWeightPct": 62.87,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|10|pressure|BB": {
+      "decisions": 1758,
+      "raisePct": 18.43,
+      "limpOrCallPct": 32.03,
+      "foldPct": 26,
+      "foldToOpenPct": 37.49,
+      "threeBetPct": 16.32,
+      "callOpenPct": 46.19,
+      "meanContinueWeightPct": 52.68,
+      "meanRaiseWeightPct": 18.5,
+      "positionLabels": {
+        "BB": 1758
+      }
+    },
+    "correctedHU|10|balanced|BB": {
+      "decisions": 1759,
+      "raisePct": 15.29,
+      "limpOrCallPct": 32.97,
+      "foldPct": 28.03,
+      "foldToOpenPct": 39.73,
+      "threeBetPct": 13.54,
+      "callOpenPct": 46.74,
+      "meanContinueWeightPct": 49.57,
+      "meanRaiseWeightPct": 14.93,
+      "positionLabels": {
+        "BB": 1759
+      }
+    },
+    "correctedHU|10|value|BB": {
+      "decisions": 1754,
+      "raisePct": 14.2,
+      "limpOrCallPct": 32.78,
+      "foldPct": 28.91,
+      "foldToOpenPct": 41.29,
+      "threeBetPct": 11.89,
+      "callOpenPct": 46.82,
+      "meanContinueWeightPct": 49.44,
+      "meanRaiseWeightPct": 14.02,
+      "positionLabels": {
+        "BB": 1754
+      }
+    },
+    "correctedHU|10|trap|BB": {
+      "decisions": 1771,
+      "raisePct": 17.9,
+      "limpOrCallPct": 28.91,
+      "foldPct": 28.51,
+      "foldToOpenPct": 42.05,
+      "threeBetPct": 15.32,
+      "callOpenPct": 42.63,
+      "meanContinueWeightPct": 48.7,
+      "meanRaiseWeightPct": 17.87,
+      "positionLabels": {
+        "BB": 1771
+      }
+    },
+    "correctedHU|10|nit|BB": {
+      "decisions": 1726,
+      "raisePct": 15.12,
+      "limpOrCallPct": 29.37,
+      "foldPct": 27.64,
+      "foldToOpenPct": 42.32,
+      "threeBetPct": 12.69,
+      "callOpenPct": 44.99,
+      "meanContinueWeightPct": 46.61,
+      "meanRaiseWeightPct": 14.67,
+      "positionLabels": {
+        "BB": 1726
+      }
+    },
+    "correctedHU|10|balanced|SB": {
+      "decisions": 2000,
+      "raisePct": 58.95,
+      "limpOrCallPct": 30.1,
+      "foldPct": 10.95,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 89,
+      "meanRaiseWeightPct": 58.74,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|10|value|SB": {
+      "decisions": 2000,
+      "raisePct": 56.75,
+      "limpOrCallPct": 29,
+      "foldPct": 14.25,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 85.94,
+      "meanRaiseWeightPct": 57.25,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|10|trap|SB": {
+      "decisions": 2000,
+      "raisePct": 61.65,
+      "limpOrCallPct": 27.05,
+      "foldPct": 11.3,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 88.3,
+      "meanRaiseWeightPct": 61.63,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|10|nit|SB": {
+      "decisions": 2000,
+      "raisePct": 60.6,
+      "limpOrCallPct": 25.35,
+      "foldPct": 14.05,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 85.72,
+      "meanRaiseWeightPct": 60.94,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|15|pressure|SB": {
+      "decisions": 2000,
+      "raisePct": 60.8,
+      "limpOrCallPct": 28.35,
+      "foldPct": 10.85,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 89.51,
+      "meanRaiseWeightPct": 61.09,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|15|pressure|BB": {
+      "decisions": 1764,
+      "raisePct": 17.74,
+      "limpOrCallPct": 31.92,
+      "foldPct": 23.58,
+      "foldToOpenPct": 35.77,
+      "threeBetPct": 15.82,
+      "callOpenPct": 48.41,
+      "meanContinueWeightPct": 52.33,
+      "meanRaiseWeightPct": 17.7,
+      "positionLabels": {
+        "BB": 1764
+      }
+    },
+    "correctedHU|15|balanced|BB": {
+      "decisions": 1759,
+      "raisePct": 15.86,
+      "limpOrCallPct": 34.39,
+      "foldPct": 25.7,
+      "foldToOpenPct": 36.39,
+      "threeBetPct": 14.9,
+      "callOpenPct": 48.71,
+      "meanContinueWeightPct": 52.78,
+      "meanRaiseWeightPct": 16.12,
+      "positionLabels": {
+        "BB": 1759
+      }
+    },
+    "correctedHU|15|value|BB": {
+      "decisions": 1759,
+      "raisePct": 12.79,
+      "limpOrCallPct": 35.47,
+      "foldPct": 26.83,
+      "foldToOpenPct": 38.25,
+      "threeBetPct": 11.18,
+      "callOpenPct": 50.57,
+      "meanContinueWeightPct": 50.37,
+      "meanRaiseWeightPct": 13.32,
+      "positionLabels": {
+        "BB": 1759
+      }
+    },
+    "correctedHU|15|trap|BB": {
+      "decisions": 1775,
+      "raisePct": 16.56,
+      "limpOrCallPct": 34.7,
+      "foldPct": 27.77,
+      "foldToOpenPct": 38.16,
+      "threeBetPct": 14.16,
+      "callOpenPct": 47.68,
+      "meanContinueWeightPct": 53.39,
+      "meanRaiseWeightPct": 16.37,
+      "positionLabels": {
+        "BB": 1775
+      }
+    },
+    "correctedHU|15|nit|BB": {
+      "decisions": 1753,
+      "raisePct": 13.52,
+      "limpOrCallPct": 31.26,
+      "foldPct": 27.21,
+      "foldToOpenPct": 41.44,
+      "threeBetPct": 10.95,
+      "callOpenPct": 47.61,
+      "meanContinueWeightPct": 47.52,
+      "meanRaiseWeightPct": 13.72,
+      "positionLabels": {
+        "BB": 1753
+      }
+    },
+    "correctedHU|15|balanced|SB": {
+      "decisions": 2000,
+      "raisePct": 62.25,
+      "limpOrCallPct": 25.95,
+      "foldPct": 11.8,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 88.1,
+      "meanRaiseWeightPct": 62.21,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|15|value|SB": {
+      "decisions": 2000,
+      "raisePct": 60.85,
+      "limpOrCallPct": 26.3,
+      "foldPct": 12.85,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 86.86,
+      "meanRaiseWeightPct": 60.85,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|15|trap|SB": {
+      "decisions": 2000,
+      "raisePct": 61.15,
+      "limpOrCallPct": 28.2,
+      "foldPct": 10.65,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 89.06,
+      "meanRaiseWeightPct": 60.5,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|15|nit|SB": {
+      "decisions": 2000,
+      "raisePct": 59.05,
+      "limpOrCallPct": 27.6,
+      "foldPct": 13.35,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 86.6,
+      "meanRaiseWeightPct": 58.78,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|25|pressure|SB": {
+      "decisions": 2000,
+      "raisePct": 63,
+      "limpOrCallPct": 26.65,
+      "foldPct": 10.35,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 89.78,
+      "meanRaiseWeightPct": 63.02,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|25|pressure|BB": {
+      "decisions": 1754,
+      "raisePct": 17.1,
+      "limpOrCallPct": 34.04,
+      "foldPct": 25.66,
+      "foldToOpenPct": 37.1,
+      "threeBetPct": 13.69,
+      "callOpenPct": 49.22,
+      "meanContinueWeightPct": 53.33,
+      "meanRaiseWeightPct": 17.14,
+      "positionLabels": {
+        "BB": 1754
+      }
+    },
+    "correctedHU|25|balanced|BB": {
+      "decisions": 1750,
+      "raisePct": 16.74,
+      "limpOrCallPct": 34.06,
+      "foldPct": 26.46,
+      "foldToOpenPct": 37.52,
+      "threeBetPct": 14.18,
+      "callOpenPct": 48.3,
+      "meanContinueWeightPct": 52.95,
+      "meanRaiseWeightPct": 16.58,
+      "positionLabels": {
+        "BB": 1750
+      }
+    },
+    "correctedHU|25|value|BB": {
+      "decisions": 1750,
+      "raisePct": 13.83,
+      "limpOrCallPct": 33.77,
+      "foldPct": 26.91,
+      "foldToOpenPct": 38.77,
+      "threeBetPct": 12.59,
+      "callOpenPct": 48.64,
+      "meanContinueWeightPct": 49.97,
+      "meanRaiseWeightPct": 13.78,
+      "positionLabels": {
+        "BB": 1750
+      }
+    },
+    "correctedHU|25|trap|BB": {
+      "decisions": 1763,
+      "raisePct": 17.07,
+      "limpOrCallPct": 33.41,
+      "foldPct": 26.15,
+      "foldToOpenPct": 36.91,
+      "threeBetPct": 15.93,
+      "callOpenPct": 47.16,
+      "meanContinueWeightPct": 52.77,
+      "meanRaiseWeightPct": 17.04,
+      "positionLabels": {
+        "BB": 1763
+      }
+    },
+    "correctedHU|25|nit|BB": {
+      "decisions": 1747,
+      "raisePct": 13.85,
+      "limpOrCallPct": 32.4,
+      "foldPct": 27.88,
+      "foldToOpenPct": 41.52,
+      "threeBetPct": 10.23,
+      "callOpenPct": 48.25,
+      "meanContinueWeightPct": 48.84,
+      "meanRaiseWeightPct": 13.63,
+      "positionLabels": {
+        "BB": 1747
+      }
+    },
+    "correctedHU|25|balanced|SB": {
+      "decisions": 2000,
+      "raisePct": 60.4,
+      "limpOrCallPct": 27.85,
+      "foldPct": 11.75,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 88.16,
+      "meanRaiseWeightPct": 60.24,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|25|value|SB": {
+      "decisions": 2000,
+      "raisePct": 62.4,
+      "limpOrCallPct": 24.1,
+      "foldPct": 13.5,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 86.3,
+      "meanRaiseWeightPct": 62.31,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|25|trap|SB": {
+      "decisions": 2000,
+      "raisePct": 59.85,
+      "limpOrCallPct": 28.45,
+      "foldPct": 11.7,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 88.53,
+      "meanRaiseWeightPct": 60.01,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|25|nit|SB": {
+      "decisions": 2000,
+      "raisePct": 58.55,
+      "limpOrCallPct": 26.95,
+      "foldPct": 14.5,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 85.56,
+      "meanRaiseWeightPct": 58.83,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|40|pressure|SB": {
+      "decisions": 2000,
+      "raisePct": 60.75,
+      "limpOrCallPct": 28.9,
+      "foldPct": 10.35,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 89.54,
+      "meanRaiseWeightPct": 60.54,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|40|pressure|BB": {
+      "decisions": 1754,
+      "raisePct": 18.13,
+      "limpOrCallPct": 33.18,
+      "foldPct": 24.63,
+      "foldToOpenPct": 36.09,
+      "threeBetPct": 15.29,
+      "callOpenPct": 48.62,
+      "meanContinueWeightPct": 53.09,
+      "meanRaiseWeightPct": 17.84,
+      "positionLabels": {
+        "BB": 1754
+      }
+    },
+    "correctedHU|40|balanced|BB": {
+      "decisions": 1738,
+      "raisePct": 16.74,
+      "limpOrCallPct": 31.13,
+      "foldPct": 26.7,
+      "foldToOpenPct": 39.39,
+      "threeBetPct": 14.69,
+      "callOpenPct": 45.93,
+      "meanContinueWeightPct": 50.03,
+      "meanRaiseWeightPct": 15.66,
+      "positionLabels": {
+        "BB": 1738
+      }
+    },
+    "correctedHU|40|value|BB": {
+      "decisions": 1756,
+      "raisePct": 15.09,
+      "limpOrCallPct": 29.21,
+      "foldPct": 27.05,
+      "foldToOpenPct": 41.38,
+      "threeBetPct": 13.94,
+      "callOpenPct": 44.69,
+      "meanContinueWeightPct": 47.18,
+      "meanRaiseWeightPct": 15.11,
+      "positionLabels": {
+        "BB": 1756
+      }
+    },
+    "correctedHU|40|trap|BB": {
+      "decisions": 1750,
+      "raisePct": 15.77,
+      "limpOrCallPct": 35.09,
+      "foldPct": 24.4,
+      "foldToOpenPct": 35.49,
+      "threeBetPct": 13.47,
+      "callOpenPct": 51.04,
+      "meanContinueWeightPct": 53,
+      "meanRaiseWeightPct": 16.1,
+      "positionLabels": {
+        "BB": 1750
+      }
+    },
+    "correctedHU|40|nit|BB": {
+      "decisions": 1746,
+      "raisePct": 13.12,
+      "limpOrCallPct": 34.99,
+      "foldPct": 26.63,
+      "foldToOpenPct": 38.33,
+      "threeBetPct": 11.29,
+      "callOpenPct": 50.37,
+      "meanContinueWeightPct": 50.36,
+      "meanRaiseWeightPct": 13.34,
+      "positionLabels": {
+        "BB": 1746
+      }
+    },
+    "correctedHU|40|balanced|SB": {
+      "decisions": 2000,
+      "raisePct": 62.15,
+      "limpOrCallPct": 25.15,
+      "foldPct": 12.7,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 87.22,
+      "meanRaiseWeightPct": 62.14,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|40|value|SB": {
+      "decisions": 2000,
+      "raisePct": 56.75,
+      "limpOrCallPct": 30.3,
+      "foldPct": 12.95,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 86.82,
+      "meanRaiseWeightPct": 56.74,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|40|trap|SB": {
+      "decisions": 2000,
+      "raisePct": 58.35,
+      "limpOrCallPct": 29.45,
+      "foldPct": 12.2,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 88.36,
+      "meanRaiseWeightPct": 58.15,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|40|nit|SB": {
+      "decisions": 2000,
+      "raisePct": 58.95,
+      "limpOrCallPct": 26.45,
+      "foldPct": 14.6,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 85.53,
+      "meanRaiseWeightPct": 59.12,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|60|pressure|SB": {
+      "decisions": 2000,
+      "raisePct": 60.2,
+      "limpOrCallPct": 29,
+      "foldPct": 10.8,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 89.42,
+      "meanRaiseWeightPct": 60.37,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|60|pressure|BB": {
+      "decisions": 1744,
+      "raisePct": 18.12,
+      "limpOrCallPct": 31.54,
+      "foldPct": 24.37,
+      "foldToOpenPct": 37.12,
+      "threeBetPct": 14.85,
+      "callOpenPct": 48.03,
+      "meanContinueWeightPct": 51.35,
+      "meanRaiseWeightPct": 18.02,
+      "positionLabels": {
+        "BB": 1744
+      }
+    },
+    "correctedHU|60|balanced|BB": {
+      "decisions": 1777,
+      "raisePct": 16.88,
+      "limpOrCallPct": 31.91,
+      "foldPct": 25.94,
+      "foldToOpenPct": 38.19,
+      "threeBetPct": 14.83,
+      "callOpenPct": 46.98,
+      "meanContinueWeightPct": 51.42,
+      "meanRaiseWeightPct": 16.89,
+      "positionLabels": {
+        "BB": 1777
+      }
+    },
+    "correctedHU|60|value|BB": {
+      "decisions": 1750,
+      "raisePct": 12.8,
+      "limpOrCallPct": 31.71,
+      "foldPct": 26.86,
+      "foldToOpenPct": 41.37,
+      "threeBetPct": 9.77,
+      "callOpenPct": 48.86,
+      "meanContinueWeightPct": 47.29,
+      "meanRaiseWeightPct": 12.89,
+      "positionLabels": {
+        "BB": 1750
+      }
+    },
+    "correctedHU|60|trap|BB": {
+      "decisions": 1769,
+      "raisePct": 15.04,
+      "limpOrCallPct": 33.07,
+      "foldPct": 28.09,
+      "foldToOpenPct": 40.31,
+      "threeBetPct": 12.25,
+      "callOpenPct": 47.45,
+      "meanContinueWeightPct": 50.34,
+      "meanRaiseWeightPct": 15.02,
+      "positionLabels": {
+        "BB": 1769
+      }
+    },
+    "correctedHU|60|nit|BB": {
+      "decisions": 1767,
+      "raisePct": 13.87,
+      "limpOrCallPct": 29.99,
+      "foldPct": 29.49,
+      "foldToOpenPct": 43.78,
+      "threeBetPct": 11.68,
+      "callOpenPct": 44.54,
+      "meanContinueWeightPct": 46.32,
+      "meanRaiseWeightPct": 14.17,
+      "positionLabels": {
+        "BB": 1767
+      }
+    },
+    "correctedHU|60|balanced|SB": {
+      "decisions": 2000,
+      "raisePct": 57.35,
+      "limpOrCallPct": 31.25,
+      "foldPct": 11.4,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 88.36,
+      "meanRaiseWeightPct": 57.24,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|60|value|SB": {
+      "decisions": 2000,
+      "raisePct": 59.85,
+      "limpOrCallPct": 28.05,
+      "foldPct": 12.1,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 87.79,
+      "meanRaiseWeightPct": 59.96,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|60|trap|SB": {
+      "decisions": 2000,
+      "raisePct": 60.7,
+      "limpOrCallPct": 28.2,
+      "foldPct": 11.1,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 88.82,
+      "meanRaiseWeightPct": 60.99,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    },
+    "correctedHU|60|nit|SB": {
+      "decisions": 2000,
+      "raisePct": 57.45,
+      "limpOrCallPct": 28.3,
+      "foldPct": 14.25,
+      "foldToOpenPct": 0,
+      "threeBetPct": 0,
+      "callOpenPct": 0,
+      "meanContinueWeightPct": 85.44,
+      "meanRaiseWeightPct": 57.27,
+      "positionLabels": {
+        "BTN": 2000
+      }
+    }
+  },
+  "blindFoldRuns": {
+    "live8|5": {
+      "runs": 1164,
+      "max": 2,
+      "mean": 1.045,
+      "atLeast3": 0,
+      "atLeast5": 0,
+      "distribution": {
+        "1": 1112,
+        "2": 52
+      }
+    },
+    "live8|10": {
+      "runs": 1149,
+      "max": 2,
+      "mean": 1.041,
+      "atLeast3": 0,
+      "atLeast5": 0,
+      "distribution": {
+        "1": 1102,
+        "2": 47
+      }
+    },
+    "live8|15": {
+      "runs": 1205,
+      "max": 4,
+      "mean": 1.038,
+      "atLeast3": 1,
+      "atLeast5": 0,
+      "distribution": {
+        "1": 1161,
+        "2": 43,
+        "4": 1
+      }
+    },
+    "live8|25": {
+      "runs": 1202,
+      "max": 3,
+      "mean": 1.052,
+      "atLeast3": 2,
+      "atLeast5": 0,
+      "distribution": {
+        "1": 1141,
+        "2": 59,
+        "3": 2
+      }
+    },
+    "live8|40": {
+      "runs": 1139,
+      "max": 3,
+      "mean": 1.045,
+      "atLeast3": 1,
+      "atLeast5": 0,
+      "distribution": {
+        "1": 1089,
+        "2": 49,
+        "3": 1
+      }
+    },
+    "live8|60": {
+      "runs": 1165,
+      "max": 3,
+      "mean": 1.046,
+      "atLeast3": 1,
+      "atLeast5": 0,
+      "distribution": {
+        "1": 1112,
+        "2": 52,
+        "3": 1
+      }
+    },
+    "correctedHU|5": {
+      "runs": 1137,
+      "max": 3,
+      "mean": 1.051,
+      "atLeast3": 2,
+      "atLeast5": 0,
+      "distribution": {
+        "1": 1081,
+        "2": 54,
+        "3": 2
+      }
+    },
+    "correctedHU|10": {
+      "runs": 1176,
+      "max": 2,
+      "mean": 1.048,
+      "atLeast3": 0,
+      "atLeast5": 0,
+      "distribution": {
+        "1": 1120,
+        "2": 56
+      }
+    },
+    "correctedHU|15": {
+      "runs": 1143,
+      "max": 2,
+      "mean": 1.041,
+      "atLeast3": 0,
+      "atLeast5": 0,
+      "distribution": {
+        "1": 1096,
+        "2": 47
+      }
+    },
+    "correctedHU|25": {
+      "runs": 1177,
+      "max": 3,
+      "mean": 1.05,
+      "atLeast3": 1,
+      "atLeast5": 0,
+      "distribution": {
+        "1": 1119,
+        "2": 57,
+        "3": 1
+      }
+    },
+    "correctedHU|40": {
+      "runs": 1193,
+      "max": 3,
+      "mean": 1.053,
+      "atLeast3": 2,
+      "atLeast5": 0,
+      "distribution": {
+        "1": 1132,
+        "2": 59,
+        "3": 2
+      }
+    },
+    "correctedHU|60": {
+      "runs": 1147,
+      "max": 2,
+      "mean": 1.04,
+      "atLeast3": 0,
+      "atLeast5": 0,
+      "distribution": {
+        "1": 1101,
+        "2": 46
+      }
+    }
+  }
+}

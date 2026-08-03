@@ -1,0 +1,59 @@
+ Downloading crates ...
+  Downloaded wasm-bindgen-macro v0.2.123
+  Downloaded rustversion v1.0.22
+  Downloaded wasm-bindgen-shared v0.2.123
+  Downloaded wasm-bindgen-macro-support v0.2.123
+  Downloaded wasm-bindgen v0.2.123
+   Compiling unicode-ident v1.0.24
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.45
+   Compiling wasm-bindgen-shared v0.2.123
+   Compiling cfg-if v1.0.4
+   Compiling rustversion v1.0.22
+   Compiling bumpalo v3.20.3
+   Compiling once_cell v1.21.4
+   Compiling parking_lot_core v0.9.12
+   Compiling scopeguard v1.2.0
+   Compiling autocfg v1.5.1
+   Compiling serde_core v1.0.228
+   Compiling rand_core v0.10.1
+   Compiling getrandom v0.4.2
+   Compiling smallvec v1.15.1
+   Compiling lock_api v0.4.14
+   Compiling num-traits v0.2.19
+   Compiling pin-project-lite v0.2.17
+   Compiling zmij v1.0.21
+   Compiling chacha20 v0.10.0
+   Compiling bytes v1.11.1
+   Compiling thiserror v2.0.18
+   Compiling parking_lot v0.12.5
+   Compiling serde_json v1.0.150
+   Compiling serde v1.0.228
+   Compiling tracing-core v0.1.36
+   Compiling either v1.16.0
+   Compiling syn v2.0.117
+   Compiling futures-sink v0.3.32
+   Compiling futures-core v0.3.32
+   Compiling memchr v2.8.1
+   Compiling wasm-bindgen v0.2.123
+   Compiling itoa v1.0.18
+   Compiling rs_poker v5.0.0 (/private/tmp/rs-poker-river-room-spike)
+   Compiling itertools v0.14.0
+   Compiling wasm-bindgen-macro-support v0.2.123
+   Compiling approx v0.5.1
+   Compiling tokio-macros v2.5.0
+   Compiling tracing-attributes v0.1.31
+   Compiling thiserror-impl v2.0.18
+   Compiling serde_derive v1.0.228
+   Compiling async-trait v0.1.89
+   Compiling tokio v1.43.4
+error: Only features sync,macros,io-util,rt,time are supported on wasm.
+   --> /Users/mrb/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.43.4/src/lib.rs:476:1
+    |
+476 | compile_error!("Only features sync,macros,io-util,rt,time are supported on wasm.");
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   Compiling tracing v0.1.44
+   Compiling wasm-bindgen-macro v0.2.123
+error: could not compile `tokio` (lib) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...

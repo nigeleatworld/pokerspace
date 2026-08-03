@@ -1,0 +1,45 @@
+     Locking 7 packages to latest Rust 1.99.0-nightly compatible versions
+      Adding bumpalo v3.20.3
+      Adding js-sys v0.3.103
+      Adding rustversion v1.0.23
+      Adding wasm-bindgen v0.2.126
+      Adding wasm-bindgen-macro v0.2.126
+      Adding wasm-bindgen-macro-support v0.2.126
+      Adding wasm-bindgen-shared v0.2.126
+ Downloading crates ...
+  Downloaded wasm-bindgen-macro v0.2.126
+  Downloaded rustversion v1.0.23
+  Downloaded wasm-bindgen-shared v0.2.126
+  Downloaded wasm-bindgen v0.2.126
+  Downloaded wasm-bindgen-macro-support v0.2.126
+  Downloaded bumpalo v3.20.3
+   Compiling wasm-bindgen-shared v0.2.126
+   Compiling rustversion v1.0.23
+   Compiling bumpalo v3.20.3
+   Compiling unicode-ident v1.0.24
+   Compiling getrandom v0.4.3
+   Compiling syn v2.0.119
+   Compiling parking_lot v0.12.5
+   Compiling memchr v2.8.3
+   Compiling itoa v1.0.18
+   Compiling rs_poker v5.0.0 (https://github.com/elliottneilclark/rs-poker?rev=c9fff5de185ece2c148e6bd84c552b3ac93ec060#c9fff5de)
+   Compiling itertools v0.14.0
+   Compiling approx v0.5.1
+   Compiling serde v1.0.229
+   Compiling serde_json v1.0.151
+   Compiling thiserror v2.0.19
+   Compiling wasm-bindgen-macro-support v0.2.126
+   Compiling tokio-macros v2.5.0
+   Compiling tracing-attributes v0.1.31
+   Compiling wasm-bindgen v0.2.126
+   Compiling tokio v1.43.4
+error: Only features sync,macros,io-util,rt,time are supported on wasm.
+   --> /Users/mrb/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.43.4/src/lib.rs:476:1
+    |
+476 | compile_error!("Only features sync,macros,io-util,rt,time are supported on wasm.");
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   Compiling tracing v0.1.44
+   Compiling wasm-bindgen-macro v0.2.126
+error: could not compile `tokio` (lib) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
