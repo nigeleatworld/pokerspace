@@ -1,12 +1,15 @@
 'use strict';
 const fs=require('fs'),vm=require('vm'),assert=require('assert');
 const html=fs.readFileSync(__dirname+'/index.html','utf8');
+const deliverableHtml=html;
 const m=html.match(/\/\* CORE_START \*\/([\s\S]*?)\/\* CORE_END \*\//);
 assert(m,'embedded RiverCore test seam is present');
 const sandbox={console,Math,Uint32Array,crypto:require('crypto').webcrypto}; sandbox.globalThis=sandbox;
 vm.runInNewContext(m[1],sandbox); const C=sandbox.RiverCore;
 function p(stack=1000,bet=0,total=0){return {stack,bet,total,folded:false,allIn:false,acted:false,raiseRights:true,hole:[]}}
 function test(name,fn){try{fn();console.log('✓',name)}catch(e){console.error('✗',name);throw e}}
+test('repository has one canonical playable HTML artifact',()=>{assert(!fs.existsSync(__dirname+'/Pokerspace.html'),'duplicate Pokerspace.html must be removed');assert(!fs.existsSync(__dirname+'/Pokerspace.html.bak'),'backup HTML must live outside the release repository')});
+test('release package is generated and verified from the canonical artifact',()=>{for(const f of ['package-release.sh','release-check.sh'])assert(fs.existsSync(__dirname+'/'+f),`${f} missing`);let pack=fs.readFileSync(__dirname+'/package-release.sh','utf8'),check=fs.readFileSync(__dirname+'/release-check.sh','utf8');assert(/zip -X.*index\.html.*README\.md/.test(pack));assert(/unzip -p Pokerspace\.zip index\.html/.test(check));assert(/cmp .*index\.html/.test(check));assert(/unzip -p Pokerspace\.zip README\.md/.test(check));assert(/cmp .*README\.md/.test(check))});
 
 test('bet 20 then raise 50 makes minimum reraise 80',()=>{const s={players:[p(980,20),p(950,50),p()],currentBet:50,lastFullRaiseSize:30,actedSinceFullRaise:new Set([1]),turn:2,pot:70};assert.equal(C.legalActions(s,2).minRaiseTo,80)});
 test('short all-in does not reopen prior actor but preserves unacted rights',()=>{const s={players:[p(900,100),p(0,150),p(1000,0)],currentBet:150,lastFullRaiseSize:100,actedSinceFullRaise:new Set([0,1]),turn:0,pot:250};s.players[0].raiseRights=false;s.players[1].allIn=true;assert.equal(C.legalActions(s,0).canRaise,false);s.turn=2;assert.equal(C.legalActions(s,2).canRaise,true);assert.equal(C.legalActions(s,2).minRaiseTo,250)});
@@ -159,7 +162,7 @@ test('setup preserves the full 6 to 8 handed range',()=>{
   assert(html.includes('data-n="8"'),'8-handed option');
 });
 
-test('previous hand control cycles through stored history and identifies the shown item',()=>{const handler=html.match(/\$\('#previous'\)\.onclick=\(\)=>\{([\s\S]*?)\};\$\('#resumeBtn'/)[1];assert(/historyCursor/.test(handler));assert(/History.*\/.*Hand/.test(handler));assert(/%\s*g\.histories\.length/.test(handler))});
+test('previous hand control opens the replay viewer',()=>{assert(/\$\('#previous'\)\.onclick=\(\)=>showReplay\(\)/.test(html));assert(/function showReplay\(\)/.test(html));});
 
 test('table shows player action callouts and persistent blind markers',()=>{
   assert(/class="action-callout/.test(html),'seat-level action callout');
@@ -205,6 +208,98 @@ test('spectator data and opponent cards stay gated behind a successful folded he
   assert(/if\(!spectating\)/.test(html),'panel must explicitly clear outside spectator mode');
   assert(/action-bar\.spectator \.spectator-grid\{[^}]*flex-wrap:nowrap[^}]*overflow-x:auto/.test(html),'mobile spectator rows must form a bounded horizontal tray');
   assert(/action-bar\.spectator\{[^}]*height:142px[^}]*overflow:hidden/.test(html),'mobile spectator tray must not grow over the table');
+});
+test('post-hand coach explains equity and pot odds before judging the decision',()=>{
+  assert(deliverableHtml.includes('Equity is your estimated chance of winning'),'coach must define equity in plain language');
+  assert(deliverableHtml.includes('Pot odds are the minimum win chance a call needs'),'coach must define pot odds in plain language');
+  assert(deliverableHtml.includes('When equity is higher than pot odds'),'coach must teach the comparison rule');
+  assert(/Calling .* to play for .* means you need/.test(deliverableHtml),'coach must translate the actual call price into a break-even percentage');
+  assert(!deliverableHtml.includes('% equity vs ${'),'replay and debrief must not fall back to unexplained equity-vs-odds shorthand');
+  assert(deliverableHtml.includes('% chance to win; break-even is ${'),'replay must use plain-language comparison');
+  assert(/@media\(max-width:580px\)[\s\S]*?\.result\{[^}]*max-height:124px/.test(deliverableHtml),'mobile result must stay compact enough to preserve the table');
+  assert(/\.hand-settled \.action-bar\{height:212px;max-height:212px\}/.test(deliverableHtml),'settled tray must not cover the hero seat');
+});
+test('decision grading gives folds and calls opposite action-aware verdicts',()=>{
+  const correctFold=C.gradeDecision({type:'fold',equity:.14,toCall:125,potBefore:200});
+  assert.equal(correctFold.status,'correct');
+  assert.equal(correctFold.callEv,-79.5);
+  assert.equal(correctFold.cost,0);
+  const mistakenFold=C.gradeDecision({type:'fold',equity:.55,toCall:50,potBefore:150});
+  assert.equal(mistakenFold.status,'mistake');
+  assert.equal(mistakenFold.callEv,60);
+  assert.equal(mistakenFold.cost,60);
+  const correctCall=C.gradeDecision({type:'call',equity:.55,toCall:50,potBefore:150});
+  assert.equal(correctCall.status,'correct');
+  assert.equal(correctCall.callEv,60);
+  const mistakenCall=C.gradeDecision({type:'call',equity:.14,toCall:125,potBefore:200});
+  assert.equal(mistakenCall.status,'mistake');
+  assert.equal(mistakenCall.cost,79.5);
+});
+test('decision grading refuses false precision for raises and uncertain inputs',()=>{
+  assert.deepEqual(C.gradeDecision({type:'raise',equity:.8,toCall:20,potBefore:100}),{status:'ungraded',gradable:false,reason:'raise-model'});
+  assert.deepEqual(C.gradeDecision({type:'check',equity:.2,toCall:0,potBefore:100}),{status:'ungraded',gradable:false,reason:'no-price'});
+  assert.equal(C.gradeDecision({type:'call',equity:null,toCall:20,potBefore:100}).status,'ungraded');
+});
+test('every coaching surface uses one decision view instead of duplicate EV rules',()=>{
+  assert(/function decisionView\(a\)/.test(html),'one UI adapter must own coaching language');
+  assert((html.match(/decisionView\(a\)/g)||[]).length>=4,'post-hand, debrief and replay must share the adapter');
+  assert(!html.includes('let ev=(a.heroEquity-a.heroPotOdds)'),'debrief must not use the old sign-blind EV shortcut');
+  assert(!html.includes("eq!=null&&eq>.5"),'raises must not be graded from raw equity thresholds');
+  const build=html.match(/function buildAnalysis\(\)\{([\s\S]*?)function heroBusted/)[1];
+  assert(!/coachLesson\(a\)/.test(build),'the table tray must contain only compact coaching');
+});
+test('hand review preserves decision context and complete action sequencing',()=>{
+  assert(/stackBefore:before/.test(html),'action history must capture the acting stack');
+  assert(/pricedCallCost=/.test(html),'priced decisions must distinguish calls the hero can fully cover');
+  assert(/callCost:pricedCallCost/.test(html),'short all-in alternatives must remain ungraded');
+  assert(/function boardAtStreet\(/.test(html),'replay needs street-specific board state');
+  assert(/a\.position/.test(html)&&/a\.stackBefore/.test(html),'replay must show position and starting stack');
+  assert(/let oppActions=actions\.filter\(a=>a\?\.actor!==0\)/.test(html),'checks must remain in opponent action history');
+});
+test('persisted replay content is escaped before entering modal HTML',()=>{
+  const replay=html.match(/function showReplay\(\)\{([\s\S]*?)function decisionView/)[1];
+  assert(/esc\(String\(rankLabel\(r\)\)\+String\(s\)\)/.test(replay),'card rank and suit must be escaped');
+  assert(/esc\(context\)/.test(replay),'persisted decision context must be escaped');
+  assert(/esc\(String\(a\.street\|\|'hand'\)\.toUpperCase\(\)\)/.test(replay),'opponent street must be escaped');
+  assert(/esc\(String\(a\.type\|\|'action'\)\.toUpperCase\(\)\)/.test(replay),'opponent action must be escaped');
+  assert(/esc\(boardLabel\)/.test(replay),'persisted board text must be escaped');
+});
+test('persisted debrief labels are escaped before entering modal HTML',()=>{
+  const debrief=html.match(/function showDebrief\(endAfter=false\)\{([\s\S]*?)function boardAtStreet/)[1];
+  assert(/Hand \$\{esc\(String\(hand\)\)\}/.test(debrief),'persisted hand label must be escaped');
+  assert(/\$\{esc\(v\.street\)\}/.test(debrief),'persisted street label must be escaped');
+  assert(/\$\{esc\(v\.action\)\}/.test(debrief),'persisted action label must be escaped');
+});
+test('persisted non-modal labels are escaped before entering game HTML',()=>{
+  assert(/g\.n=g\.mode==='tournament'\?8:\[6,7,8\]\.includes\(Number\(g\.n\)\)\?Number\(g\.n\):6/.test(html),'persisted table size must be allowlisted before HTML logging');
+  assert(/blind=p\.blind\?`<div class="blind-marker">\$\{esc\(p\.blind\)\}<\/div>`/.test(html),'persisted blind marker must be escaped');
+  const analysis=html.match(/function buildAnalysis\(\)\{([\s\S]*?)function heroBusted/)[1];
+  assert(/\$\{esc\(v\.street\)\} · \$\{esc\(v\.action\)\}/.test(analysis),'settled-hand coaching labels must be escaped');
+  const busted=html.match(/function heroBusted\(\)\{([\s\S]*?)function ordinal/)[1];
+  assert(/Final hand: \$\{esc\(summary\)\}/.test(busted),'busted-hand history summary must be escaped');
+  assert(/place=Number\.isInteger\(g\.players\[0\]\.finishPlace\)/.test(busted),'persisted finish place must be normalized');
+});
+test('end and debrief keeps an explicit path to end the session',()=>{
+  assert(/function showDebrief\(endAfter=false\)/.test(html));
+  assert(/id="debriefEnd"/.test(html));
+  assert(/\$\('#debriefEnd'\)\.onclick=\(\)=>\{closeModal\(\);endSession\(\)\}/.test(html));
+  assert(/\$\('#endSession'\)\.onclick=\(\)=>\{if\(g\?\.histories\?\.length\)\{showDebrief\(true\)\}/.test(html));
+});
+test('setup and review overlays expose proper modal and motion semantics',()=>{
+  assert(/class="app" inert/.test(html),'background app starts inert behind setup');
+  assert(/class="setup" id="setup" role="dialog" aria-modal="true"/.test(html));
+  assert(/class="replay-panel" role="dialog" aria-modal="true"/.test(html));
+  assert(/function mountModal\(/.test(html),'review overlays need shared inert and focus handling');
+  assert((html.match(/mountModal\(overlay/g)||[]).length>=2,'debrief and replay must use the modal helper');
+  assert(/:focus-visible/.test(html));
+  assert(/@media\(prefers-reduced-motion:reduce\)/.test(html));
+});
+test('desktop hero seat clears the action tray at short viewport heights',()=>{assert(/\.seat\.pos0\{top:86%!important\}/.test(html))});
+test('spectator equity stays below the table instead of covering community cards',()=>{
+  assert(!/className='eq-table'/.test(deliverableHtml),'spectator equity must not create a centered table overlay');
+  assert(!/\.eq-table\{[^}]*top:50%/.test(deliverableHtml),'no equity panel may share the board centerline');
+  assert(/panel\.innerHTML=`<div class="spectator-title">/.test(deliverableHtml),'detailed spectator equity belongs in the action tray');
+  assert(/class="equity-badge"/.test(deliverableHtml),'small seat-level win percentages remain visible');
 });
 test('spectator flop equity, known-dead removal and turn chop outs are exact',()=>{
   const active=[{i:1,hole:C.cards('As Ad')},{i:2,hole:C.cards('Ks Kd')}];

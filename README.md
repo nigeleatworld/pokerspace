@@ -10,7 +10,7 @@ Pokerspace is a fully offline, single-file Texas Hold'em game. No accounts, no s
 - **Cash game**: $5/$10 blinds, $1,500 buy-in, rebuys, cumulative P/L tracking
 - **5 bot personas** with distinct play styles: Pressure, Balanced, Value, Trap, Nit
 - **Spectator equity**: fold and watch the hand play out with live win probabilities and exact outs on each remaining player
-- **Post-hand analysis**: pot odds, decision quality, and your last move after every settled hand
+- **Post-hand analysis**: estimated fold/call EV from modeled opponent ranges, with raises left ungraded when the model cannot support a trustworthy verdict
 - **Sequential all-in runouts**: community cards revealed one at a time for suspense
 - **Persistent saves**: close the tab, come back, resume exactly where you left off
 - **Mobile-first**: works on phones at 320px and up
@@ -44,6 +44,8 @@ This is strong recreational/training AI, not solver-backed or GTO-grade.
 - `qa-tests.js` - Regression suite (run with `node qa-tests.js`)
 - `ai-match-bench.js` - Adversarial benchmark
 - `qa-mobile.html` - Mobile geometry harness
+- `package-release.sh` - Rebuild the ZIP from the canonical game and verify it
+- `release-check.sh` - Run QA and prove the ZIP contains the tested `index.html`
 - `spikes/` - Research notes: WASM poker engine investigation, tournament cadence simulation, AI exploit benchmarks, heads-up telemetry, bot-style telemetry
 
 ## Run tests
@@ -51,6 +53,14 @@ This is strong recreational/training AI, not solver-backed or GTO-grade.
 ```bash
 node qa-tests.js
 ```
+
+## Build the release
+
+```bash
+./package-release.sh
+```
+
+This regenerates `Pokerspace.zip`, runs the full QA suite, and verifies that the packaged `index.html` is byte-identical to the tested game.
 
 ## License
 
